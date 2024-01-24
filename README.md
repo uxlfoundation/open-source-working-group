@@ -1,2 +1,7 @@
-# open-source-working-group
-The UXL Foundation Open Source Working Group
+================================
+ UXLF Open Source Working Group
+================================
+
+* `Meeting Notes`_
+
+.. _`Meeting Notes`: meetings/notes.rst
