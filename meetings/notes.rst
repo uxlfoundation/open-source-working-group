@@ -61,32 +61,33 @@ The group went through a set of priorities that have been provided by the UXL St
 * Build Infrastructure Discussion
 Due to the history of the projects the infrastructure is mostly hosted by Intel but we would like to integrate CI, build and testing for different vendor and architecture targets.
 Penporn from Google shared information about how this is done with the TensorFlow project:
-`Official Builds (maintained by Google)`_
-`Community Builds (maintained by 3rd parties)`_
+  * `Official Builds (maintained by Google)`_
+  * `Community Builds (maintained by 3rd parties)`_
 
 A similar model could be adopted for UXL Foundation projects.
 Options for using public cloud infrastructure for the projects include:
  
 * The foundation funding infrastructure (this is unlikely due to the 
-    costs involved)
+  costs involved)
 * Obtaining donations of credits from public cloud infrastructure 
-    providers (note that donations cannot be used in lieu of membership cost)
+  providers (note that donations cannot be used in lieu of membership cost)
 * Organisations providing infrastructure in a similar way to how Intel
-    currently does this
+  currently does this
 
 Some points to note from the discussions:
 * TensorFlow has a dedicated team looking after build and CI
 * The build machines needed is dictated by the volume of Pull Requests 
-    made so can increase as contributions increase otherwise the process 
-	can get backed up
+  made so can increase as contributions increase otherwise the process 
+  can get backed up
 * Some organisations require security scanning when builds are done, 
-    some of these would be difficult to do in public
+  some of these would be difficult to do in public
 * A big improvement for projects would be to move infrastructure or 
-    build logs in public so that the community can see this, but some 
-	infrastructure can still live inside the corporate network
-* An example of the infrastructure TensorFlow uses `with Arm is this`_
+  build logs in public so that the community can see this, but some 
+  infrastructure can still live inside the corporate network
+* Here is a link to an example of the infrastructure TensorFlow uses 
+  `with Arm`_
 * The best solution is to find maintainers for specific target devices 
-    and enable them to do this through the GitHub projects
+  and enable them to do this through the GitHub projects
 
 Penporn passed on the details of some Intel people working on CI for 
 TensorFlow who may have some advice or help.
@@ -105,5 +106,5 @@ meeting.
 
 .. _`Official Builds (maintained by Google)`: https://github.com/tensorflow/tensorflow?tab=readme-ov-file#official-builds
 .. _`Community Builds (maintained by 3rd parties)`: https://github.com/tensorflow/build#community-supported-tensorflow-builds
-.. _ `with Arm is this`: https://github.com/tensorflow/tensorflow/actions/workflows/arm-ci.yml
+.. _ `with Arm`: https://github.com/tensorflow/tensorflow/actions/workflows/arm-ci.yml
 
