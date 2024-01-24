@@ -61,6 +61,7 @@ The group went through a set of priorities that have been provided by the UXL St
 * Build Infrastructure Discussion
 Due to the history of the projects the infrastructure is mostly hosted by Intel but we would like to integrate CI, build and testing for different vendor and architecture targets.
 Penporn from Google shared information about how this is done with the TensorFlow project:
+
   * `Official Builds (maintained by Google)`_
   * `Community Builds (maintained by 3rd parties)`_
 
@@ -75,6 +76,7 @@ Options for using public cloud infrastructure for the projects include:
   currently does this
 
 Some points to note from the discussions:
+
 * TensorFlow has a dedicated team looking after build and CI
 * The build machines needed is dictated by the volume of Pull Requests 
   made so can increase as contributions increase otherwise the process 
@@ -100,9 +102,9 @@ with other projects.
 Discussions will continue on the Slack channel and at the next 
 Working Group meeting.
 
-The group agreed that the Working Group will initially focus on 
+**The group agreed that the Working Group will initially focus on 
 specific projects, with oneDAL and oneDNN the focus for the next 
-meeting.
+meeting.**
 
 .. _`Official Builds (maintained by Google)`: https://github.com/tensorflow/tensorflow?tab=readme-ov-file#official-builds
 .. _`Community Builds (maintained by 3rd parties)`: https://github.com/tensorflow/build#community-supported-tensorflow-builds
