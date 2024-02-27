@@ -2,7 +2,7 @@
  Meeting Notes
 ===============
 
-This file contains all the meeting notes from the Open Source Working Group Meetings. 
+`2024-02-27 <2024-02-27.rst>`__
 
 1/24/2024
 =========

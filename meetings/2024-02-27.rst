@@ -1,0 +1,83 @@
+===========================
+ Open Source WG: 2/27/2024
+===========================
+
+John M. chaired the meeting. Andy could not attend because of travel.
+
+Security: Roman Z.
+==================
+
+See `Roman's slides`_ for details.
+
+AR: Projects send 1 or 2 names to Roman
+
+* Starting a new work package for security. Need to establish UXL
+  processes for reporting, handling vulnerabilities, SDL, etc.
+* Roman has been looking at security procesess of open source projects
+  and is responsible for Intel security processes for some of the UXL
+  projects.
+* Roman has agreed to lead subgroup to work on this. He needs 1-2
+  people from each project. Anyone is welcome to join. It is not
+  limited to people with a defined role in a project. Short term the
+  effort will be in setting up processes, longer term effort will be
+  about tools.
+* Security group members will be added to private slack channel. Long
+  term could be both private/public channel
+
+Open Source recommendations: John M.
+====================================
+
+AR: Review checklist for your project and consider addressing issues.
+
+* Using `Red Hat open source checklist`_, Rod looked at the UXL
+  project repos to see what can be improved. It is summarized in a
+  spreadsheet and detailed reports. oneTBB report is missing. Some
+  people had trouble accessing the links. Robert verified that the
+  links below do not require a google login:
+
+  * `Summary spreadsheet`_
+  * `oneMKL report`_
+  * `oneDPL report`_
+  * `oneDNN report`_
+  * `oneCCL report`_
+  * `oneDAL report`_
+
+* We reviewed the oneMKL report, but discussed the issues for all
+  projects. Most of the discussion was about communication:
+
+  * report recommended slack, concern about having too many
+    communication tools and drawbacks of slack (e.g. 90
+    history). preference for mailing list, github discussions, and
+    other means.
+  * slack is a recommendation, not a mandate.
+  * concern about the need to keep some information private
+    (e.g. discussion of unannounced products)
+  * discussion about the different tools, they support different
+    communication styles
+  * recommendation to understand where a project is looking for more
+    contributors, and how more communication can further that goal,
+    letting people know how to communication with other developers
+
+* Identifying project roles
+
+  * Seemed to be general agreement that this was good and can be done
+
+* Public decision making
+
+  * projects are doing this to varying degrees
+  * would like to hear about what other projects are doing and share
+    their experiences in future meeting
+
+* Other topics had less discussion, but should be reviewed
+
+  * Discuss in `slack channel`_ or raise in next meeting
+
+.. _`slack channel`: : https://uxlfoundation.slack.com/archives/C06E1NBV2ER
+.. _`Red Hat open source checklist`: https://www.redhat.com/en/resources/open-source-project-health-checklist
+.. _`Summary spreadsheet`: https://docs.google.com/spreadsheets/d/1UgOGCpskfu1LotfEh1MPwuV-GGdzB2FQQiw0iOd0Cb0
+.. _`oneMKL report`: https://docs.google.com/document/d/1F_WtqzdJuvEKgmBJR9P8nEjmalYLtxmS
+.. _`oneDPL report`: https://docs.google.com/document/d/1l_B_MM0Sk7qbIdjgBBAUgtW7VwmJOBfa
+.. _`oneDNN report`: https://docs.google.com/document/d/1e9vHtVcqWvusIs_U2mP1B8L5DtO5Qb8b
+.. _`oneCCL report`: https://docs.google.com/document/d/1NNK_BrBb0Rz_kcDDprfyuZPyktqePDtY
+.. _`oneDAL report`: https://docs.google.com/document/d/1QRJVhcUv_JKSQmqlb43NkL37n5rliKw4
+.. _`Roman's slides`: ../presentations/security-2024-02.pdf
