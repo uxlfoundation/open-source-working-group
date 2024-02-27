@@ -80,4 +80,4 @@ AR: Review checklist for your project and consider addressing issues.
 .. _`oneDNN report`: https://docs.google.com/document/d/1e9vHtVcqWvusIs_U2mP1B8L5DtO5Qb8b
 .. _`oneCCL report`: https://docs.google.com/document/d/1NNK_BrBb0Rz_kcDDprfyuZPyktqePDtY
 .. _`oneDAL report`: https://docs.google.com/document/d/1QRJVhcUv_JKSQmqlb43NkL37n5rliKw4
-.. _`Roman's slides`: "../presentations/UXLF - Security work Package proposal - Roman Zhukov - February 2024 1.pdf"
+.. _`Roman's slides`: ../presentations/security-2024-02.pdf
