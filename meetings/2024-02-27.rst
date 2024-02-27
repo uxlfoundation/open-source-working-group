@@ -74,7 +74,7 @@ AR: Review checklist for your project and consider addressing issues.
 
 .. _`slack channel`: : https://uxlfoundation.slack.com/archives/C06E1NBV2ER
 .. _`Red Hat open source checklist`: https://www.redhat.com/en/resources/open-source-project-health-checklist
-.. _`Summary spreadsheet`: https://docs.google.com/spreadsheets/d/1SZQXu9zemYYtZYaufSEpU_7zZySN5VqFx39C-tfaMi8
+.. _`Summary spreadsheet`: https://docs.google.com/spreadsheets/d/1UgOGCpskfu1LotfEh1MPwuV-GGdzB2FQQiw0iOd0Cb0
 .. _`oneMKL report`: https://docs.google.com/document/d/1F_WtqzdJuvEKgmBJR9P8nEjmalYLtxmS
 .. _`oneDPL report`: https://docs.google.com/document/d/1l_B_MM0Sk7qbIdjgBBAUgtW7VwmJOBfa
 .. _`oneDNN report`: https://docs.google.com/document/d/1e9vHtVcqWvusIs_U2mP1B8L5DtO5Qb8b
