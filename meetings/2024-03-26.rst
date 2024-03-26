@@ -1,0 +1,67 @@
+===========================
+ Open Source WG: 3/26/2024
+===========================
+
+John M. chaired the meeting. Andy could not attend because of travel.
+
+Security: Roman Z.
+==================
+
+* Roman gave an update on security
+* Group has formed and met once
+* There is a `security slack channel`_
+* Roman has created a github project: `security work package`_
+* Work is in progress
+* Deciding how to track (GitHub vs Jira)
+* Concerns about having the bandwidth to get this work done:
+
+  * Roman will make some work estimations and set deadlines
+
+.. _`security slack channel`: https://uxlfoundation.slack.com/archives/C06G978GAHG
+.. _`security work package`: https://github.com/orgs/uxlfoundation/projects/3
+
+Open Source recommendations: Rod B.
+===================================
+
+* Rod had a follow-up discussion about the findings from looking at
+  the `Red Hat open source checklist`_.
+  * `Summary spreadsheet`_
+  * `oneMKL report`_
+  * `oneDPL report`_
+  * `oneDNN report`_
+  * `oneCCL report`_
+  * `oneDAL report`_
+
+* Q: More discussion about private vs public discussion.
+  * Prioritize the kinds of information that other developers will
+    need to know. Look at oneDNN RFC's as an example.
+
+* Need to have some deadlines. Rod has created a github project: `open
+  source checklist work package`_
+
+.. _`open source checklist work package`: https://github.com/orgs/uxlfoundation/projects/5/views/1?layout=board
+.. _`Red Hat open source checklist`: https://www.redhat.com/en/resources/open-source-project-health-checklist
+.. _`Summary spreadsheet`: https://docs.google.com/spreadsheets/d/1UgOGCpskfu1LotfEh1MPwuV-GGdzB2FQQiw0iOd0Cb0
+.. _`oneMKL report`: https://docs.google.com/document/d/1F_WtqzdJuvEKgmBJR9P8nEjmalYLtxmS
+.. _`oneDPL report`: https://docs.google.com/document/d/1l_B_MM0Sk7qbIdjgBBAUgtW7VwmJOBfa
+.. _`oneDNN report`: https://docs.google.com/document/d/1e9vHtVcqWvusIs_U2mP1B8L5DtO5Qb8b
+.. _`oneCCL report`: https://docs.google.com/document/d/1NNK_BrBb0Rz_kcDDprfyuZPyktqePDtY
+.. _`oneDAL report`: https://docs.google.com/document/d/1QRJVhcUv_JKSQmqlb43NkL37n5rliKw4
+
+GitHub Org Transition: Robert C.
+================================
+
+* `GitHub Org Slides`_
+* We have to move GitHub repos to LF/UXLF ownership
+* examined:
+  1. taking oneapi-src
+  2. moving to uxlfoundation
+  3. every project has its own org: https://github.com/onednn-project/onednn
+
+* Recommend option 3
+* See the slides for details
+* There were no strong objections, but we did not have representation
+  from all the projects. Will follow-up with some slides that makes
+  the recommendation clear, and a follow-up discussion.
+
+.. _`GitHub Org Slides`: ../presentations/2024-03-26-GitHub-org.pdf
