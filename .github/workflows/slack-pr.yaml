@@ -23,7 +23,7 @@ jobs:
       uses: slackapi/slack-github-action@v1.25.0
       with:
         # channel-id: "wg-open-source"
-        channel-id: {{ env.channel }}
+        channel-id: ${{ env.channel }}
         slack-message: "${{ github.actor }} posted a RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
 
   meeting-notes:
@@ -38,5 +38,5 @@ jobs:
     - name: Notify Slack
       uses: slackapi/slack-github-action@v1.25.0
       with:
-        channel-id: {{ env.channel }}
+        channel-id: ${{ env.channel }}
         slack-message: "${{ github.actor }} posted meeting notes: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
