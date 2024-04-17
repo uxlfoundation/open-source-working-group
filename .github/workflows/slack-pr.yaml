@@ -1,24 +1,42 @@
 name: Slack PR Notification
 on:
+  # use pull_request_target to run on PRs from forks and have access to secrets
   pull_request_target:
-    types: [labeled]
+    types: [labeled, closed]
+
+env:
+  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+  # channel: "wg-open-source"
+  # for testing
+  channel: "rc-test"
 
 jobs:
-  rfc-notify:
+  rfc:
     name: RFC Notification
     runs-on: ubuntu-latest
-    steps:
-    - name: Check PR label
-      id: check
-      run: |
-        if echo "${{ toJSON(github.event.pull_request.labels.*.name) }}" | grep -q "RFC"; then
-          echo "NOTIFY_SLACK=true" >> $GITHUB_ENV
-        fi
+    # Trigger when labeling a PR with "RFC"
+    if: |
+      github.event.action == 'labeled' &&
+      contains(toJson(github.event.pull_request.labels.*.name), '"RFC"')
+    steps: 
     - name: Notify Slack
-      if: env.NOTIFY_SLACK == 'true'
       uses: slackapi/slack-github-action@v1.25.0
       with:
-        channel-id: "wg-open-source"
-        slack-message: "${{ github.actor }} labeled a PR with RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
-      env:
-        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+        # channel-id: "wg-open-source"
+        channel-id: {{ env.channel }}
+        slack-message: "${{ github.actor }} posted a RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
+
+  meeting-notes:
+    name: Meeting Notes Notification
+    runs-on: ubuntu-latest
+    # Trigger when closing a PR with "meeting notes" label
+    if: |
+      github.event.action == 'closed' &&
+      github.event.pull_request.merged == true &&
+      contains(toJson(github.event.pull_request.labels.*.name), '"meeting notes"')
+    steps: 
+    - name: Notify Slack
+      uses: slackapi/slack-github-action@v1.25.0
+      with:
+        channel-id: {{ env.channel }}
+        slack-message: "${{ github.actor }} posted meeting notes: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
