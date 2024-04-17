@@ -6,9 +6,9 @@ on:
 
 env:
   SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-  # channel: "wg-open-source"
+  channel: "wg-open-source"
   # for testing
-  channel: "rc-test"
+  # channel: "rc-test"
 
 jobs:
   rfc:
