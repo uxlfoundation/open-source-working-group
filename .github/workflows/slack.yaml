@@ -11,7 +11,7 @@ jobs:
     - name: Check PR label
       id: check
       run: |
-        if echo "${{ github.event.pull_request.labels.*.name }}" | grep -q "RFC"; then
+        if echo "${{ toJSON(github.event.pull_request.labels.*.name) }}" | grep -q "RFC"; then
           echo "NOTIFY_SLACK=true" >> $GITHUB_ENV
         fi
     - name: Notify Slack
