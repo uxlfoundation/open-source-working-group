@@ -1,25 +1,24 @@
 name: Slack PR Notification
 on:
-  # pull request target uses base and has access to secrets
   pull_request_target:
-    types: [opened, reopened]
+    types: [labeled]
 
 jobs:
   rfc-notify:
     name: RFC Notification
     runs-on: ubuntu-latest
     steps:
-    - name: Check PR title
+    - name: Check PR label
       id: check
       run: |
-        if [[ "${{ github.event.pull_request.title }}" == *"RFC"* ]]; then
+        if echo "${{ github.event.pull_request.labels.*.name }}" | grep -q "RFC"; then
           echo "NOTIFY_SLACK=true" >> $GITHUB_ENV
         fi
     - name: Notify Slack
       if: env.NOTIFY_SLACK == 'true'
       uses: slackapi/slack-github-action@v1.25.0
       with:
-        channel-id: "wg-open-source"
-        slack-message: "${{ github.actor }} opened a new RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
+        channel-id: "rc-test"
+        slack-message: "${{ github.actor }} labeled a PR with RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
