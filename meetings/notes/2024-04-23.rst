@@ -1,0 +1,166 @@
+===========================
+ Open Source WG: 3/26/2024
+===========================
+
+Attendees
+=========
+
+.. list-table:: 
+
+  * - Alexey Kukanov 
+    - Intel Corporation
+  * - Maria Garzaran 
+    - Intel Corporation
+  * - Abhishek Jain 
+    - Fujitsu Limited
+  * - Nikolay Petrov
+    - Intel Corporation
+  * - Jory Burson
+    - The Linux Foundation
+  * - Kasper Mecklenburg
+    - Arm Limited
+  * - Ruyman Reyes Castro
+    - Codeplay Software
+  * - Ragesh Hajela
+    - Fujitsu Limited
+  * - Ankit Manerikar
+    - Intel Corporation
+  * - Steve Capper
+    - Arm Limited
+  * - Rod Burns
+    - Codeplay Software
+  * - Joel Rosenzweig
+    - Intel Corporation
+  * - Roman Zhukov
+    - Intel Corporation
+  * - David Edelsohn
+    - International Business Machines Corporation
+  * - Stephano Cetola
+    - Intel Corporation
+  * - Alison Richards
+    - Intel Corporation
+  * - John Melonakos
+    - Intel Corporation
+  * - Balas, DorotheeX Marie Clotilde
+    - Intel Corporation
+  * - Robert Cohn
+    - Intel Corporation
+  * - Pavel Kumbrasev
+    - Intel Corporation
+
+Brief Agenda
+============
+
+* Update on repo migration and binary distribution.
+* Updates and plans regarding CI from an Arm perspective.
+* Announcement of the upcoming webinar on UE Camera.
+* Discuss open source best practices and security items progress.
+
+Summary Main Takeaways
+======================
+
+* Repo migration for One API source to project-specific GitHub organizations is
+  being discussed, and RFC was put out.
+* Considering binary distribution of SYCL-based development environment via
+  Conda.
+* Arm is ironing out CI issue for testing against SYCL and building it.
+* Linux Foundation `UXL Webinar`_ announced for April 30th. Share this with
+  your organization.
+* Collaboration with other foundations, e.g., Rust Foundation, was discussed.
+* Robert has implementing custom slack notifications based on GitHub activity,
+  looking at web hosting when GitHub Pages is not enough. Contact him if you
+  need this.
+
+.. _`UXL Webinar`: https://www.linuxfoundation.org/webinars/uxl-foundation-drive-an-open-standard-accelerator-software-ecosystem
+
+Key Discussion Points
+======================
+
+ARM CI Support
+--------------
+
+Arm is working on CI support for SYCL. Good progress. They are having issues
+with building SYCL. Long build times and other issues. Have tested it against
+multiple targets. DAL and DNN, hoping to have it within the next quarter. Need
+to work out how it would be part of development process: separate or results in
+a central place.
+
+
+Repo Migration
+--------------
+
+Migration moving from oneAPI source GitHub organization to a GitHub
+organization owned by UXL. Proposal discussed last time for moving to
+project-specific orgs, e.g. onednn-project/onednn. Wrote and distributed RFC_.
+No objections from projects and Intel management. Need to move on to planning.
+RFC sketches out transition and potential issues. Each project needs to make
+its own plan and schedule. After discussion, it appears that Q4 is the likely
+target as projects will be busy with a major release. Robert is looking for a
+committed schedule so we can show progress towards the goal. Robert is
+transitioning oneapi-spec repo to a new org now and will have some familiarity
+with issues if you have questions. TBB & DPL teams have been discussing the
+transition. Robert to follow up with Timmie afterwards.
+
+.. _RFC: https://github.com/uxlfoundation/open-source-working-group/pull/86
+
+Community-based Binary Distribution
+-----------------------------------
+
+Andrew Richards has been discussing need for UXL to have an accelerator
+platform, and binary distribution is one aspect. Robert has been looking at
+what will be possible without requiring large effort from the projects. This
+would be a cross architecture distribution of open source components. It would
+still need to layer on top of proprietary drivers if that is the only option.
+It would be complementary to binary distributions from product groups:
+
+* Some people prefer open source, even when using a binary distribution
+* Support multiple architectures for host and accelerator
+* Community-based packaging, more ability to influence direction
+* Potentially faster than product releases where stability is important
+
+Looking at Conda Forge as a distribution mechanism. Package manager that can be
+used to distribute binaries and libraries. Language agnostic and can be used
+for Python, C++, R, etc.
+
+* Popular for AI community and used in HPC
+* Community based packaging
+* 25k packages
+* many contributors
+* Community operated CI system that builds packages for x86, Arm, Nvidia, ...
+* Package maintainers do not need to be maintainers for the upstream project
+* onednn & tbb already have conda forge packages based on open source. oneapi
+  products are also redistributed via conda channel
+
+Some discussion points:
+
+* Interoperability with product/open source distributions
+* Conflicts between product and open source. e.g. installing one breaks the
+  other
+* ARM use of DAL/DNN is currently CPU, not SYCL. Seeing interest in SYCL from
+  partners.
+* Containers vs packages
+* Will enable other conda packages to distribute SYCL enabled applications
+
+Robert will continue to investigate as time allows. Want to have minimal
+environment with SYCL open source compiler and nvidia support. Libraries that
+are portable because they are pure SYCL: MKL with portblas, portfft. Python
+dpctrl
+
+
+Open Source Best Practices and Security Progress
+------------------------------------------------
+
+Roman says projects have started work, but not much visible progress. Timmie
+has been working on open source best practices. He has moved to the new
+license and a few other tasks are in progress.  He does not have permissions to update project board. Rod will follow-up on that.
+
+Action Items:
+
+* Rod Burns: Ensure people have the right permissions to move project board
+  items.
+* All teams: reach out to Roman Zhukov for any difficulties related to open
+  source best practices and security items.
+* Timmie Smith: Sync up with Robert regarding one Dpl technical questions.
+* Ruyman Reyes Castro: Investigate the specific issues ARM is experience
+  building SYCL 
+
