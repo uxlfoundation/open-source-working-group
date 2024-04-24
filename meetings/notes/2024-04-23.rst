@@ -119,3 +119,48 @@ Action Items:
 * Ruyman Reyes Castro: Investigate the specific issues ARM is experience
   building SYCL 
 
+Attendees
+=========
+
+.. list-table::
+  
+   * - Ruyman Reyes Castro
+     - Codeplay Software
+   * - peizhao
+     -
+   * - Rod Burns
+     - Codeplay Software
+   * - Pavel Kumbrasev
+     - Intel Corporation
+   * - Alexey Kukanov
+     - Intel Corporation
+   * - Andrew Wafaa
+     - Arm Limited
+   * - Alison Richards
+     - Intel Corporation
+   * - Roman Zhukov
+     - Intel Corporation
+   * - Timmie Smith
+     - Intel Corporation
+   * - Maria Kraynyuk
+     - Intel Corporation
+   * - David Edelsohn
+     - International Business Machines Corporation
+   * - Oleksandr Pavlyk
+     - Intel Corporation
+   * - Mourad Gouicem
+     - Intel Corporation
+   * - Robert Cohn
+     - Intel Corporation
+   * - Nikolay Petrov
+     - Intel Corporation
+   * - Sarah Knepper
+     - Intel Corporation
+   * - Joel Rosenzweig
+     - Intel Corporation
+   * - Alastair Murray
+     - Codeplay Software
+   * - Vadim Pirogov
+     - Intel Corporation
+   * - John Melonakos
+     - Intel Corporation
