@@ -4,6 +4,52 @@
 
 John M. chaired the meeting. Andy could not attend because of travel.
 
+Attendees
+=========
+
+.. list-table:: 
+
+  * - Alexey Kukanov 
+    - Intel Corporation
+  * - Maria Garzaran 
+    - Intel Corporation
+  * - Abhishek Jain 
+    - Fujitsu Limited
+  * - Nikolay Petrov
+    - Intel Corporation
+  * - Jory Burson
+    - The Linux Foundation
+  * - Kasper Mecklenburg
+    - Arm Limited
+  * - Ruyman Reyes Castro
+    - Codeplay Software
+  * - Ragesh Hajela
+    - Fujitsu Limited
+  * - Ankit Manerikar
+    - Intel Corporation
+  * - Steve Capper
+    - Arm Limited
+  * - Rod Burns
+    - Codeplay Software
+  * - Joel Rosenzweig
+    - Intel Corporation
+  * - Roman Zhukov
+    - Intel Corporation
+  * - David Edelsohn
+    - International Business Machines Corporation
+  * - Stephano Cetola
+    - Intel Corporation
+  * - Alison Richards
+    - Intel Corporation
+  * - John Melonakos
+    - Intel Corporation
+  * - Balas, DorotheeX Marie Clotilde
+    - Intel Corporation
+  * - Robert Cohn
+    - Intel Corporation
+  * - Pavel Kumbrasev
+    - Intel Corporation
+
 Security: Roman Z.
 ==================
 
