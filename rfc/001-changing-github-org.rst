@@ -87,18 +87,21 @@ and plan. Robert Dower, the maintainer of oneapi-src org will help with the
 move by preparing the new org, transferring the teams, and moving the repos.
 
 Preparation:
+
 1. Create the new org and teams
 2. Prepare a project specific test plan
 3. Prepare a project specific communication plan
 4. Identify URLs that are not redirected and prepare PR's to update them.
 
 Execution:
+
 1. Communicate the change to the community.
 2. Move the repos to the new org.
 3. Merge the PR's to update the URLs
 4. Testing
 
 Cleanup:
+
 1. Update URLs that are redirected
 
 Risks and Mitigations
