@@ -41,33 +41,52 @@ We recommend (3) because it is the common practice for large complex open
 source projects. Projects will have the freedom to manage their org as they see
 fit and not be affected by requirements or preferences of other projects.
 
-Proposed Org & Rep Names
-========================
+Repo Information
+================
 
 .. list-table::
    :header-rows: 1
 
    * - Current Repo
+     - Primary Contact
+     - Migration Date
      - New Org
      - New Repo
    * - onednn
+     - Vadim Pirogov
+     - 
      - onednn-project
      - oneDNN
    * - onedal
+     - Nikolay Petrov
+     - 
      - onedal-project
      - oneDAL
    * - oneccl
+     - Joel Rosenzweig
+     - 
      - oneccl-project
      - oneCCL
    * - onemkl
+     - Irina Topinskaia
+     - 
      - onemkl-project
      - oneMKL-sycl-interfaces
    * - onedpl
+     - Timmie Smith
+     -
      - onedpl-project
      - oneDPL
    * - onetbb
+     - Ekaterina Semenova
+     - 
      - onetbb-project
      - oneTBB
+   * - oneapi-spec
+     - Robert Cohn
+     - 5/2/2024
+     - uxlfoundation
+     - oneapi-spec
 
 Org Administration
 ==================
