@@ -74,12 +74,12 @@ Repo Information
      - oneMKL-sycl-interfaces
    * - onedpl
      - Timmie Smith
-     -
+     - Q4 2024
      - onedpl-project
      - oneDPL
    * - onetbb
      - Ekaterina Semenova
-     - 
+     - Q4 2024
      - onetbb-project
      - oneTBB
    * - oneapi-spec
@@ -95,8 +95,9 @@ The projects will have ownership of their org. To ensure continuity, select at
 least 2 people to have the org ``owner`` role. It is not recommended to broadly
 share ownership permissions. Prepare a basic set of recommended configurations
 (e.g. 2fa) for the org or perhaps the org can be configured before handover of
-the project. Each org will be Linux Foundation and UXL admins who are there for
-emergency maintenance only. Need to share some guides on how to manage an org.
+the project. Each org will have Linux Foundation and UXL admins who are there
+for emergency maintenance only. Need to share some guides on how to manage an
+org.
 
 Process
 =======
