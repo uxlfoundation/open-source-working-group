@@ -124,6 +124,39 @@ Cleanup:
 
 1. Update URLs that are redirected
 
+Moving the Repo
+---------------
+
+The recommended way to move the repo is to use the GitHub web interface to move
+it to the new org. This will preserve the issues, PR's, and stars. The repo URL
+will change, but GitHub will redirect the old URL to the new URL. Another
+option is to fork the repo into the new org, but it will not do forwarding and
+will not preserve the issues, PR's, and stars.
+
+It may be convenient to initially fork the repo to the new org for the purpose
+of testing. I believe you can rename the repo in the new org to avoid confusion
+about the active repo. Another possibility it to make the new repo private. In
+either case, the fork would be deleted and the original repo moved.
+
+Robert Cohn has experience writing python scripts that use the GitHub APIs so
+if there is some aspect of the move that you would like to automate, please let
+him know.
+
+Project Web Sites
+-----------------
+
+Most project web sites are hosted on GitHub pages. The URL is based on the org
+and repo name. The URL will change when the repo is move. GitHub pages URLs are
+not automatically forwarded, but we can manually forward individual URLs.
+
+Projects may want to consider moving their web site to a new URL that is not
+based on the org and repo name. This will avoid the need to manually forward
+URLs if the repo or org changes in the future. It also makes it possible to
+change the web hosting provider without changing URLs. GitHub Pages is
+preferred, but other providers allow dynamic content and bigger web sites.
+Contact Robert Cohn to discuss web hosting if you want alternate hosting.
+
+
 Risks and Mitigations
 =====================
 
