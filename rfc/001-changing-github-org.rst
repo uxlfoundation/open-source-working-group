@@ -52,32 +52,32 @@ Repo Information
      - Migration Date
      - New Org
      - New Repo
-   * - onednn
+   * - onednn_
      - Vadim Pirogov
      - 
      - onednn-project_
      - oneDNN
-   * - onedal
+   * - onedal_
      - Nikolay Petrov
      - 
      - onedal-project_
      - oneDAL
-   * - oneccl
+   * - oneccl_
      - Joel Rosenzweig
      - 
      - oneccl-project_
      - oneCCL
-   * - onemkl
+   * - onemkl_
      - Irina Topinskaia
      - 
      - onemkl-project_
      - oneMKL-sycl-interfaces
-   * - onedpl
+   * - onedpl_
      - Timmie Smith
      - Q4 2024
      - onedpl-project_
      - oneDPL
-   * - onetbb
+   * - onetbb_
      - Ekaterina Semenova
      - Q4 2024
      - onetbb-project_
@@ -86,7 +86,7 @@ Repo Information
      - Robert Cohn
      - 5/2/2024
      - uxlfoundation_
-     - oneapi-spec
+     - oneapi-spec_
 
 .. _onednn-project: https://github.com/onednn-project
 .. _onedal-project: https://github.com/onedal-project
@@ -95,6 +95,15 @@ Repo Information
 .. _onedpl-project: https://github.com/onedpl-project
 .. _onemkl-project: https://github.com/onemkl-project
 .. _uxlfoundation: https://github.com/uxlfoundation
+
+.. _onednn: https://github.com/oneapi-src/onednn
+.. _onedal: https://github.com/oneapi-src/onedal
+.. _oneccl: https://github.com/oneapi-src/oneccl
+.. _onetbb: https://github.com/oneapi-src/onetbb
+.. _onedpl: https://github.com/oneapi-src/onedpl
+.. _onemkl: https://github.com/oneapi-src/onemkl
+.. _oneapi-spec: https://github.com/uxlfoundation/oneapi-spec
+
 
 Org Administration
 ==================
