@@ -55,38 +55,46 @@ Repo Information
    * - onednn
      - Vadim Pirogov
      - 
-     - onednn-project
+     - onednn-project_
      - oneDNN
    * - onedal
      - Nikolay Petrov
      - 
-     - onedal-project
+     - onedal-project_
      - oneDAL
    * - oneccl
      - Joel Rosenzweig
      - 
-     - oneccl-project
+     - oneccl-project_
      - oneCCL
    * - onemkl
      - Irina Topinskaia
      - 
-     - onemkl-project
+     - onemkl-project_
      - oneMKL-sycl-interfaces
    * - onedpl
      - Timmie Smith
      - Q4 2024
-     - onedpl-project
+     - onedpl-project_
      - oneDPL
    * - onetbb
      - Ekaterina Semenova
      - Q4 2024
-     - onetbb-project
+     - onetbb-project_
      - oneTBB
    * - oneapi-spec
      - Robert Cohn
      - 5/2/2024
-     - uxlfoundation
+     - uxlfoundation_
      - oneapi-spec
+
+.. _onednn-project: https://github.com/onednn-project
+.. _onedal-project: https://github.com/onedal-project
+.. _oneccl-project: https://github.com/oneccl-project
+.. _onetbb-project: https://github.com/onetbb-project
+.. _onedpl-project: https://github.com/onedpl-project
+.. _onemkl-project: https://github.com/onemkl-project
+.. _uxlfoundation: https://github.com/uxlfoundation
 
 Org Administration
 ==================
