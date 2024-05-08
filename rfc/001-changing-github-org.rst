@@ -54,7 +54,7 @@ Repo Information
      - New Repo
    * - onednn_
      - Vadim Pirogov
-     - 
+     - Q4 2024
      - onednn-project_
      - oneDNN
    * - onedal_
@@ -69,7 +69,7 @@ Repo Information
      - oneCCL
    * - onemkl_
      - Irina Topinskaia
-     - 
+     - Q4 2024
      - onemkl-project_
      - oneMKL-sycl-interfaces
    * - onedpl_
