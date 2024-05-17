@@ -15,6 +15,7 @@ Active Work Packages
 
 * `Open Source Project Best Practices`_
 * `Security Processes and Practices`_
+* `UXL Foundation Repository Migration`
 * `Autoware Demonstration Application`
 
 Draft Work Packages
