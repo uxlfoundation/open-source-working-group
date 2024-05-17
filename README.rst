@@ -10,8 +10,21 @@ During 2024 the group will be focusing on ensuring that the community have a fri
 `Join the Slack`_ channel "open-source-wg" to participate in the discussions.
 
 * `Meeting Notes`_
-* `RFCs`_
+
+Active Work Packages
+
+* `Open Source Project Best Practices`_
+* `Security Processes and Practices`_
+* `UXL Foundation Repository Migration`
+* `Autoware Demonstration Application`
+
+Draft Work Packages
+
+* Public Build Infrastructure
+* Open Source Math Kernels
 
 .. _`RFCs`: rfc
 .. _`Meeting Notes`: meetings/notes/README.rst
 .. _`Join the Slack`: https://join.slack.com/t/uxlfoundation/shared_invite/zt-2b1tm2frp-GZY~JBngtXo5xRrcgFrV6Q
+.. _`Security Processes and Practices`: https://github.com/orgs/uxlfoundation/projects/3
+.. _`Open Source Project Best Practices`: https://github.com/orgs/uxlfoundation/projects/5
