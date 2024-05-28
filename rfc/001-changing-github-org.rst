@@ -59,12 +59,12 @@ Repo Information
      - oneDNN
    * - onedal_
      - Nikolay Petrov
-     - 
+     - Q4 2024
      - onedal-project_
      - oneDAL
    * - oneccl_
      - Joel Rosenzweig
-     - 
+     - Q4 2024
      - oneccl-project_
      - oneCCL
    * - onemkl_
