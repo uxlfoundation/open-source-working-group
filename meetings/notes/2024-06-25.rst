@@ -37,6 +37,7 @@ Key Discussion Points:
   * Potential for introducing a unified C API across domains was briefly touched.
 
 Action Items:
+
 * Maria Kraynyuk: Follow up on VSL kernels query regarding future plans.
 * Rod Burns & Romain Biessy: Discuss offline the potential forming of a subgroup focused on the oneMKL interface domain split for detailed planning and coordination.
 
