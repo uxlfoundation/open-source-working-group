@@ -16,6 +16,7 @@ Active Work Packages
 * `Open Source Project Best Practices`_
 * `Security Processes and Practices`_
 * `UXL Foundation Repository Migration`
+* `Math oneMKL Library Re-organization`_
 * `Autoware Demonstration Application`
 
 Draft Work Packages
@@ -26,5 +27,6 @@ Draft Work Packages
 .. _`RFCs`: rfc
 .. _`Meeting Notes`: meetings/notes/README.rst
 .. _`Join the Slack`: https://join.slack.com/t/uxlfoundation/shared_invite/zt-2b1tm2frp-GZY~JBngtXo5xRrcgFrV6Q
-.. _`Security Processes and Practices`: https://github.com/orgs/uxlfoundation/projects/3
-.. _`Open Source Project Best Practices`: https://github.com/orgs/uxlfoundation/projects/5
+.. _`Security Processes and Practices`: https://github.com/orgs/uxlfoundation/projects/3?pane=info
+.. _`Open Source Project Best Practices`: https://github.com/orgs/uxlfoundation/projects/5?pane=info
+.. _`Math oneMKL Library Re-organization`: https://github.com/orgs/uxlfoundation/projects/7?pane=info
