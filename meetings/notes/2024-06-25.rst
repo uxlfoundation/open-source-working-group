@@ -2,6 +2,9 @@
  Open Source WG: 6/25/2024
 ===========================
 
+Attendees
+=========
+
 Highlights
 ==========
 
@@ -16,6 +19,7 @@ Meeting Summary
 * Open questions were raised regarding splitting the specification and the practical implications of domain interdependencies.
 
 Key Discussion Points:
+
 * Project Migrations and GitHub Organization:
   * Concerns about moving to multiple GitHub organizations versus one for ease of resource access and hardware support.
   * Decision inclination towards starting with a single UXL Organization on GitHub to keep things simple.
