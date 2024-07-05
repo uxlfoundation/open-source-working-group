@@ -1,0 +1,41 @@
+===========================
+ Open Source WG: 6/25/2024
+===========================
+
+Highlights
+==========
+
+This month’s meeting was especially productive, with representation from several UXL members, including ARM, Codeplay, Fujitsu, IBM, Imagination, Intel, and Qualcomm. Attendees considered an important proposal (the oneMKL domain split), and a consensus agreement was reached to proceed with the split. It was a good early exercise of the working group’s decision-making collaboration. Thanks to everyone for participating.
+
+Meeting Summary
+===============
+
+* Discussed potential migration from oneAPI-source to UXL Foundation and issues with multiple GitHub organizations.
+* Security roadmap progress shared, highlighting scanning with Coverity and scorecards discussions.
+* Proposal to split oneMKL into separate repositories by domain discussed; a consensus formed around moving forward.
+* Open questions were raised regarding splitting the specification and the practical implications of domain interdependencies.
+
+Key Discussion Points:
+* Project Migrations and GitHub Organization:
+  * Concerns about moving to multiple GitHub organizations versus one for ease of resource access and hardware support.
+  * Decision inclination towards starting with a single UXL Organization on GitHub to keep things simple.
+* Security Roadmap Update:
+  * Progress shared on security checks and policies, including adopting Dependabot and target release placements.
+  * Introduction of Coverity scans was discussed as an ongoing effort; encouragements were made to teams for implementation.
+  * Encouraged enabling openSSF scorecard badges on repositories to highlight security adherence.
+* oneMKL Interface Domain Split Proposal:
+  * Aimed at making the project more modular, maintainable, and easy to follow for stakeholders.
+  * Discussion included how domain interdependencies could be managed, especially where LAPACK depends on BLAS.
+  * Agreement on moving forward with the proposal, though implementation details require further discussion.
+  * Suggested creating split repositories in coordination with moving to the UXL organization on GitHub.
+  * Mentioned possible feature additions like summary statistics and vector mathematics as future roadmap items.
+* Other Enhancements and Future Roadmap:
+  * Potential for introducing a unified C API across domains was briefly touched.
+
+Action Items:
+* Maria Kraynyuk: Follow up on VSL kernels query regarding future plans.
+* Rod Burns & Romain Biessy: Discuss offline the potential forming of a subgroup focused on the oneMKL interface domain split for detailed planning and coordination.
+
+Decisions/Agreements Made:
+* General consensus to advance with the oneMKL interface domain split, recognizing that implementation specifics need clarification and detailing.
+* Decided to integrate the project migrations to the UXL Organization on GitHub in coordination with the domain split effort for efficiency and better resource allocation.
