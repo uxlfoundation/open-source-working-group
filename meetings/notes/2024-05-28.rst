@@ -1,0 +1,57 @@
+===========================
+ Open Source WG: 5/28/2024
+===========================
+  
+Brief Agenda Items
+==================
+  
+* Status updates from each project or member
+* Security for various projects
+* Update on public CI infrastructure
+* Github.org transition discussion
+* Review of best practices tracker
+
+Key Discussion Points
+=====================
+  
+* Security Update Presentation
+  * Good job by nearly all UXL projects completed the new Security.md and enabled GitHub Vulnerability Reporting feature. oneDAL is only 1 outstanding.
+  * All Security Work Package members are added to security@uxlfoundation.org mailing list so that we can react on reports going through this channel as well.
+  * oneMKL is only 1 started to trying out Scan.Coverity (free version for open-source). Some of early results – investigating issues with building using icx – work in progress. Others – please plan this AR as well, all instructions/references are inside GitHub issues assigned for each projects. This is very important to complete to move forward.
+  * Upcoming ARs to the Q3 and beyond roadmap: Enable OSSF Badge, Test out CVE-Bin-Tool and more.
+  * Roman is working at the background to align UXL Security roadmap and Intel& industry practices. Reach out to Roman if there are any concerns, questions, or suggestions, either technical or procedural.
+  * Learn more:
+    * Security Work Package planner 
+    * Quarterly Milestones (UXL migration overall)
+* Public CI Infrastructure Update by Codeplay Software
+  * Codeplay providing funding and effort for the next 6 months
+  * Proof of Concept (POC) repo and documentation to be used as a template
+  * Aim to have UXL members contribute to hardware for testing
+  * Timeline: The project will start in July, with a first PoC presentation expected in September and a second in November. The final goal is to have a robust infrastructure by the end of the year.
+  * Assigned Liaisons: John Melonakos suggested having an assigned liaison between each project and the CI effort, similar to the security setup. Robert Cohn supported the idea.
+  * Detailed Plan: Aaron Dron shared more details, including secure workflow configurations, dependency management, security scanning, and sufficient hardware for external PRs. They plan to document the process and create a knowledge base.
+
+Follow-Up Actions:
+
+* Create a UXL mailing list and Slack channel for easier communication (Robert Cohn, Melissa Aranzamendez).
+* Start an email thread to answer questions about required resources and configurations (John Melonakos).
+
+* Github.org Transition
+  * Transition to new Github.org for projects in progress
+  * Each project to move by Q4, some may be earlier
+  * Existing internal tools and SDL process discussions for being open-source
+  * Concerns about sharing runners between multiple Github organizations
+* Review Best Practices Tracker
+  * Efforts ongoing to close issues and improve project collaboration
+  * Work on template processes for project leadership and reviews
+  * Importance of having clear opportunities for community contributions
+
+Follow-Up Actions:
+
+* Schedule a meeting to discuss the implications of multiple org designs and potential solutions (Robert Cohn, Aaron Dron).
+* Add oneTBB to the tracker and follow up on permissions. (Rod Burns)
+
+Decisions/Agreements:
+
+* Projects committed to transitioning their repositories to their respective Github.org by Q4.
+* Effort to improve public CI infrastructure with POC due December and a request for input and feedback from UXL members.
