@@ -42,5 +42,6 @@ Action Items:
 * Rod Burns & Romain Biessy: Discuss offline the potential forming of a subgroup focused on the oneMKL interface domain split for detailed planning and coordination.
 
 Decisions/Agreements Made:
+
 * General consensus to advance with the oneMKL interface domain split, recognizing that implementation specifics need clarification and detailing.
 * Decided to integrate the project migrations to the UXL Organization on GitHub in coordination with the domain split effort for efficiency and better resource allocation.
