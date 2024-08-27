@@ -1,0 +1,72 @@
+===========================
+ Open Source WG: 8/27/2024
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+           a member of the Working Group you can access this through your account.
+
+
+Meeting Minutes
+===============
+Summary of Main Takeaways:
+* Progress updates on CI infrastructure and repository migrations.
+* Discussions on the organizational move to the UXL Foundation.
+* Version macros for programmatically checking version support.
+* Open Source Best Practices across projects.
+* RFCs for process and implementation improvements.
+
+
+Key Discussion Points
+======================
+1. CI Updates
+   * Speaker: Aaron Dron
+   * Key Points:
+     * Objectives for the current project and changes in naming conventions.
+     * Focus on non-Intel participants and improving contributions.
+     * Plans for the remaining year, including repository migrations and improving security.
+     * Specifics on hardware contributions and experiments, including GP Max systems.
+     * Discussion on private documentation and security for the public test infrastructure.
+   * Action Items:
+     * Aaron: Complete current goals and address security concerns for public test infrastructure.
+     * Discussion with IDC for more GPU nodes and potential private documentation solutions.
+2. Organization Moves
+   * Speaker: John Melonakos & Robert Cohn
+   * Key Points:
+     * Reviewing each project's timeline for moving to the UXL Foundation.
+     * Emphasized the importance of public CI and role specification.
+     * Specific updates from multiple projects, including oneTBB, oneMKL, oneDNN. Projects are generally on track for
+       end-of-year completion.
+     * Addressing concerns about custom roles and branch protection.
+   * Action Items:
+     * Pavel: Finalize plans for roles and contributor processes.
+     * Robert: Coordinate logistics for oneDNN migration; ensure teams have necessary privileges.
+3. Version Macros Discussion
+   * Speaker: Robert Cohn
+   * Key Points:
+     * Programmatic access to versioning for specification implementation.
+     * Importance for projects to confirm versions supported by different libraries.
+   * Action Items:
+     * Raj Malia & Mkl Team: Finalize the discussion and implementation strategy for version macros.
+4. Open Source Best Practices and RFCs
+   * Speaker: John Melonakos
+   * Key Points:
+     * Review of tracker status for various projects.
+     * Emphasis on regular release processes and leadership roles documentation.
+     * Specific focus on the RFCs in-flight, including:
+       * oneMKL – https://github.com/oneapi-src/oneMKL/pull/551 (RFC to develop RFCs)
+       * oneCCL – https://github.com/oneapi-src/oneCCL/pull/134 (RFC for new API)
+       * oneDPL – https://github.com/uxlfoundation/oneAPI-spec/pull/564 & https://github.com/uxlfoundation/oneAPI-spec/pull/567 (not RFCs, but significant PRs)
+   * Action Items:
+     * Rod: Split CI tasks into multiple steps for better clarity and ownership.
+5. Miscellaneous Topics / Open Questions
+   * General consensus on progress and moving towards the next phase.
+   * Encouragement to ensure representation in future meetings for a comprehensive discussion.
+
+
+Action Items:
+=============
+* Aaron Dron: Complete current CI goals and security guidelines.
+* Pavel Kumbrasev: Implement final roles and migration plans post-org move.
+* Robert Cohn: Assist oneDNN and other teams with organizational logistics.
+* Raj Malia & Mkl Team: Configure version macros as needed.
+* Rod Burns: Break down CI tasks for better manageability.
