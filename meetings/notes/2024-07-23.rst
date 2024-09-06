@@ -26,8 +26,8 @@ Key Discussion Points:
 
 2. Review of Project Feedback:
 
-   *Highlighted the need to improve decision-making processes.
-   *Emphasis on public/open discussions for collaborative and transparent decisions.
+   * Highlighted the need to improve decision-making processes.
+   * Emphasis on public/open discussions for collaborative and transparent decisions.
 
 3. CCL IPP API Changes:
 
@@ -52,9 +52,9 @@ Key Discussion Points:
      and encouraging development in UXL repositories.
    * Key Points:
 
-     1. Implementation of security best practices for testing environments.
-     2. Intel Developer Cloud collaboration for providing test nodes.
-     3. Emphasis on secure setup and guidance documentation for member-enrolled hardware systems.
+     * Implementation of security best practices for testing environments.
+     * Intel Developer Cloud collaboration for providing test nodes.
+     * Emphasis on secure setup and guidance documentation for member-enrolled hardware systems.
 
 Action Items:
 =============
