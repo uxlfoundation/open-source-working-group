@@ -1,0 +1,73 @@
+===========================
+ Open Source WG: 7/23/2024
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+
+Meeting Minutes
+===============
+
+Highlights:
+
+* Recognition of Request for Comments (RFC): established to improve collaborative decision-making.
+* oneCCL API Changes Alignment with NCCL for easier integration.
+* Repository Migration Conversations: includes updates to URLs for oneAPI specifications.
+* Focused Efforts on CI Proof of Concept to enable community contributions and support members' self-hosted test
+  hardware.
+
+Key Discussion Points:
+======================
+
+1. Open Discussions:
+
+   * John Melonakos invited open items from members before starting the primary agenda.
+
+2. Review of Project Feedback:
+
+   * Highlighted the need to improve decision-making processes.
+   * Emphasis on public/open discussions for collaborative and transparent decisions.
+
+3. CCL IPP API Changes:
+
+   * Presenter: Gengbin Zheng
+   * Objective: Align oneCCL API with NCCL APIs to improve user adoption and compatibility.
+   * Key Points:
+
+     * Motivation includes user preference for NCCL-like APIs and easier migration.
+     * Proposal for C-based API by wrapping SYCL queue.
+     * Explicit memory handling and scoped future considerations for out-of-order queue support.
+     * Suggestions were made against stateful API design to avoid multi-threading complications.
+
+4. API Spec Changes by Robert Cohn:
+
+   * Migration of oneAPI repository to UXL organization.
+   * Updates to the published spec URLs and the removal of Level Zero spec from the oneAPI spec.
+
+5. CI Proof of Concept Progress:
+
+   * Presenter: Aaron Dron
+   * Objective: To create a conducive environment for community contributions, supporting members' self-hosted hardware,
+     and encouraging development in UXL repositories.
+   * Key Points:
+
+     * Implementation of security best practices for testing environments.
+     * Intel Developer Cloud collaboration for providing test nodes.
+     * Emphasis on secure setup and guidance documentation for member-enrolled hardware systems.
+
+Action Items:
+=============
+
+* Maria Garzaran: Draft and propose (the RFC utility TBD in follow-on conversations) documentation to gather feedback on
+  oneCCL API from UXL members.
+* Aaron Dron: Continue security and implementation practices for CI proof of concept.
+* All Members: Provide feedback on CI Proof of Concept and possible documentation repositories.
+
+Decisions/Agreements Made:
+=============
+
+* The RFC process is recommended when projects have substantial changes to bring the community along in the
+  decision-making process.
+* Proceed with frameworks and NCCL API alignment for oneCCL as the preferred path, with feedback integrated through
+  follow-on discussions.
