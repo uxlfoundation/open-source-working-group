@@ -1,0 +1,71 @@
+===========================
+ Open Source WG: 9/24/2024
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+
+Meeting Minutes
+===============
+
+Summary of Main Takeaways:
+
+* Agreement on RFC processes and methodologies.
+* oneMKL to be renamed to oneMath, with ongoing discussions on naming implications.
+* Introduction of a generic GPU backend for oneDNN with opportunities for vendor-specific optimizations.
+* Repository migrations scheduled for Q4 with provisional spec published.
+* Progress on CI infrastructure with new GPU resources and potential community contributions.
+
+
+Key Discussion Points
+=====================
+
+1. General RFC Processes Discussion
+
+   * Rod Burns initiated the discussion on the RFC processes for projects involving major changes.
+   * Vadim Pirogov shared experience from the oneDNN team, highlighting a maintainer-driven approach.
+   * Importance of consensus and feedback from key stakeholders mentioned by Vadim and Rod.
+
+2. OneMKL Project Renaming
+
+   * Romain Biessy presented a proposal to rename the oneMKL project to oneMath.
+   * Discussion on the impact of renaming on namespaces and headers, retaining compatibility with warnings.
+   * Need clarity on stakeholders involved in decision-making.
+   * New GitHub resources were discussed for administrative communication.
+
+3. oneDNN Generic GPU Backend
+
+   * Denis Samoilov introduced a new generic GPU backend to support various hardware.
+   * The backend can work with different adoptions like Intel, NVIDIA, and AMD.
+   * Emphasis on expanding coverage and optimizing implementations using vendor performance libraries.
+
+4. Repository Migration Update
+
+   * Robert Cohn reaffirmed the timeline for repository migration to Q4.
+   * Encouraged feedback on provisional spec published.
+   * Discussions on managing existing and new repositories during the migration.
+
+5. CI Infrastructure Update
+
+   * Aaron Dron updated on the CI infrastructure progress with new GPU resources.
+   * Invited discussions on hardware contributions from members.
+   * Planning for private documentation and handling driver updates.
+
+
+Action Items
+============
+
+* Vadim Pirogov: Explore further steps for vendor-specific optimizations.
+* Romain Biessy: Send a reminder regarding the naming decision deadline.
+* Robert Cohn: Provide support for oneCCL spec updates.
+* Aaron Dron: Liaise with members interested in providing test hardware.
+* Andrew Wafaa: Assist with coordination for ARM support via GitHub Actions.
+
+
+Decisions/Agreements Made
+=========================
+
+* Agreement to proceed with oneMath renaming pending further stakeholder feedback.
+* Consensus on adopting a step-by-step approach for repository migration.
+* Approval for developing a structured CI infrastructure, leveraging new GPU testing capabilities.
