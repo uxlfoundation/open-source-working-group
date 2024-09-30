@@ -27,14 +27,14 @@ Key Discussion Points
    * Vadim Pirogov shared experience from the oneDNN team, highlighting a maintainer-driven approach.
    * Importance of consensus and feedback from key stakeholders mentioned by Vadim and Rod.
 
-2. OneMKL Project Renaming
+2. oneMKL Project Renaming (`slides1`_)
 
    * Romain Biessy presented a proposal to rename the oneMKL project to oneMath.
    * Discussion on the impact of renaming on namespaces and headers, retaining compatibility with warnings.
    * Need clarity on stakeholders involved in decision-making.
    * New GitHub resources were discussed for administrative communication.
 
-3. oneDNN Generic GPU Backend
+3. oneDNN Generic GPU Backend (`slides2`_)
 
    * Denis Samoilov introduced a new generic GPU backend to support various hardware.
    * The backend can work with different adoptions like Intel, NVIDIA, and AMD.
@@ -46,7 +46,7 @@ Key Discussion Points
    * Encouraged feedback on provisional spec published.
    * Discussions on managing existing and new repositories during the migration.
 
-5. CI Infrastructure Update
+5. CI Infrastructure Update (`slides3`_)
 
    * Aaron Dron updated on the CI infrastructure progress with new GPU resources.
    * Invited discussions on hardware contributions from members.
@@ -69,3 +69,8 @@ Decisions/Agreements Made
 * Agreement to proceed with oneMath renaming pending further stakeholder feedback.
 * Consensus on adopting a step-by-step approach for repository migration.
 * Approval for developing a structured CI infrastructure, leveraging new GPU testing capabilities.
+
+
+.. _`slides1`: ../presentations/2024-09-24-oneMKL-renaming.pdf
+.. _`slides2`: ../presentations/2024-09-24-oneDNN-generic-GPU-vendor.pptx
+.. _`slides3`: ../presentations/2024-09-24-UXLCIPoC.pdf
