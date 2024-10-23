@@ -62,7 +62,7 @@ Key Discussion Points
 
      * The `RFC for renaming`_ was merged. Now, work is in progress for the actual implementation.
      * `PR for the spec`_
-     * `PR for opensource project`_
+     * `PR for the open-source project`_
 
    * oneDPL –
 
