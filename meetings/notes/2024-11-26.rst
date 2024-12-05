@@ -21,10 +21,8 @@ Key Discussion Points
 
 1. Member Meeting Slide Review
 
-   * oneDNN: Transition to UXL Foundation; development of generic implementations.
-   * oneMath: GitHub migration planned; improvement in public CI.
-   * oneCCL: Performance improvements and preparations for GitHub migration.
-   * oneDPL: New algorithms introduced; need for increased external contribution.
+   * Each project presented a single slide of 2024 progress, 2025 plans, requests for support from UXL members, and
+     GitHub migration plan.
 
 2. GitHub Project Migration
 
@@ -43,8 +41,8 @@ Key Discussion Points
 Action Items
 ============
 
-* Romain Biessy: Coordinate final approvals for One Math PRs.
-* Maria Garzaran: Work on resolving CI setup challenges for OneCCL.
+* Romain Biessy: Coordinate final approvals for oneMath PRs.
+* Maria Garzaran: Work on resolving CI setup challenges for oneCCL.
 * Aaron Dron: Document infrastructure setup and machine particulars for community runners.
 * Projects to ensure security compliance by engaging with Roman's security initiatives.
 * Projects are encouraged to increase documentation and process visibility to improve external contributions.
