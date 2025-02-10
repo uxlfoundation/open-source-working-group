@@ -1,0 +1,115 @@
+===========================
+ Open Source WG: 01/28/2025
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+
+Meeting Minutes
+===============
+
+Clarifying Meeting Time and Release Schedule
+============================================
+
+The meeting began with a discussion about the confusion regarding the meeting time, which was later clarified by
+Melissa. The team also discussed the new AI-enabled feature in their meetings, which was enabled for the current
+meeting. Megan then introduced the agenda for the meeting, which included updates on the spec release schedule, Google
+Summer of Code opportunities, and a security status update. John then reviewed the release schedule for the
+specification, noting that they typically do provisional releases in September and final versions in November and
+December. Rod suggested the possibility of more frequent releases if needed, and Nikolay agreed with the current
+schedule.
+
+OneDAL API Specification Limitations
+====================================
+
+Nikolay explained that the current specification for oneDAL covers less than 10% of the API, as there has been no
+external demand or interest in expanding it. The team primarily develops the spec for internal use, focusing on
+essential elements and implementation details. John and Maria discuss the purpose and importance of having a
+comprehensive specification, with Maria emphasizing its value for standardization. Nikolay acknowledges that while a
+broader spec would be ideal, the lack of interest from other parties and the resource-intensive nature of creating specs
+have limited its development.
+
+Spec Updates and Release Schedules
+==================================
+
+John, Mourad, and Maria discussed the status and future of the spec, with Mourad confirming that the current spec
+matches the features in oneDNN 3.0, but with some extensions in the API. They agreed on a systematic approach to
+updating the spec, with experimental features being moved to the spec once mature. The team also discussed the schedule
+for major and provisional releases per year, which was deemed suitable. Maria suggested cleaning up the spec when moving
+to new versions. The team also discussed the need for more feedback on the spec from member companies. Rod proposed a
+follow-up discussion on how different projects are working with the spec.
+
+Google Summer of Code Project Discussion
+========================================
+
+Rod discussed the Google Summer of Code project, an open-source initiative where volunteers work on various projects
+over the summer. He expressed interest in applying again this year and sought input from the team on potential projects
+they could contribute to. Rod emphasized that the ideas list should be high-level and not a detailed requirements list,
+as individual volunteers would submit their own applications describing their contributions. He also mentioned that the
+project duration could be between 90 and 120 hours, and encouraged team members to consider getting involved. Rod
+promised to send a Google Summer of Code guide for further reference.
+
+Project Deadline and Guide Discussion
+=====================================
+
+Rod informed the team about a project deadline on February 11th, urging them to start thinking about it soon. He also
+mentioned that he would send a guide and that Victor, his colleague, could answer any questions about the project. Megan
+asked about the deadline for specific projects, to which Rod responded that the 11th was the ultimate deadline, and he
+would prefer to receive information by the 5th. Aaron was then scheduled to update the team on CI.
+
+Github Usage and Future Plans
+=============================
+
+Aaron discussed the current state of their Github usage, including the availability of free self-hosted runners and the
+recent addition of ARM runners by Github. He mentioned the ongoing testing of AWS-hosted Graviton runners and the active
+systems provided by Intel Tiber AI Cloud. Aaron also highlighted the potential for upgrading their Github membership to
+a higher tier for increased concurrent builds and the ongoing pursuit of NVIDIA runners. He detailed the use of Github
+ARC for Kubernetes clusters and the testing of GPU systems, noting some caveats such as Linux-only and no docker
+support. Aaron also mentioned the need for more test hardware, a CPU-only test system, and a dedicated multi-GPU system,
+as well as the need to handle driver updates and the consideration of minimal viable testing.
+
+UXL Project Contributions and Security
+======================================
+
+Aaron discussed the process of public contributions and PRs for UXL projects, emphasizing the need for public testing
+before accepting a PR. He also mentioned the ongoing work towards enabling all UXL projects to accept contributions
+safely. Megan thanked Aaron for the update and brought up a security status issue. John announced Roman's departure from
+Intel and suggested individual project security management. Rod agreed to discuss open security issues with the projects
+and document security policies in a non-public GitHub repo. John proposed making this an agenda item for the next
+meeting.
+
+Creating High-Level Roadmap for Projects
+========================================
+
+The meeting revolved around the idea of creating a high-level roadmap for the year, covering major milestones or feature
+releases for the projects. Megan suggested that this could be beneficial for contributors to see the direction of the
+projects and potentially increase the contributor base. Rod agreed, mentioning that they had discussed this idea over
+email. Mourad shared that they already have a release roadmap available on their Github project, which includes a list
+of issues to be solved for each release. The team discussed the possibility of standardizing this across all
+projects. John mentioned an exciting contribution from SiPearl for an ARM backend for oneMath. Andrey confirmed that
+they try to keep their spec up to date with the oneMath API, adding new features to the spec before adding them to their
+open-source project.
+
+Improving Project Planning and Collaboration
+============================================
+
+The team discussed the progress of various projects and the need for better forward planning. They considered conducting
+an inventory of the projects on the mailing list to assess their current status and identify gaps. The idea of
+facilitating collaboration between project needs and member companies was also discussed, with suggestions for
+educational or training sessions. The team agreed on the importance of promoting the collaborative effort and the
+projects to member companies. The possibility of hosting more meetings or creating video shorts for social media was
+also considered.
+
+Next steps
+==========
+
+* Rod to send around the Google Summer of Code guide to project members.
+* Project members to consider getting involved in Google Summer of Code and submit ideas list to Rod by February 5th.
+* Aaron to continue testing Github-provided ARM runners for CI.
+* Aaron to work on a process for driver updates on CI test systems.
+* Rod to document security contacts for each project in the operations Github repo.
+* John to add security policy review as an agenda item for the next meeting.
+* Megan to create an inventory of project roadmap processes via mailing list.
+* Rod to explore opportunities for UXL projects to present at member companies' internal meetings.
+* Megan to consider creating video shorts about UXL projects for social media.
