@@ -1,0 +1,138 @@
+===========================
+ Open Source WG: 02/25/2025
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+
+* Rod Burns - Codeplay
+* Aaron Dron - Codeplay
+
+* Ragesh Hajela - Fujitsu
+
+* Kevan Ahmadi - Imagination Technologies
+
+* John Melonakos - Intel
+* Alexey Kukanov - Intel
+* Nikolay Petrov - Intel
+* Michael Voss - Intel
+* Alison Richards - Intel
+* Victor Lu - 
+* Mourad Gouicem - Intel
+* Andrey Fedorov - Intel
+* Maria Petrova - Intel
+* Vadim Pirogov - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+* Roman Zhukov - Red Hat
+
+* Biagio COSENZA - University of Salerno
+
+
+Mini Summit
+===========
+
+In the meeting, John initiated discussions about the upcoming Mini Summit by the Excel foundation on June 26th at the
+Colorado Convention Center. He also invited others to propose topics for the summit. Rod, Megan, and John discussed the
+potential for remote participation in the summit.
+
+CI Infrastructure Update (`slides`_)
+====================================
+
+Aaron provided an update on the CI infrastructure, mentioning the upgrade of the UXL Foundation's Github organization to
+the Enterprise tier, which might allow for up to 500 concurrent CI runs. Aaron also discussed the likely dedication of a
+Graviton system to the oneAPI construction kit and the testing of new Github Enterprise features.
+
+Security Update
+===============
+
+John shared the security tracker page, which Rod confirmed was still in use but needed follow-up on open issues. Roman
+expressed interest in feedback on the implementation of recommendations and the potential for adjusting the program
+based on obstacles encountered. Aaron and Rod discussed the process document shared by Rod, with Aaron suggesting the
+use of a pull request for further discussion and minor changes.
+
+Organizing Learning Sessions for Projects
+=========================================
+
+John proposed the idea of organizing learning sessions for member companies to increase awareness and usage of the
+projects. The goal is to inspire engineers to download and start using the projects, overcoming any reluctance or
+blockages they might have. The content would include technical presentations, showing benchmarks, and providing simple
+steps to get started, followed by Q&A sessions to address any concerns. The success metric is not just attendance but
+actual usage of the projects. Each project would assign a representative to tailor the content based on the interests of
+the member companies. Mike suggested a deeper dive into projects based on customer interest, which John acknowledged
+might be company-specific. The next step is to decide on the logistics and assign the right people.
+
+Planning Webinars and UXL Roadmap
+=================================
+
+Rod suggested conducting a survey or poll to determine what topics the team would like to hear about, with the
+possibility of setting up sessions accordingly. Alison proposed the idea of hosting webinars throughout the year on
+various topics, which could also be uploaded to their YouTube channel for new members. John agreed, emphasizing the need
+for a presentation that convinces engineers to use the software. Alexey mentioned that some webinars had been conducted
+in the past for certain projects. Alison suggested refreshing the content if it's available but needs minor edits, or
+making it more compatible with uxl if it's too branded. John and Alison agreed to work on this initiative offline.
+
+Managing Project Releases and Milestones
+========================================
+
+John proposed the idea of an at-a-glance roadmap of uxl project releases. John, Vadim, and Rod discussed the use of
+milestones and pull requests in managing project releases. They agreed that having a system to view upcoming releases
+and aligning with external ecosystems like PyTorch could be beneficial. Vadim suggested the creation of a place to
+discuss and coordinate schedules involving all involved parties. John proposed the idea of having a shared timeline to
+view all upcoming releases. The team also discussed the possibility of using milestones as a field on a Github project
+to assign certain issues to a milestone.
+
+Exploring Platforms for Knowledge Sharing
+=========================================
+
+John, Vadim, Alexey, Mourad, Rod, Aaron, and John discussed the need for a platform to facilitate discussions and
+knowledge sharing across projects. Vadim expressed a desire for a platform where proposals could be shared and
+stakeholders could be on board. Alexey suggested using Github discussions or a Slack channel, while Aaron proposed Zulip
+as a potential solution. The team agreed to explore these options and gather more information before deciding on a
+platform. They also decided to collect project milestones for discussion in the next meeting.
+
+Binary Releases and Open Source Platforms
+=========================================
+
+John initiated a discussion about the final initiative, which involved packaging binary releases for the UXL
+Foundation. The team debated the motivation behind this initiative, with Rod suggesting that it might be beneficial to
+have non-binary releases that are regularly validated. John agreed and asked the other projects on the call to share
+their experiences. Nikolay shared that they don't have separate open source releases, but they do release binaries for
+non-intel platforms. He suggested looking into open source platforms like Conda Forge for easier enablement. Rod
+confirmed that oneDNN and TV are already built on Conda Forge from sources.
+
+In the meeting, Nikolay and Vadim discussed the challenges of handling non-Intel targets and the potential of using
+public infrastructure for distribution. Aaron shared the task of defining a minimum viable product for an open source
+release of oneAPI, without any internal closed source components, and the goal of getting this into Linux
+distributions. He also mentioned the need to consider how an open source release can coexist with a closed source
+release, and the importance of testing components against each other. John suggested that Aaron's efforts could be
+tracked and supported by the team. Aaron also expressed interest in understanding the testing component teams would like
+to have in the UXL and what their blockers are. The team agreed to continue this discussion in future meetings.
+
+Next steps
+==========
+
+• Allison and John to work offline on dividing and conquering the initiative for creating and refreshing project
+  presentation content for member companies.
+• John to collect milestone information from all projects similar to OneDNN's milestones before the next meeting.
+• Rod to explore Zulip as a potential alternative for asynchronous discussions and long-term topic archiving.
+• Aaron to continue work on defining a minimum viable product for an open source release of oneAPI and provide updates
+  in future meetings.
+• Component teams to identify CI testing they would like to have in the UXEL that they don't currently have, and
+  identify blockers in achieving those tests.
+
+Humorous Side Note
+==================
+
+The Zoom AI Companion that produced the initial draft of these minutes refers to the UXL Foundation as "U Excel
+Foundation."
+
+
+
+.. _`slides`: ../presentations/2025-02-25-UXLCIPoC.pdf

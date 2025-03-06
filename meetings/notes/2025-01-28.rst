@@ -17,7 +17,7 @@ specification, noting that they typically do provisional releases in September a
 December. Rod suggested the possibility of more frequent releases if needed, and Nikolay agreed with the current
 schedule.
 
-OneDAL API Specification Limitations
+oneDAL API Specification Limitations
 ====================================
 
 Nikolay explained that the current specification for oneDAL covers less than 10% of the API, as there has been no
@@ -55,8 +55,8 @@ mentioned that he would send a guide and that Victor, his colleague, could answe
 asked about the deadline for specific projects, to which Rod responded that the 11th was the ultimate deadline, and he
 would prefer to receive information by the 5th. Aaron was then scheduled to update the team on CI.
 
-Github Usage and Future Plans
-=============================
+Github Usage and Future Plans (`slides`_)
+=========================================
 
 Aaron discussed the current state of their Github usage, including the availability of free self-hosted runners and the
 recent addition of ARM runners by Github. He mentioned the ongoing testing of AWS-hosted Graviton runners and the active
@@ -110,3 +110,6 @@ Next steps
 * Megan to create an inventory of project roadmap processes via mailing list.
 * Rod to explore opportunities for UXL projects to present at member companies' internal meetings.
 * Megan to consider creating video shorts about UXL projects for social media.
+
+
+.. _`slides`: ../presentations/2025-01-28-UXLCIPoC.pdf
