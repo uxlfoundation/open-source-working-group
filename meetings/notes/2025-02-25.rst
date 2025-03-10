@@ -22,7 +22,6 @@ Attendees
 * Nikolay Petrov - Intel
 * Michael Voss - Intel
 * Alison Richards - Intel
-* Victor Lu - 
 * Mourad Gouicem - Intel
 * Andrey Fedorov - Intel
 * Maria Petrova - Intel
@@ -34,13 +33,14 @@ Attendees
 
 * Biagio COSENZA - University of Salerno
 
+* Victor Lu - Unknown
 
 Mini Summit
 ===========
 
-In the meeting, John initiated discussions about the upcoming Mini Summit by the Excel foundation on June 26th at the
-Colorado Convention Center. He also invited others to propose topics for the summit. Rod, Megan, and John discussed the
-potential for remote participation in the summit.
+In the meeting, John initiated discussions about the upcoming UXL Foundation `Mini Summit`_ on June 26th as part of the
+OSSNA conference. He invited others to propose topics for the summit. Rod, Megan, and John discussed the potential for
+remote participation in the summit.
 
 CI Infrastructure Update (`slides`_)
 ====================================
@@ -52,10 +52,10 @@ Graviton system to the oneAPI construction kit and the testing of new Github Ent
 Security Update
 ===============
 
-John shared the security tracker page, which Rod confirmed was still in use but needed follow-up on open issues. Roman
-expressed interest in feedback on the implementation of recommendations and the potential for adjusting the program
-based on obstacles encountered. Aaron and Rod discussed the process document shared by Rod, with Aaron suggesting the
-use of a pull request for further discussion and minor changes.
+John shared the `security tracker page`_, which Rod confirmed was still in use but needed follow-up on open
+issues. Roman expressed interest in feedback on the implementation of recommendations and the potential for adjusting
+the program based on obstacles encountered. Aaron and Rod discussed the process document shared by Rod, with Aaron
+suggesting the use of a pull request for further discussion and minor changes.
 
 Organizing Learning Sessions for Projects
 =========================================
@@ -81,12 +81,12 @@ making it more compatible with uxl if it's too branded. John and Alison agreed t
 Managing Project Releases and Milestones
 ========================================
 
-John proposed the idea of an at-a-glance roadmap of uxl project releases. John, Vadim, and Rod discussed the use of
-milestones and pull requests in managing project releases. They agreed that having a system to view upcoming releases
-and aligning with external ecosystems like PyTorch could be beneficial. Vadim suggested the creation of a place to
-discuss and coordinate schedules involving all involved parties. John proposed the idea of having a shared timeline to
-view all upcoming releases. The team also discussed the possibility of using milestones as a field on a Github project
-to assign certain issues to a milestone.
+John proposed the idea of an at-a-glance roadmap of UXL project releases. John, Vadim, and Rod discussed the use of
+Github milestones and pull requests in managing project releases. They agreed that having a system to view upcoming
+releases and aligning with external ecosystems like PyTorch could be beneficial. Vadim suggested the creation of a place
+to discuss and coordinate schedules involving all involved parties. John proposed the idea of having a shared timeline
+to view all upcoming releases. The team also discussed the possibility of using milestones as a field on a Github
+project to assign certain issues to a milestone.
 
 Exploring Platforms for Knowledge Sharing
 =========================================
@@ -100,12 +100,11 @@ platform. They also decided to collect project milestones for discussion in the 
 Binary Releases and Open Source Platforms
 =========================================
 
-John initiated a discussion about the final initiative, which involved packaging binary releases for the UXL
-Foundation. The team debated the motivation behind this initiative, with Rod suggesting that it might be beneficial to
-have non-binary releases that are regularly validated. John agreed and asked the other projects on the call to share
-their experiences. Nikolay shared that they don't have separate open source releases, but they do release binaries for
-non-intel platforms. He suggested looking into open source platforms like Conda Forge for easier enablement. Rod
-confirmed that oneDNN and TV are already built on Conda Forge from sources.
+John initiated a discussion about packaging binary releases for the UXL Foundation. The team debated the motivation
+behind this initiative, with Rod suggesting that it might be beneficial to have non-binary releases that are regularly
+validated. John agreed and asked the other projects on the call to share their experiences. Nikolay shared that they
+don't have separate open source releases, but they do release binaries for non-intel platforms. He suggested looking
+into open source platforms like Conda Forge for easier enablement.
 
 In the meeting, Nikolay and Vadim discussed the challenges of handling non-Intel targets and the potential of using
 public infrastructure for distribution. Aaron shared the task of defining a minimum viable product for an open source
@@ -120,19 +119,21 @@ Next steps
 
 • Allison and John to work offline on dividing and conquering the initiative for creating and refreshing project
   presentation content for member companies.
-• John to collect milestone information from all projects similar to OneDNN's milestones before the next meeting.
+• John to collect milestone information from all projects similar to oneDNN's milestones before the next meeting.
 • Rod to explore Zulip as a potential alternative for asynchronous discussions and long-term topic archiving.
 • Aaron to continue work on defining a minimum viable product for an open source release of oneAPI and provide updates
   in future meetings.
-• Component teams to identify CI testing they would like to have in the UXEL that they don't currently have, and
-  identify blockers in achieving those tests.
+• Component teams to identify CI testing they would like to have in the UXL that they don't currently have, and identify
+  blockers in achieving those tests. That information can be shared with Aaron.
 
 Humorous Side Note
 ==================
 
-The Zoom AI Companion that produced the initial draft of these minutes refers to the UXL Foundation as "U Excel
+The Zoom AI Companion that produced the initial draft of these minutes refers to the UXL Foundation as the "U Excel
 Foundation."
 
 
 
+.. _`Mini Summit`: https://events.linuxfoundation.org/open-source-summit-north-america/features/co-located-events/#unified-acceleration-uxl-foundation-mini-summit
 .. _`slides`: ../presentations/2025-02-25-UXLCIPoC.pdf
+.. _`security tracker page`: https://github.com/orgs/uxlfoundation/projects/3/views/1
