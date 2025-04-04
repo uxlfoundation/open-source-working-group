@@ -57,13 +57,13 @@ event or paying the Linux Foundation for it.
 Ongoing Security Efforts and Project Updates
 ============================================
 
-The next topic was security tracking. Rod mentioned that there are still many open items from Roman's original
-_`security tracker page`. The group discusses the importance of ongoing security efforts for each project. Rod offers to
-follow up with project leads, but Megan suggests asking all projects to report updates at the next meeting. The team
-agrees to review the security dashboard and provide updates on their assigned issues. Dan mentions that oneDPL is still
-working on fuzzing and Coverity scans. Megan proposes a mid-year check-in around the Mini Summit to assess progress and
-resource needs. Nikolay raises concerns about adding external maintainers with merge access, prompting a discussion on
-security practices and identity verification. The team reviews existing contributor guidelines and discusses potential
+The next topic was security tracking. Rod mentioned that there are still many open items from Roman's original `security
+tracker page`_. The group discusses the importance of ongoing security efforts for each project. Rod offers to follow up
+with project leads, but Megan suggests asking all projects to report updates at the next meeting. The team agrees to
+review the security dashboard and provide updates on their assigned issues. Dan mentions that oneDPL is still working on
+fuzzing and Coverity scans. Megan proposes a mid-year check-in around the Mini Summit to assess progress and resource
+needs. Nikolay raises concerns about adding external maintainers with merge access, prompting a discussion on security
+practices and identity verification. The team reviews existing contributor guidelines and discusses potential
 improvements to balance community involvement with project security.
 
 Exploring Github Actions and UXL Processes (`slides`_)
