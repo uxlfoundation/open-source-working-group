@@ -1,12 +1,9 @@
 # Project Infrastructure for CI and CD
 
-This document gathers together for each UXL Foundation project the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
-Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
-
-This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
-
 UXL Foundation CI Infrastructure
 ================================
+
+The table outline the existing public CI available to UXL Foundation projects.
 
 | Owner | Type | OS | Number | Active? | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -16,16 +13,24 @@ UXL Foundation CI Infrastructure
 | Codeplay | CPU aarch64 | Linux | Cloud-based | Yes | Available until 31 May |
 | Codeplay | Intel GPU Battlemage B580 | Linux | 1 | No | |
 
+The following sections gather together for each UXL Foundation project the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
+Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
+
+This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
+
 oneDNN 
 ======
 
 Representative: Vadim Pirogov
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -42,12 +47,15 @@ oneDPL
 ======
 
 Representative: Timmie Smith
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -64,12 +72,15 @@ oneDAL
 ======
 
 Representative: Nikolay Petrov
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -86,12 +97,15 @@ oneCCL
 ======
 
 Representative: Maria Petrova
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -108,12 +122,15 @@ oneMath
 =======
 
 Representative: Maria Kraynyuk
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -130,12 +147,15 @@ oneTBB
 ======
 
 Representative: Michael Voss
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -152,12 +172,15 @@ oneCK
 =====
 
 Representative: Aaron Dron
+Support contact for CI:
 
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | ? | ? | ? | ? | ? | ? |
+
+*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
