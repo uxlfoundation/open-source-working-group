@@ -5,10 +5,27 @@ Currently much of the project CI is hosted by internal corporate infrastructure,
 
 This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
 
+UXL Foundation CI Infrastructure
+================================
+
+| Owner | Type | OS | Number | Active? | Notes |
+| --- | --- | --- | --- | --- | --- |
+| GitHub | CPU x86 | Linux, Windows, Mac | Up to 500 concurrent | Yes | |
+| GitHub | CPU aarch64 | Linux, Mac | Up to 500 concurrent | Yes | |
+| Intel | Intel GPU Max 1550 | Linux | Varies depending on request | Yes | |
+| Codeplay | CPU aarch64 | Linux | Cloud-based | Yes | Available until 31 May |
+| Codeplay | Intel GPU Battlemage B580 | Linux | 1 | No | |
+
 oneDNN 
 ======
 
 Representative: Vadim Pirogov
+
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -26,6 +43,12 @@ oneDPL
 
 Representative: Timmie Smith
 
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
+
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
@@ -41,6 +64,12 @@ oneDAL
 ======
 
 Representative: Nikolay Petrov
+
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -58,6 +87,12 @@ oneCCL
 
 Representative: Maria Petrova
 
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
+
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
@@ -73,6 +108,12 @@ oneMath
 =======
 
 Representative: Maria Kraynyuk
+
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -90,6 +131,12 @@ oneTBB
 
 Representative: Michael Voss
 
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
+
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
@@ -105,6 +152,12 @@ oneCK
 =====
 
 Representative: Aaron Dron
+
+*Existing public CI*
+
+| Owner | Type | OS | Number | Active? | How to access logs |
+| --- | --- | --- | --- | --- | --- |
+| ? | ? | ? | ? | ? | ? |
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
