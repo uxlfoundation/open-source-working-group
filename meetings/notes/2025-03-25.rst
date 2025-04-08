@@ -1,0 +1,125 @@
+===========================
+ Open Source WG: 03/25/2025
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - ARM
+
+* Rod Burns - Codeplay
+* Aaron Dron - Codeplay
+* Alastair Murray - Codeplay
+
+* Ed Tuke - Imagination Technologies
+
+* Dan Hoeflinger - Intel
+* Alexey Kukanov - Intel
+* Ankit Manerikar - Intel
+* Andrey Fedorov - Intel
+* Timmie Smith - Intel
+* Vasudha Badri-Paul - Intel
+* Alison Richards - Intel
+* Nikolay Petrov - Intel
+* Dmitrii Sobolev - Intel
+* John Melonakos - Intel
+* Michael Voss - Intel
+* Maria Petrova - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+* Biagio Cosenza - University of Salerno
+
+Next steps
+==========
+
+• All projects to clean up security-related issues on GitHub before the next meeting.
+• All projects to prepare responses regarding their current CI processes and needs for Aaron before the next meeting.
+• Rod to set up a shared document or GitHub project table for projects to input their CI information.
+• All projects to work on creating public roadmaps and milestones on GitHub.
+• John to send follow-up email to projects about roadmap and milestone information.
+• Rod to consider recording/remote access options for the UXL Mini Summit.
+• Alison to work with project owners on creating getting started guides and positioning documents for each project.
+• Projects to share any existing getting started materials or resources with Alison.
+
+UXL Foundation Mini Summit Planning
+===================================
+
+In the meeting, Megan, John, and Rod discussed the upcoming UXL foundation `Mini Summit`_ at Open Source Summit, North
+America. They clarified that full conference registration is required, but Linux Foundation members can get a 20%
+discount. The cost of the Mini summit is $5. Rod mentioned that remote access to the Mini summit might not be possible
+due to logistics, but they could consider recording the event. Megan suggested finding a community member to record the
+event or paying the Linux Foundation for it.
+
+Ongoing Security Efforts and Project Updates
+============================================
+
+The next topic was security tracking. Rod mentioned that there are still many open items from Roman's original `security
+tracker page`_. The group discusses the importance of ongoing security efforts for each project. Rod offers to follow up
+with project leads, but Megan suggests asking all projects to report updates at the next meeting. The team agrees to
+review the security dashboard and provide updates on their assigned issues. Dan mentions that oneDPL is still working on
+fuzzing and Coverity scans. Megan proposes a mid-year check-in around the Mini Summit to assess progress and resource
+needs. Nikolay raises concerns about adding external maintainers with merge access, prompting a discussion on security
+practices and identity verification. The team reviews existing contributor guidelines and discusses potential
+improvements to balance community involvement with project security.
+
+Exploring Github Actions and UXL Processes (`slides`_)
+======================================================
+
+Aaron discussed the availability of various runners for Github actions, including self-hosted and public Github provided
+free runners. He mentioned the need for assessing the health of PR testing for UXL projects and understanding what
+testing should be happening for external PRs. Aaron also raised questions about new UXL level processes, such as the
+need for maintainers and associated code of conduct changes. He mentioned the need to understand how to handle ancillary
+test systems triggered by PRs. Aaron also discussed the possibility of an open source release of oneAPI and the need for
+a standard release process for UXL projects. He mentioned conversations with Intel's Clear Linux team and the internal
+oneAPI release team to understand the testing that happens internally for Intel.
+
+Improving Project Distribution and Adoption
+===========================================
+
+The group discusses strategies for improving the distribution and adoption of their projects. Aaron emphasizes the need
+to address strategic questions before moving into other distributions, with Clear Linux being a priority. Megan suggests
+keeping this as a recurring agenda item. The conversation then shifts to documenting release processes and identifying
+pain points. Aaron mentions that Clear Linux engineers are reviewing some projects and may have filed tickets. The group
+agrees on the importance of addressing these concerns promptly and getting organized before wider distribution. They
+also discuss the need for public CI testing on external PRs, with Aaron requesting information from each project about
+their current testing practices and requirements. Rod suggests creating a shared document to track the status of each
+project's CI capabilities.
+
+Unified Roadmap for UXL Projects
+================================
+
+John discusses the goal of creating a unified roadmap for UXL projects. He notes that one project (oneDNN) has already
+completed their roadmap, while others are still in progress. Andrey mentions that oneMath doesn't have public milestones
+yet, and Mike states that oneTBB has a roadmap but it's not external. The group discusses the need for each project to
+have a publicly communicated roadmap to create a unified one, with John acknowledging that some processes may not have
+fully migrated to open source yet.
+
+Public Roadmaps for Project Visibility
+======================================
+
+Megan, John, Mike, Maria, and Alison discussed the importance of having public roadmaps for their projects to attract
+more contributors and funding. They agreed that the current RFC process is a good start, but they need to document how
+people can get involved in the projects. Maria suggested adding milestones and release dates to their Github projects,
+even if they don't have many open issues. The team agreed that this would increase visibility and attract more
+contributors. They also discussed the need to transition more of their internal discussions to public Github tools to
+demonstrate the activity and health of their projects.
+
+Strategies for External Contributor Base
+========================================
+
+In the meeting, Megan, John, Maria, Alison, Rod, and Andrey discussed strategies to increase external contributor base
+and reduce project risks. They agreed to set goals for public roadmaps and to work on transitioning material to the UXL
+Foundation. Alison proposed working with project owners to create getting started guides and positioning documents. The
+team also discussed the need for a repository to display projects using their tools and the possibility of creating a
+web page with QR codes for presentations. The next steps include sharing resources for getting started documentation and
+preparing for the next meeting.
+
+
+
+.. _`Mini Summit`: https://events.linuxfoundation.org/open-source-summit-north-america/features/co-located-events/#unified-acceleration-uxl-foundation-mini-summit
+.. _`slides`: ../presentations/2025-03-25-UXLCIPoC.pdf
+.. _`security tracker page`: https://github.com/orgs/uxlfoundation/projects/3/views/1

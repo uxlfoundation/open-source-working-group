@@ -14,6 +14,8 @@ The table outlines the existing shared public CI available to UXL Foundation pro
 | Codeplay | Intel GPU Battlemage B580 | Linux | 1 | No | |
 
 The following sections gather together, for each UXL Foundation project, the existing public CI set up and the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
+=======
+This document gathers together for each UXL Foundation project the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
 Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
 
 This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
@@ -31,6 +33,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -56,6 +59,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -81,6 +85,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -106,6 +111,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -131,6 +137,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -156,6 +163,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
@@ -181,6 +189,7 @@ Support contact for CI:
 | ? | ? | ? | ? | ? | ? |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+=======
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | 
 | --- | --- | --- | --- |
