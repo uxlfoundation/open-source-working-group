@@ -3,7 +3,7 @@
 UXL Foundation CI Infrastructure
 ================================
 
-The table outline the existing public CI available to UXL Foundation projects.
+The table outline the existing shared public CI available to UXL Foundation projects.
 
 | Owner | Type | OS | Number | Active? | Notes |
 | --- | --- | --- | --- | --- | --- |
