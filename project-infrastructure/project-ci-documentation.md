@@ -3,7 +3,7 @@
 UXL Foundation CI Infrastructure
 ================================
 
-The table outline the existing shared public CI available to UXL Foundation projects.
+The table outlines the existing shared public CI available to UXL Foundation projects.
 
 | Owner | Type | OS | Number | Active? | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -13,7 +13,7 @@ The table outline the existing shared public CI available to UXL Foundation proj
 | Codeplay | CPU aarch64 | Linux | Cloud-based | Yes | Available until 31 May |
 | Codeplay | Intel GPU Battlemage B580 | Linux | 1 | No | |
 
-The following sections gather together for each UXL Foundation project the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
+The following sections gather together, for each UXL Foundation project, the existing public CI set up and the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
 Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
 
 This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
