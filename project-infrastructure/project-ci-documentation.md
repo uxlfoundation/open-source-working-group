@@ -131,7 +131,7 @@ Support contact for CI:
 | --- | --- | --- | --- | --- | --- |
 | GitHub	| CPU x86 | Ubuntu latest | N/A - GitHub-hosted runners | Yes | From workflow run |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | Comment |
 | --- | --- | --- | --- | --- |
@@ -140,10 +140,10 @@ Support contact for CI:
 | Intel Data Center Max Series | Intel | GPU | Ubuntu | Or at least one from [Intel oneMKL supported list](https://www.intel.com/content/www/us/en/developer/articles/system-requirements/oneapi-math-kernel-library-system-requirements.html) on Linux |
 | A100 or H100 | NVIDIA | GPU | Ubuntu | Or at least Compute Capability 7.5 or later (T4+), see [CUDA toolkit deprecated GPUs](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#deprecated-architectures) |
 | MI210 | AMD | GPU | Ubuntu | Or at least one from [ROCm supported list](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html) |
-| x86 | Intel | CPU | Windows | Can be supported with GitHub-hosted runners, but they have not enough procesors for acceptable build time |
+| x86 | Intel | CPU | Windows | Can be supported with GitHub-hosted runners, but they have not enough processors for acceptable build time |
 | Intel Flex or Arch Series | Intel | GPU | Windows | Or at least one from [Intel oneMKL supported list](https://www.intel.com/content/www/us/en/developer/articles/system-requirements/oneapi-math-kernel-library-system-requirements.html) on Windows |
 
-Software requiremenbts: [link](https://github.com/uxlfoundation/oneMath/tree/develop?tab=readme-ov-file#software-requirements)
+Software requirements: [link](https://github.com/uxlfoundation/oneMath/tree/develop?tab=readme-ov-file#software-requirements)
 
 oneTBB 
 ------
