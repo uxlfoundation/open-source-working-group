@@ -122,8 +122,9 @@ glibc
 oneMath
 -------
 
-Representative: Maria Kraynyuk
-Support contact for CI:
+Representative: [Maria Kraynyuk](https://github.com/mkrainiuk)
+
+Support contact for CI: [Alexey Srednitsky](https://github.com/toxicscum)
 
 *Existing public CI*
 
@@ -135,12 +136,12 @@ Support contact for CI:
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System | Comment |
 | --- | --- | --- | --- | --- |
-| x86 | Intel | CPU | Ubuntu | Already supported in Public CI |
+| x86 | Intel/AMD | CPU | Ubuntu | Already supported in public CI on x64 VM |
 | aarch64 | Arm | CPU | Ubuntu | Arm Neoverse Processor Family: N1, V1, or V2 |
 | Intel Data Center Max Series | Intel | GPU | Ubuntu | Or at least one from [Intel oneMKL supported list](https://www.intel.com/content/www/us/en/developer/articles/system-requirements/oneapi-math-kernel-library-system-requirements.html) on Linux |
 | A100 or H100 | NVIDIA | GPU | Ubuntu | Or at least Compute Capability 7.5 or later (T4+), see [CUDA toolkit deprecated GPUs](https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#deprecated-architectures) |
 | MI210 | AMD | GPU | Ubuntu | Or at least one from [ROCm supported list](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/reference/system-requirements.html) |
-| x86 | Intel | CPU | Windows | Can be supported with GitHub-hosted runners, but they have not enough processors for acceptable build time |
+| x86 | Intel/AMD | CPU | Windows | Can be supported with GitHub-hosted runners, but they have not enough processors for acceptable build time |
 | Intel Flex or Arch Series | Intel | GPU | Windows | Or at least one from [Intel oneMKL supported list](https://www.intel.com/content/www/us/en/developer/articles/system-requirements/oneapi-math-kernel-library-system-requirements.html) on Windows |
 
 Software requirements: [link](https://github.com/uxlfoundation/oneMath/tree/develop?tab=readme-ov-file#software-requirements)
