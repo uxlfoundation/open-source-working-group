@@ -78,11 +78,19 @@ Representative: Timmie Smith
 
 Support contact for CI:
 
+| Maintainers               |
+| ------------------------- |
+| Dan Hoeflinger @danhoeflinger |
+| Dmitriy Sobolev @dmitriy-sobolev |
+| Timmie Smith @timmiesmith |
+
 *Existing public CI*
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+| GitHub | CPU x86 | Ubuntu | 11 | Yes | Via CI Testing Workflow view |
+| GitHub | CPU x86 | Windows | 3 | Yes | Via CI Testing Workflow view |
+| GitHub | AArch64 | Mac OS | 1 | Yes | Via CI Testing Workflow view |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
@@ -90,6 +98,9 @@ Support contact for CI:
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
+| Xe, Xe2, Xe3 | Intel | GPU | Ubuntu, Windows |
+|  | NVIDIA | GPU | Ubuntu, Windows |
+|  | AMD | GPU | Ubuntu, Windows |
 
 Software Versions:
 * CMake
