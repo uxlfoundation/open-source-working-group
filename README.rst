@@ -7,7 +7,7 @@ The group charter is currently being defined and agreed.
 
 During 2024 the group will be focusing on ensuring that the community have a frictionless experience when contributing to the UXL Foundation projects.
 
-`Join the Slack`_ channel "open-source-wg" to participate in the discussions.
+`Join the Slack`_ channel "wg-open-source" to participate in the discussions.
 
 * `Meeting Notes`_
 
