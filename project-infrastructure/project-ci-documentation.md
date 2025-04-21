@@ -176,20 +176,30 @@ oneTBB
 
 Representative: Michael Voss
 
-Support contact for CI:
+Support contact for CI: Konstantin Boyarinov
 
 *Existing public CI*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
-| --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+| Runner | Target | OS | Active | How to access logs |
+| --- | --- | --- | --- | --- |
+| ubuntu-latest	| CPU x64 | Linux |Yes | CI PR check |
+| ubuntu-24.04 | CPU x64 | Linux | Yes | CI PR check |
+| ubuntu-24.04-arm | CPU AArch64 | Linux | Yes | CI PR check |
+| ubuntu-22.04 | CPU x64 | Linux | Yes | CI PR check |
+| ubuntu-22.04-arm | CPU AArch64 | Linux | Yes | CI PR check |
+| macos-15 | CPU AArch64 | macOS | Yes | CI PR check |
+| macos-14 | CPU AArch64 | macOS | Yes | CI PR check |
+| macos-13 | CPU x64 | macOS | Yes | CI PR check |
+| Windows-2025 | CPU x64 | Windows | Yes | CI PR check |
+| Windows-2022 | CPU x64 | Windows | Yes | CI PR check |
+| Windows-2019 | CPU x64 | Windows | Yes | CI PR check |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
-| Instruction set architecture | Hardware Vendor | Processor Type | Operating System |
-| --- | --- | --- | --- |
-| x86 | Intel | CPU | Ubuntu |
-| AArch64 | Arm | CPU | Ubuntu |
+| Target        | OS                    |
+| ------------- | --------------------- |
+| CPU AArch64   | Linux, macOS |
+| CPU x64       | Linux, Windows, macOS |
 
 Software Versions:
 * CMake
