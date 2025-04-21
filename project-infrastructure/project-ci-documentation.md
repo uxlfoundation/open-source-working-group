@@ -103,9 +103,17 @@ Support contact for CI:
 |  | AMD | GPU | Ubuntu, Windows |
 
 Software Versions:
-* CMake
-* glibc
-* ...
+| Windows | Linux | MacOS (Arm CPU testing) |
+| --- | --- | --- |
+| CMake 3.20 | CMake 3.11 | CMake 3.11 |
+| git | git | git |
+| python | python | python |
+| miniforge-python | miniforge-python | miniforge-python |
+| DPC++ Compiler | DPC++ Compiler | clang++ compiler |
+| gmake | clang++ compiler | |
+| ninja | g++ | |
+| Visual Studio 2019 | | |
+| Visual Studio 2022 | | |
 
 oneDAL
 ------
