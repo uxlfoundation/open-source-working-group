@@ -111,7 +111,7 @@ Support contacts for CI:
 
 More details available in [MAINTAINERS.md](https://github.com/uxlfoundation/oneDAL/blob/main/MAINTAINERS.md)
 
-*Existing public CI*
+####*Existing public CI*
 
 oneDAL
 
@@ -134,8 +134,9 @@ oneDAL
 | Azure DevOps | sklearnex validation | Linux | 1 | Yes | Checking out sklearnex sources, doing build and validation with oneDAL PR changes. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
 | Codefactor | Codefactor checks | N/A | 1 | Yes | Enforcing code checks in PRs, Bandit, and other code quality checks. [Codefactor](https://www.codefactor.io/repository/github/uxlfoundation/onedal)  |
 
-*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
-Currently internal intel CI validation is required for code verification. 
+####*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
+
+Currently internal Intel CI validation is required for code verification. 
 Intel employees can start internal CI with comment "/intelci: run" and corresponding CI would be triggered.
 It's not possible to access logs without access to Intel network
 
