@@ -86,11 +86,11 @@ Support contact for CI:
 
 *Existing public CI*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
-| --- | --- | --- | --- | --- | --- |
-| GitHub | CPU x86 | Ubuntu | 11 | Yes | Via CI Testing Workflow view |
-| GitHub | CPU x86 | Windows | 3 | Yes | Via CI Testing Workflow view |
-| GitHub | AArch64 | Mac OS | 1 | Yes | Via CI Testing Workflow view |
+| Owner | Type | OS | How to access logs |
+| --- | --- | --- | --- | --- | --- | --- |
+| GitHub | CPU x86 | Ubuntu | Via CI Testing Workflow view |
+| GitHub | CPU x86 | Windows | Via CI Testing Workflow view |
+| GitHub | AArch64 | Mac OS | Via CI Testing Workflow view |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
@@ -102,17 +102,26 @@ Support contact for CI:
 |  | NVIDIA | GPU | Ubuntu, Windows |
 |  | AMD | GPU | Ubuntu, Windows |
 
+There are no special paths for particular architectures for AMD and NVIDIA GPUs in oneDPL at this point. It is
+sufficient for correctness to run functional testing on one GPU from a vendor.
+
+Testing on CPU platforms must exercise several execution policies with OpenMP and oneTBB to cover all of the oneDPL backends.
+| Processor Type | Execution Policy |
+| --- | --- |
+| CPU | seq, unseq, par (using oneTBB), par (using OpenMP), par\_unseq(using oneTBB), par\_unseq(using OpenMP) |
+| GPU | device\_policy |
+
 Software Versions:
 | Windows | Linux | MacOS (Arm CPU testing) |
 | --- | --- | --- |
+| OpenMP | OpenMP | OpenMP |
+| oneTBB | oneTBB | oneTBB |
 | CMake 3.20 | CMake 3.11 | CMake 3.11 |
 | git | git | git |
 | python | python | python |
-| miniforge-python | miniforge-python | miniforge-python |
 | DPC++ Compiler | DPC++ Compiler | clang++ compiler |
-| gmake | clang++ compiler | |
-| ninja | g++ | |
-| Visual Studio 2019 | | |
+| ninja | clang++ compiler | |
+| Visual Studio 2019 | g++ | |
 | Visual Studio 2022 | | |
 
 oneDAL
