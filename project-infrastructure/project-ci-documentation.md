@@ -103,7 +103,10 @@ Support contact for CI:
 |  | AMD | GPU | Ubuntu, Windows |
 
 There are no special paths for particular architectures for AMD and NVIDIA GPUs in oneDPL at this point. It is
-sufficient for correctness to run functional testing on one GPU from a vendor.
+sufficient for correctness to run functional testing on one GPU from a vendor. More information on the supported
+platforms can be found in the links below.
+* NVIDIA: https://developer.codeplay.com/products/oneapi/nvidia/2025.1.0/guides/get-started-guide-nvidia#supported-platforms
+* AMD: https://developer.codeplay.com/products/oneapi/amd/2025.1.0/guides/get-started-guide-amd#supported-platforms
 
 Testing on CPU platforms must exercise several execution policies with OpenMP and oneTBB to cover all of the oneDPL backends.
 | Processor Type | Execution Policy |
