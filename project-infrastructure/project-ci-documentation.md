@@ -99,7 +99,7 @@ Software Versions:
 oneDAL
 ------
 
-Representative: Nikolay Petrov[https://github.com/napetrov]
+Representative: [Nikolay Petrov](https://github.com/napetrov)
 
 Support contacts for CI:
 
@@ -118,29 +118,29 @@ oneDAL
 | Platform | Type | OS | Number | Active? | Comments |
 | --- | --- | --- | --- | --- | --- |
 | Github | CPU AArch64 | Linux | 2 | Yes | 2 Pipelines on Physical ARM systems Github hosted and ARM hosted. ci-aarch64.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci-aarch64.yml]  |
-| Github | Intel GPU (ICX compiler) | Linux | 1 | Yes* | Pipelene configured for GPU valdiation on uxlfoundation GPU runners, currently disabled due to issues with Tiber Cloud. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml]  |
-| Github | ABI conformance | Linux | 1 | Yes | 2 Pipelines on Physical ARM systems Github hosted and ARM hosted. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml]  |
+| Github | Intel GPU (ICX compiler) | Linux | 1 | Yes* | Pipeline configured for GPU validation on uxlfoundation GPU runners, currently disabled due to issues with Tiber Cloud. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml]  |
+| Github | ABI conformance | Linux | 1 | Yes | 2 Pipelines on Physical ARM systems Github-hosted and ARM-hosted. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml]  |
 | Github | Docker validation | Linux | 1 | Yes | Validation of oneDAL development env docker file. docker-validation-ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docker-validation-ci.yml]  |
-| Github | CPU Nightly | Linux, Windwos | 2 | Yes | Nightly builds and broaer validation for oneDAL. nightly-build.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/nightly-build.yml]  |
+| Github | CPU Nightly | Linux, Windwos | 2 | Yes | Nightly builds and broader validation for oneDAL. nightly-build.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/nightly-build.yml]  |
 | Github | Copyright headers check | Linux | 1 | Yes | Check for proper copyright headers. skywalking-eyes.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/skywalking-eyes.yml]  |
-| Github | PR checklist validation | Linux | 1 | Yes | Validation of PR conformacne. pr-checklist.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/pr-checklist.yml]  |
-| Github | Documentation deployment to gh-pages | Linux | 1 | Yes | Automatic docs deployemnt with release tag creation. docs-release.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docs-release.yml]  |
-| Mergify | Helper automation for merges/backporting | Linux | 1 | Yes | Automated labels asigment, removal of renovate branches. .mergify.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/.mergify.yml]  |
-| Renovate | Automated dependency upadates | Linux | 1 | Yes | Dependabot alternative, manages dependency updates for components. renovate.json[https://github.com/uxlfoundation/oneDAL/blob/main/.github/renovate.json]  |
+| Github | PR checklist validation | Linux | 1 | Yes | Validation of PR conformance. pr-checklist.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/pr-checklist.yml]  |
+| Github | Documentation deployment to gh-pages | Linux | 1 | Yes | Automatic docs deployment with release tag creation. docs-release.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docs-release.yml]  |
+| Mergify | Helper automation for merges/backporting | Linux | 1 | Yes | Automated labels assignment, removal of renovate branches. .mergify.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.github/.mergify.yml]  |
+| Renovate | Automated dependency updates | Linux | 1 | Yes | Dependabot alternative, manages dependency updates for components. renovate.json[https://github.com/uxlfoundation/oneDAL/blob/main/.github/renovate.json]  |
 | Azure DevOps | Clang format check| Linux | 1 | Yes | Enforce coding standards. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
-| Azure DevOps | CI build/test for x86/ARM/RISC-V with OS compilers | Linux, Windows | 8 | Yes | Intel build natively, ARM and RISC-V with crosplatform build and QEMU emulation. Build with GCC/VC compilers. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
-| Azure DevOps | CI build/test with Bazel | Linux | 1 | Yes | Bazel based build and validation. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
-| Azure DevOps | oneDAL documentation build | Linux | 1 | Yes | Build documentation for validation purposese in CI. docs.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/docs.yml]  |
+| Azure DevOps | CI build/test for x86/ARM/RISC-V with OS compilers | Linux, Windows | 8 | Yes | Intel build natively, ARM and RISC-V with cross-platform build and QEMU emulation. Build with GCC/VC compilers. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
+| Azure DevOps | CI build/test with Bazel | Linux | 1 | Yes | Bazel-based build and validation. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
+| Azure DevOps | oneDAL documentation build | Linux | 1 | Yes | Build documentation for validation purposes in CI. docs.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/docs.yml]  |
 | Azure DevOps | sklearnex validation | Linux | 1 | Yes | Checking out sklearnex sources, doing build and validation with oneDAL PR changes. ci.yml[https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml]  |
 | Codefactor | Codefactor checks | N/A | 1 | Yes | Enforcing code checks in PRs, Bandit, and other code quality checks. Codefactor[https://www.codefactor.io/repository/github/uxlfoundation/onedal]  |
 
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
-Currently internal intel CI validation is requred for code verification. 
+Currently internal intel CI validation is required for code verification. 
 Intel employees can start internal CI with comment "/intelci: run" and corresponding CI would be triggered.
 It's not possible to access logs without access to Intel network
 
-Migration to public validation is possible but would requere more x86 systems availabe in public - currenlty public validation covers only ~20% in validation scopes 
+Migration to public validation is possible but would require more x86 systems available in public - currently public validation covers only ~20% of validation scopes 
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System |
 | --- | --- | --- | --- |
@@ -158,7 +158,7 @@ Software Versions:
 * Microsoft Visual Studio* (Windows* only)
 * MSYS2 (Windows* only)
 * make and dos2unix tools
-Full list of SW requerements and steps defined in INSTALL.md[https://github.com/uxlfoundation/oneDAL/blob/main/INSTALL.md]
+Full list of SW requirements and steps defined in INSTALL.md[https://github.com/uxlfoundation/oneDAL/blob/main/INSTALL.md]
 
 oneCCL
 ------
