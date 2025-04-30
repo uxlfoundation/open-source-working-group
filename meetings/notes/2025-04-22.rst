@@ -1,0 +1,119 @@
+===========================
+ Open Source WG: 04/22/2025
+===========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Deepika H V - Centre for Development of Advanced Computing
+
+* Rod Burns - Codeplay
+* Kumudha Narasimhan - Codeplay
+* Aaron Dron - Codeplay
+
+* Ragesh Hajela - Fujitsu
+
+* Kevan Ahmadi - Imagination Technologies
+* Ed Tuke - Imagination Technologies
+
+* Maria Kraynyuk - Intel
+* Vadim Pirogov - Intel
+* Maria Petrova - Intel
+* Vasudha Badri-Paul - Intel
+* Alison Richards - Intel
+* Maria Garzaran - Intel
+* Timmie Smith - Intel
+* John Melonakos - Intel
+* Nikolay Petrov - Intel
+* Konstantin Boyarinov - Intel
+* Andrey Fedorov - Intel
+* Mike Voss - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+Next Steps
+==========
+
+* All projects to review and update their project CI documentation in the open source working group repo.
+* Aaron and team to continue working on documentation for CI infrastructure.
+* Rod and John to have a separate meeting about expanding the UXL Foundation GitHub organization's README and structure.
+* All projects to check and ensure documentation links are easily findable on their project pages.
+* Alison to collect and review marketing materials from all projects to identify gaps and plan next steps.
+* All project members to mention UXL Foundation and oneAPI in conference talks and tag them in social media posts.
+* John to arrange for Vasanth to present his CPU inclusivity proposal at the next meeting.
+* Rod to ensure relevant member organization representatives are present for Vasanth's presentation on CPU inclusivity.
+
+Security Work Package Breakdown Discussion (`slides`_)
+==========================================
+
+Aaron discussed the security work package breakdown, noting that most projects still have items in the in progress
+column. He asked for feedback on any issues with Coverity or OSS-Fuzz, and mentioned that the oneAPI Construction Kit
+and scikit-learn-intelex projects were behind on their work packages. Mike expressed that his team was not prioritizing
+fuzz testing due to the high effort required. Aaron suggested that the security work packages could be closed if they
+are not relevant, but also noted that some issues might not come up again. He proposed using the OpenSSF Scorecard as a
+guidance for future directions and suggested that the security contacts and other stakeholders should regularly review
+and discuss it.
+
+UXL Project Dashboard and Maintainer Selection (`slides`_)
+==============================================
+
+Aaron provides an update on several topics related to the UXL project. He discusses a dashboard implemented by an
+engineer to show GitHub organization scores, and recommends running scorecards within projects rather than relying on
+external workflows. Aaron raises the question of establishing a default process for maintainer selection and suggests
+using UXL membership to create a basic chain of trust. He also proposes creating a master list of GitHub accounts and
+their organizational affiliations to improve user management. Regarding CI, Aaron reports that ARM runners are working
+well, but Intel GPU Max runners are currently unstable due to a location change. He mentions that there may be some
+downtime for these runners until the migration is complete.
+
+Standardizing Project Infrastructure and Documentation (`slides`_)
+======================================================
+
+Aaron discussed the need for standardization in project infrastructure and the importance of documenting testing
+processes. He mentioned the development of two new runner runners and the need for more documentation. Rod suggested
+reviewing the information in the Github repo to ensure it's up-to-date and accurate. Aaron also discussed the
+possibility of using Conda Forge for binary releases and the need for a standard UXL release process. Timmie asked about
+the level of detail required in the CI infrastructure documentation, and Aaron responded that while specific hardware
+details may not be necessary, software versions and compatibility should be included.
+
+UXL Roadmap Progress and Future Plans
+=====================================
+
+John discussed the progress of the UXL roadmap, noting that three projects had responded, while one project was not at
+1.0 yet and lacked a defined roadmap. John also mentioned that some projects had shared their feedback in chat
+messages. Maria clarified that they had listed milestones on Github but not specific issues to be addressed. Mike added
+that they were starting to apply milestones to their RFCs, issues, and PRs. John suggested a separate meeting to discuss
+the UXL Foundation Github organization and how to expand the roadmap. Rod agreed to this. John also mentioned the
+potential merger of two working groups (Spec and Open-source).
+
+Intel Project Documentation and Marketing Strategy
+==================================================
+
+In the meeting, the team discussed the organization of their projects, specifically focusing on the Intel projects that
+have been moved to the UXL Foundation. They discussed the need for a unified way to direct users to the documentation
+for each project. Rod suggested a review of each project to ensure that documentation is easily accessible. The team
+also discussed the creation of a 'get started' page to link everything together. Alison proposed the creation of a
+presentation or video to provide a quick understanding of each project, its value proposition, and how to get
+started. The team agreed to collect all marketing materials for the projects in the next month to identify gaps and plan
+for the future.
+
+Expanding CPU Support in UXL
+============================
+
+John presented an idea to improve CPU inclusivity in the UXL libraries, which was originally proposed by Vasanth to
+Qualcomm and ARM. The current UXL specifications focus on accelerator offloading, but John suggests expanding support
+for CPUs to address the fragmented CPU landscape with its many competing interfaces. Vadim expresses uncertainty about
+the claim of CPU landscape fragmentation, prompting John to clarify.
+
+John proposed a strategy to add an abstraction layer that insulates the hardware community from rapid software
+innovation. This layer would allow for years of stable API while including CPU backends as well as accelerator
+backends. The proposal was to create a C API specification in the policy layer, which would decide whether to use the
+C++ API or a plugin API. The idea was to support CPUs in a structured way in their libraries. However, the team was
+unsure about the problem statement and the benefits of this proposal.
+
+John agreed to bring in Vasanth to explain the proposal in more detail.
+
+
+.. _`slides`: ../presentations/2025-03-25-UXLCIPoC.pdf
