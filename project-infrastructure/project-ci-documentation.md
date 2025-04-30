@@ -78,11 +78,19 @@ Representative: Timmie Smith
 
 Support contact for CI:
 
+| Maintainers               |
+| ------------------------- |
+| Dan Hoeflinger @danhoeflinger |
+| Dmitriy Sobolev @dmitriy-sobolev |
+| Timmie Smith @timmiesmith |
+
 *Existing public CI*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
-| --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+| Owner | Type | OS | How to access logs |
+| --- | --- | --- | --- | 
+| GitHub | CPU x86 | Ubuntu | Via CI Testing Workflow view |
+| GitHub | CPU x86 | Windows | Via CI Testing Workflow view |
+| GitHub | AArch64 | Mac OS | Via CI Testing Workflow view |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
@@ -90,11 +98,34 @@ Support contact for CI:
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
+| Xe, Xe2, Xe3 | Intel | GPU | Ubuntu, Windows |
+|  | NVIDIA | GPU | Ubuntu, Windows |
+|  | AMD | GPU | Ubuntu, Windows |
+
+There are no special paths for particular architectures for AMD and NVIDIA GPUs in oneDPL at this point. It is
+sufficient for correctness to run functional testing on one GPU from a vendor. More information on the supported
+platforms can be found in the links below.
+* NVIDIA: https://developer.codeplay.com/products/oneapi/nvidia/latest/guides/get-started-guide-nvidia#supported-platforms
+* AMD: https://developer.codeplay.com/products/oneapi/amd/latest/guides/get-started-guide-amd#supported-platforms
+
+Testing on CPU platforms must exercise several execution policies with OpenMP and oneTBB to cover all of the oneDPL backends.
+| Processor Type | Execution Policy |
+| --- | --- |
+| CPU | seq, unseq, par (using oneTBB), par (using OpenMP), par\_unseq(using oneTBB), par\_unseq(using OpenMP) |
+| GPU | device\_policy |
 
 Software Versions:
-* CMake
-* glibc
-* ...
+| Windows | Linux | MacOS (Arm CPU testing) |
+| --- | --- | --- |
+| OpenMP | OpenMP | OpenMP |
+| oneTBB | oneTBB | oneTBB |
+| CMake 3.20 | CMake 3.11 | CMake 3.11 |
+| git | git | git |
+| python | python | python |
+| DPC++ Compiler | DPC++ Compiler | clang++ compiler |
+| ninja | clang++ compiler | |
+| Visual Studio 2019 | g++ | |
+| Visual Studio 2022 | | |
 
 oneDAL
 ------
