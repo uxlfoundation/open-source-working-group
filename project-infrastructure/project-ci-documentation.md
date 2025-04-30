@@ -87,7 +87,7 @@ Support contact for CI:
 *Existing public CI*
 
 | Owner | Type | OS | How to access logs |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | 
 | GitHub | CPU x86 | Ubuntu | Via CI Testing Workflow view |
 | GitHub | CPU x86 | Windows | Via CI Testing Workflow view |
 | GitHub | AArch64 | Mac OS | Via CI Testing Workflow view |
