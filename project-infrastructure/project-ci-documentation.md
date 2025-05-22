@@ -86,6 +86,9 @@ Support contact for CI:
 
 *Existing public CI*
 
+The current CI infrastructure is setup for per-commit testing. It is run automatically on PRs in the oneDPL repository
+when a new commit is made to the source branch of the PR.
+
 | Owner | Type | OS | How to access logs |
 | --- | --- | --- | --- | 
 | GitHub | CPU x86 | Ubuntu | Via CI Testing Workflow view |
@@ -108,24 +111,29 @@ platforms can be found in the links below.
 * NVIDIA: https://developer.codeplay.com/products/oneapi/nvidia/latest/guides/get-started-guide-nvidia#supported-platforms
 * AMD: https://developer.codeplay.com/products/oneapi/amd/latest/guides/get-started-guide-amd#supported-platforms
 
-Testing on CPU platforms must exercise several execution policies with OpenMP and oneTBB to cover all of the oneDPL backends.
-| Processor Type | Execution Policy |
-| --- | --- |
-| CPU | seq, unseq, par (using oneTBB), par (using OpenMP), par\_unseq(using oneTBB), par\_unseq(using OpenMP) |
-| GPU | device\_policy |
+oneDPL testing must cover all C++ standard execution policies as well as oneDPL device policies.
 
-Software Versions:
-| Windows | Linux | MacOS (Arm CPU testing) |
-| --- | --- | --- |
-| OpenMP | OpenMP | OpenMP |
-| oneTBB | oneTBB | oneTBB |
-| CMake 3.20 | CMake 3.11 | CMake 3.11 |
-| git | git | git |
-| python | python | python |
-| DPC++ Compiler | DPC++ Compiler | clang++ compiler |
-| ninja | clang++ compiler | |
-| Visual Studio 2019 | g++ | |
-| Visual Studio 2022 | | |
+* CPU: ``seq``, ``unseq``, ``par_unseq``, ``device_policy``
+* GPU: ``device_policy``
+
+Testing on CPU platforms must exercise ``par`` and ``par_unseq`` execution policies with OpenMP and oneTBB to cover all
+of the oneDPL backends.
+
+Minimum Software Versions:
+| Software | Windows | Linux | MacOS (Arm CPU testing) |
+| --- | --- | --- | --- |
+| OpenMP | any | any | any |
+| oneTBB | 2022.0 | 2022.0 | 2022.0 |
+| CMake | 3.20 | 3.11 | 3.11 |
+| git | any | any | any |
+| python | any | any | any |
+| DPC++ Compiler | 2024.2 | 2024.2 | - |
+| clang++ compiler | 16 | 16 | 16 |
+| GCC compiler | 10 | 10 | 10 |
+| ninja | any | any | any |
+| Microsoft Visual Studio* | 2022 | - | - |
+| Intel General-Purpose GPU driver (for Intel HW testing) | 2423.32 (Rolling) and 2350.61 (LTS) | 2423.32 (Rolling) and 2350.61 (LTS) | - |
+
 
 oneDAL
 ------
