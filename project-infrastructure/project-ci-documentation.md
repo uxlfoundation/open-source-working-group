@@ -78,11 +78,22 @@ Representative: Timmie Smith
 
 Support contact for CI:
 
+| Maintainers               |
+| ------------------------- |
+| Dan Hoeflinger @danhoeflinger |
+| Dmitriy Sobolev @dmitriy-sobolev |
+| Timmie Smith @timmiesmith |
+
 *Existing public CI*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
-| --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+The current CI infrastructure is setup for per-commit testing. It is run automatically on PRs in the oneDPL repository
+when a new commit is made to the source branch of the PR.
+
+| Owner | Type | OS | How to access logs |
+| --- | --- | --- | --- |
+| GitHub | CPU x86 | Ubuntu | Via CI Testing Workflow view |
+| GitHub | CPU x86 | Windows | Via CI Testing Workflow view |
+| GitHub | AArch64 | Mac OS | Via CI Testing Workflow view |
 
 *Required Public CI Infrastruture Needed To Confidently Accept Contributions*
 
@@ -90,11 +101,39 @@ Support contact for CI:
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
+| Xe, Xe2, Xe3 | Intel | GPU | Ubuntu, Windows |
+|  | NVIDIA | GPU | Ubuntu, Windows |
+|  | AMD | GPU | Ubuntu, Windows |
 
-Software Versions:
-* CMake
-* glibc
-* ...
+There are no special paths for particular architectures for AMD and NVIDIA GPUs in oneDPL at this point. It is
+sufficient for correctness to run functional testing on one GPU from a vendor. More information on the supported
+platforms can be found in the links below.
+* NVIDIA: https://developer.codeplay.com/products/oneapi/nvidia/latest/guides/get-started-guide-nvidia#supported-platforms
+* AMD: https://developer.codeplay.com/products/oneapi/amd/latest/guides/get-started-guide-amd#supported-platforms
+
+oneDPL testing must cover all C++ standard execution policies as well as oneDPL device policies.
+
+* CPU: ``seq``, ``unseq``, ``par_unseq``, ``device_policy``
+* GPU: ``device_policy``
+
+Testing on CPU platforms must exercise ``par`` and ``par_unseq`` execution policies with OpenMP and oneTBB to cover all
+of the oneDPL backends.
+
+Minimum Software Versions:
+| Software | Windows | Linux | MacOS (Arm CPU testing) |
+| --- | --- | --- | --- |
+| OpenMP | any | any | any |
+| oneTBB | 2022.0 | 2022.0 | 2022.0 |
+| CMake | 3.20 | 3.11 | 3.11 |
+| git | any | any | any |
+| python | any | any | any |
+| DPC++ Compiler | 2024.2 | 2024.2 | - |
+| clang++ compiler | 16 | 16 | 16 |
+| GCC compiler | 10 | 10 | 10 |
+| ninja | any | any | any |
+| Microsoft Visual Studio* | 2022 | - | - |
+| Intel General-Purpose GPU driver (for Intel HW testing) | 2423.32 (Rolling) and 2350.61 (LTS) | 2423.32 (Rolling) and 2350.61 (LTS) | - |
+
 
 oneDAL
 ------
