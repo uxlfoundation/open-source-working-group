@@ -101,7 +101,7 @@ when a new commit is made to the source branch of the PR.
 | --- | --- | --- | --- |
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
-| Xe, Xe2, Xe3 | Intel | GPU | Ubuntu, Windows |
+| Xe, Xe2 | Intel | GPU | Ubuntu, Windows |
 |  | NVIDIA | GPU | Ubuntu, Windows |
 |  | AMD | GPU | Ubuntu, Windows |
 
