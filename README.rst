@@ -43,7 +43,7 @@ Projects
   * The oneAPI Data Analytics Library (oneDAL) is a powerful machine learning library that helps you accelerate big data
     analysis at all stages: preprocessing, transformation, analysis, modeling, validation, and decision making.
 
-  * Upcoming oneDAL Milestones: Not yet defined.
+  * Upcoming `oneDAL Milestones`_: Regular monthly releases
 
 * `oneTBB`_:
 
@@ -84,7 +84,7 @@ Communication
 .. _`oneMath`: https://github.com/uxlfoundation/oneMath
 .. _`oneMath Milestones`: https://github.com/uxlfoundation/oneMath/milestones
 .. _`oneDAL`: https://github.com/uxlfoundation/oneDAL
-.. _`oneDAL Milestones`: https://github.com/uxlfoundation/oneDAL/milestones
+.. _`oneDAL Milestones`: https://github.com/uxlfoundation/oneDAL/releases
 .. _`oneTBB`: https://github.com/uxlfoundation/oneTBB
 .. _`oneTBB Milestones`: https://github.com/uxlfoundation/oneTBB/milestones
 .. _`oneDPL`: https://github.com/uxlfoundation/oneDPL
