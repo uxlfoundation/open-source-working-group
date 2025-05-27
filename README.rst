@@ -10,7 +10,9 @@ Meetings
 The Working Group meets the 4th Tuesday of each month. Working group meetings track active work packages and discuss
 opening new work packages.
 
-* `Meeting Notes`_
+* See `Meeting Notes`_.
+* Recordings of the meetings are available in the Linux Foundation https://openprofile.dev/ profile. If you are a member
+  of the Working Group, you can access this through your account.
 
 Active Work Packages
 ====================
