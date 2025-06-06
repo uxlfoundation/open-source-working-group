@@ -9,6 +9,7 @@ Attendees
 =========
 
 Megan Knight - Arm
+Nick Dingle - Arm
 
 Aaron Dron - Codeplay
 Rod Burns - Codeplay
@@ -32,8 +33,6 @@ Alison Richards - Intel
 Roman Zhukov - Red Hat
 
 Biagio Cosenza - University of Salerno
-
-Nick Dingle -
 
 
 Next Steps
