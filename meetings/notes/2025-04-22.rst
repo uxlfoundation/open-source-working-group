@@ -116,4 +116,4 @@ unsure about the problem statement and the benefits of this proposal.
 John agreed to bring in Vasanth to explain the proposal in more detail.
 
 
-.. _`slides`: ../presentations/2025-03-25-UXLCIPoC.pdf
+.. _`slides`: ../presentations/2025-04-22-UXLCIPoC.pdf
