@@ -302,10 +302,7 @@ Support contact for CI: Konstantin Boyarinov
 | CPU AArch64   | Linux, macOS |
 | CPU x64       | Linux, Windows, macOS |
 
-Software Versions:
-* CMake
-* glibc
-* ...
+Software requirements: [link](https://github.com/uxlfoundation/oneTBB/blob/master/SYSTEM_REQUIREMENTS.md)
 
 oneCK
 -----
