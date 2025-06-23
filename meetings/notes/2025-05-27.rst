@@ -1,0 +1,114 @@
+==========================
+Open Source WG: 05/27/2025
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+* Nick Dingle - Arm
+
+* Aaron Dron - Codeplay
+* Rod Burns - Codeplay
+
+* Ragesh Hajela - Fujitsu
+
+* Kevan Ahmadi - Imagination Technologies
+
+* Michael Voss - Intel
+* John Melonakos - Intel
+* Timmie Smith - Intel
+* Maria Petrova - Intel
+* Alexey Kukanov - Intel
+* Mourad Gouicem - Intel
+* Nikolay Petrov - Intel
+* Augustin Degomme - Intel
+* Vasanth Tovinkere - Intel
+* Maria Kraynyuk - Intel
+* Alison Richards - Intel
+
+* Roman Zhukov - Red Hat
+
+* Biagio Cosenza - University of Salerno
+
+
+Next Steps
+==========
+
+* John to send out Vasanth's presentation slides to the group. (see below)
+* John to set up a GitHub discussion thread for further conversation on CPU inclusivity and the C API specification.
+* John to reach out to Qualcomm to rekindle the discussion on CPU inclusivity and compiler leveraging.
+* John to organize a focused discussion with the oneAPI Math (oneMKL) team on specific domains (BLAS, LAPACK, FFT, RNG)
+  regarding CPU inclusivity.
+* John to reach out to software ISVs to participate in the GitHub discussion on CPU inclusivity.
+* John to share the sanctions discussion topic with Larry at Intel and bring it up in the next meeting.
+* Mike to send the Linux Foundation discussion link about sanctions to John and Megan via email.
+
+Summary
+
+Security Work Package Progress Review (`UXL community infrastructure slides`_)
+=====================================
+
+Rod presented on security work package progress, noting that most issues had been resolved or moved to the "in progress"
+column. He highlighted Coverity and OSS Fuzz as potential pain points, particularly regarding Google account
+requirements for OSS Fuzz, and mentioned that a guide was being developed to assist users.
+
+Security Testing Flexibility for Projects
+=========================================
+
+The team discussed security and quality testing approaches for UXL Foundation projects, agreeing that projects can
+determine their own priorities on a case-by-case basis rather than having a unified set of rules. They decided to share
+best practices and positive experiences from different projects rather than establishing one-size-fits-all requirements
+for static analysis. The group also addressed questions about security email responses, maintainer selection processes,
+and external testing requirements, with Megan suggesting they review OpenSSF materials for guidance on maintainer
+selection. Rod noted that while current OpenSSF scorecard scores were decent, security representatives should review
+their current threats and next steps, potentially through Slack discussions.
+
+Hardware Runners Status and Planning
+====================================
+
+Rod discussed the status of various hardware runners, noting that the Codeplay host runner would go offline in a few
+days but that the free ARM runners were now available. He mentioned three in-progress runners from Codeplay and Intel,
+including the BattleMage B580 and Nvidia H100, with Intel planning to provide more B580s. Rod also highlighted the
+completion of the Intel GPU Max 1550 migration and thanked projects for providing infrastructure requirements. He
+identified gaps in testing, such as PowerPC and RISC-V requirements, and suggested potential solutions like emulation or
+hardware options. Rod also mentioned exploring Common Forge for binary releases and ongoing discussions with Intel about
+packaging DPC++. He encouraged further conversations about release planning and naming strategies.
+
+API CPU Inclusivity Customer Concerns (`CPU-inclusive C API slides`_)
+=====================================
+
+Vasanth presented on customer pain points regarding API specifications, particularly around CPU inclusivity and library
+support. Customers expressed concerns about the need to accommodate both CPU and accelerator paths, with questions about
+default targets and fallback mechanisms. The discussion highlighted the desire for a stable abstraction layer that would
+allow software innovation while providing hardware vendors with a consistent API to implement. Customers requested CPU
+inclusivity as a first-order discussion, with a preference for reference implementations and the ability to set
+different policy settings for different libraries, while also emphasizing the importance of conformance tests.
+
+Math and Imaging Library Proposals
+==================================
+
+Vasanth discussed the primary requests regarding math and imaging libraries, noting that 80-90% of the requests centered
+around math functions, with the remaining 20% focusing on imaging library specifications. He explained that discussions
+had culminated in proposals to form work groups at the UXL level to address these issues. Maria asked about the
+programming model for C API, particularly in relation to offloading tasks to GPUs and accelerators. Vasanth clarified
+that the initial pain point was resistance to changing existing C APIs to a new specification that required queuing and
+target selection, which software vendors found burdensome. He emphasized the need for a unified abstraction that would
+reduce workload and allow incremental implementation by hardware vendors, with a fallback option to CPU for seamless
+integration and testing.
+
+Compiler Support for CPU Inclusivity
+====================================
+
+The meeting focused on discussing compiler support for CPU inclusivity, particularly for oneMath projects. Vasanth
+shared feedback from various stakeholders, including Qualcomm, who expressed interest in leveraging the compiler for
+specific work. The group agreed to create a GitHub discussion thread to continue the conversation and gather input from
+those who couldn't attend.
+
+
+
+.. _`UXL community infrastructure slides`: ../presentations/2025-05-27-UXLCIPoC.pdf
+.. _`CPU-inclusive C API slides`: ../presentations/2025-05-27-UXL-Library-brainstorm.pptx
