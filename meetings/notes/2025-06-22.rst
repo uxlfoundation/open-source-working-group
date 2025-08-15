@@ -1,0 +1,134 @@
+==========================
+Open Source WG: 06/22/2025
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+
+* Kuldeep Pal - C-DAC
+
+* Rod Burns - Codeplay
+
+* Abhishek Jain - Fujitsu
+
+* Ed Tuke - Imagination Technologies
+
+* Irina Topinskaia - Intel
+* John Melonakos - Intel
+* Andrey Fedorov - Intel
+* Nikolay Petrov - Intel
+* Mike Voss - Intel
+* Mourad Gouicem - Intel
+* Maria Petrova - Intel
+* Timmie Smith - Intel
+* Alexey Kukanov - Intel
+* Aleksandr Solovev - Intel
+* Vasudha Badri-Paul - Intel
+* Ian Faust - Intel
+
+
+Quick Recap
+===========
+
+The meeting began with introductions and agenda setting, followed by discussions about OFAC sanctions and updates from
+various open source projects. The team reviewed upcoming releases across multiple projects including oneDNN, oneDPL, and
+oneCCL, with specific focus on new features and performance improvements. The conversation ended with reminders about
+sharing work through presentations at upcoming events and thanks to participants.
+
+Next Steps
+==========
+
+* Megan to reach out to OpenSSF security experts for guidance on implementing OFAC sanctions compliance
+* Megan to discuss OFAC sanctions implementation with Dolan and Rod
+* Megan to add OFAC sanctions discussion to next OpenSSF working group meeting agenda (scheduled for next Tuesday)
+* Megan to follow up with JDF contacts regarding OFAC sanctions guidance
+* Mourad to update release timeline for 3.9 release (potentially delayed due to PyTorch dependencies)
+* Maria to deliver patches for Battlemage and Arc GPU support
+* Maria to prepare patches for PyTorch 1.16 release (targeted for mid-August)
+* Maria to implement new C API design for 21.17 release (as non-default option)
+* Rod to send Open Source Summit recording links to meeting attendees
+* Rod to share Dev Summit call for presentations with meeting attendees
+
+Summary
+=======
+
+OFAC Sanctions and Project Updates:
+===================================
+
+The meeting began with Megan introducing herself and the agenda, which included a focus on OFAC sanctions and updates
+from open source projects. Rod confirmed that the recordings from the Mini summit were published and agreed to send them
+out. The group discussed the OFAC sanctions issue raised by Michael Voss, with Michael providing an overview of the
+topic and emphasizing that he is not a lawyer. The conversation ended with a reminder for participants to add any
+additional agenda items to the chat or to Megan and John.
+
+Sanctions Compliance and Legal Implications:
+============================================
+
+Mike explained the legal implications of sanctions against specially designated nationals, noting that US citizens and
+organizations must comply with these rules worldwide, even if unaware of violations. He highlighted that the rules
+impose strict liability, meaning any infractions can result in fines or criminal penalties, and emphasized that
+ownership of 50% or more by sanctioned individuals or organizations can also trigger sanctions.
+
+Open Source Contribution Policy Challenges:
+===========================================
+
+Mike raised concerns about the challenges of enforcing contribution policies for open source projects, particularly
+regarding unsolicited patches and two-way engagement with individuals or organizations on restricted lists. Megan
+acknowledged these issues and suggested exploring guidance from the Linux Foundation and OpenSSF, noting the need for
+unified policies across projects. She proposed taking the lead on this matter, including consulting with OpenSSF's
+security experts and discussing it with the operations team, to find practical solutions for identity management and
+contribution verification.
+
+oneDNN Updates:
+===============
+
+Mourad reported on oneDNN, mentioning a release candidate for 3.9 expected at the end of the week, with potential delays
+due to new features and PyTorch's schedule. They also noted interest from the Barcelona supercomputing group in adding
+RISC-V capabilities.
+
+oneMath Updates:
+================
+
+Andrey said oneMath did not have much of a update. The are focused on maintenance releases at the moment.
+
+oneDAL Updates:
+===============
+
+Ian and Aleksandr ("Sasha") provided updates on oneDAL, mentioning bug fixes and preparation for the 2025.3 release in
+November.
+
+oneTBB Updates:
+===============
+
+Mike shared that oneTBB's next release in 2022.3 would focus on improvements to the tasking API, requested by the visual
+effects community. The team agreed that monthly releases generally work well for them, allowing for better feedback on
+dependencies.
+
+oneDPL Updates:
+===============
+
+The team discussed the status and development of oneDPL, a portable library for CPUs, which currently sees primarily
+Intel-related usage. Timmie reported ongoing work on range-based APIs for parallel algorithms and GPU performance
+improvements, particularly for set operation algorithms. Alexey explained that oneDPL's CPU support serves as an
+upstream source for the C++ standard library's parallel algorithms, though this relationship has recently become less
+active.
+
+oneCCL Updates:
+===============
+
+Maria provided updates on CCL, noting their work on supporting Battle Match ARB-PE and PyTorch upstream, with plans for
+a patch release in mid-August and a major release in October that will include a new C API design as a non-default
+option.
+
+Dev Summit Presentation Submissions Discussion:
+===============================================
+
+The meeting was shorter than usual due to the summer season, with Aaron absent from the office. Rod requested that John
+share videos from the Open Source Summit and a link to the Call for Presentations for the upcoming Dev summit. John
+encouraged all projects to submit presentations, emphasizing the importance of sharing their work within the
+foundation. The conversation ended with thanks from Megan and the participants.
