@@ -29,14 +29,14 @@ Projects
   * The oneAPI Deep Neural Network Library (oneDNN) is an open-source cross-platform performance library of basic
     building blocks for deep learning applications.
 
-  * Upcoming `oneDNN Milestones`_: v3.9 (Aug 1, 2025); v3.10 (Oct 30, 2025)
+  * Upcoming `oneDNN Milestones`_: v3.10 (Oct 30, 2025); v3.11 (Feb 5, 2026)
 
 * `oneMath`_:
 
   * The oneAPI Math Library (oneMath) defines a set of fundamental mathematical routines for use in high-performance
     computing and other applications.
 
-  * Upcoming `oneMath Milestones`_: v0.8 (Jun 30, 2025); v0.9 (Nov 4, 2025)
+  * Upcoming `oneMath Milestones`_: v0.9 (Nov 4, 2025)
 
 * `oneDAL`_:
 
@@ -50,7 +50,7 @@ Projects
   * The oneAPI Threading Building Blocks Library (oneTBB) is a flexible C++ library that simplifies the work of adding
     parallelism to complex applications, even if you are not a threading expert.
 
-  * Upcoming `oneTBB Milestones`_: 2022.2.0 (Jun 30, 2025); 2022.3.0 (Oct 31, 2025)
+  * Upcoming `oneTBB Milestones`_: 2022.3.0 (Oct 31, 2025); 2022.4.0 (Mar 31, 2026)
 
 * `oneDPL`_:
 
@@ -58,14 +58,14 @@ Projects
     support data parallelism and offloading to devices, and with extensions to simplify its usage for implementing data
     parallel algorithms.
 
-  * Upcoming `oneDPL Milestones`_: 2022.9.0 (Jun 11, 2025); 2022.10.0 (Oct 16, 2025)
+  * Upcoming `oneDPL Milestones`_: 2022.10.0 (Oct 16, 2025); 2022.11.0 (Q1'2026)
 
 * `oneCCL`_:
 
   * The oneAPI Collective Communications Library (oneCCL) provides an efficient implementation of communication patterns
     used in deep learning.
 
-  * Upcoming `oneCCL Milestones`_: 2021.16 (Jun 23, 2025); 2021.17 (Oct 24, 2025)
+  * Upcoming `oneCCL Milestones`_: 2021.17 (Oct 24, 2025)
 
 Communication
 =============

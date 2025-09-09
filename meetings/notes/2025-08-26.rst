@@ -1,0 +1,131 @@
+==========================
+Open Source WG: 08/26/2025
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Deepika H V - C-DAC
+* Kuldeep Pal - C-DAC
+
+* Rod Burns - Codeplay
+
+* John Melonakos - Intel
+* Timmie Smith - Intel
+* Alison Richards - Intel
+* Nikolay Petrov - Intel
+* Mourad Gouicem - Intel
+* Vadim Pirogov - Intel
+* Andrey Fedorov - Intel
+* Michael Voss - Intel
+
+* Melissa Aranzamendez - Linux Foundation
+
+* Biagio Cosenza - University of Salerno
+
+
+Quick Recap
+===========
+
+The meeting focused on the transition of UXL Foundations' engineering infrastructure responsibilities, as Aaron can no
+longer maintain it, with John and Rod reaching out to member companies to gauge interest in taking over these
+duties. Rod presented updates on the current state of CI infrastructure and discussed the need for new hardware hosting,
+GPU testing capabilities, and GitHub organization administrators. The team reviewed project updates and discussed
+upcoming events, including a virtual dev summit and potential face-to-face meeting in Bangalore.
+
+Next Steps
+==========
+
+* Member companies to consider volunteering for GitHub organization administrator roles and email John and Megan if
+  interested.
+* Member companies to explore options for providing GPU machines for public CI infrastructure and email John and Megan
+  if able to help.
+* Codeplay team to publish documentation for CI infrastructure handover.
+* John to update the working group README with current project milestones.
+* Project leads to update their project milestone pages for John's reference.
+* John to reach out to member companies individually about transferring CI infrastructure responsibilities.
+* Project teams to consider promoting the upcoming virtual dev summit on September 17th to their networks.
+
+Summary
+=======
+
+UXL Infrastructure Transfer Discussion:   (`slides`_)
+=======================================
+
+The meeting discussed the transfer of UXL Foundations' engineering infrastructure responsibilities, as Aaron is no
+longer able to maintain it. John and Rod shared that they are reaching out to member companies to gauge their interest
+and capacity to take on this responsibility. Rod presented slides to outline the current state of the CI infrastructure
+and planned to discuss further details with the team.
+
+CI Infrastructure Transition Challenges:
+========================================
+
+Rod discussed the current state of CI (Continuous Integration) for the foundation's repositories. He explained that
+while some basic CI exists, primarily in Intel's infrastructure, the goal is to have public CI that can validate
+projects independently. Rod mentioned that projects have listed their CI requirements on a GitHub page and that a
+tracking board exists for open CI-related items. He also noted that Aaron has been the administrator for the GitHub
+organization and has been working with Codeplay to document CI setup and establish infrastructure. However, Rod revealed
+that Codeplay can no longer continue these activities, as Aaron is no longer able to act as the admin, and Robert has
+stepped back from his roles in the steering committee and as a spec editor.
+
+Hardware and CI Resource Changes:
+=================================
+
+Rod discussed the changes in available hardware and CI resources, noting that Intel's Tiber cloud and GPU Max machines
+are no longer accessible. He emphasized the need to find new ways to host hardware for various projects, secure
+workflows, and maintain a knowledge base. Rod highlighted the importance of GPU testing capabilities, which are
+currently missing, and called for contributions to add runners and hardware. The team is seeking organizations or
+individuals to help with these activities moving forward.
+
+Public CI Infrastructure Transition Plan:
+=========================================
+
+Rod discussed the transition of public CI infrastructure and the need for GitHub organization administrators. He
+emphasized the importance of finding a new owner for establishing public CI and sourcing GPU machines for testing. Rod
+also explained the roles and responsibilities of GitHub repository administrators, including managing user permissions
+and security incident reports. He called for volunteers to help with these tasks and encouraged members to apply for
+additional CI resources through the Linux Foundation or other providers.
+
+Infrastructure Changes and Workflow Impact:
+===========================================
+
+The team discussed infrastructure changes and their impact on workflows. Rod confirmed that most removed experimental
+projects were not in active use, and the only ongoing project using their infrastructure is the oneDNN project, which
+runs tests on separate machines and posts results publicly. Hamza explained that while some projects use ARM runners,
+Github now offers public ARM runners on their cobalt platform, though these are not guaranteed to have specific
+architectures and have had recent issues with Microsoft's architecture changes.
+
+Centralized Infrastructure Planning Discussion:
+===============================================
+
+The group discussed the need for a centralized infrastructure to support their projects, with John emphasizing that it
+should be customer-driven and coordinated by a central body. Hamza and Rod clarified that the long-term plan involves
+shared resources that projects can access, though the exact implementation details are still being worked out. John
+requested that other member companies volunteer to help host projects and that attendees take the initiative to
+coordinate infrastructure within their organizations.
+
+Project Updates and Backend Progress:
+=====================================
+
+The team reviewed updates across various projects. Nikolay mentioned no specific updates for his project, while John
+planned to update the working group's README and milestone information. Andrey reported that the ARM CPU backend was
+enabled for the SFT domain and an RFC was opened to support the OpenBLAS backend. Mike shared that they were working
+towards their next release with a code freeze approaching, which would include an improved tasking API. Timmie also
+reported progress, mentioning their upcoming milestone with additional range-based APIs and improved algorithm
+performance.
+
+Virtual Dev Summit Planning Discussion:
+=======================================
+
+The team discussed an upcoming virtual dev summit on September 17th, featuring a keynote from Fujitsu and other
+presenters. Alison encouraged everyone to register and share the event with their communities, noting that UXL has a
+newsletter and social media presence for outreach. John inquired about community communication methods, and Alison
+mentioned the UXL newsletter and web/social media channels. The team also briefly discussed plans for a face-to-face
+event in Bangalore in Q4, with Megan working on the details.
+
+
+
+.. _`slides`: ../presentations/2025-08-26-UXL-Working-Group-CI-Transition.pdf
