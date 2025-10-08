@@ -1,0 +1,93 @@
+==========================
+Open Source WG: 09/23/2025
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+* Hamza Butt - Arm
+
+* Rod Burns - Codeplay
+
+* Ed Tuke - Imagination Technologies Ltd.
+
+* John Melonakos - Intel
+* Mourad Gouicem - Intel
+* Michael Voss - Intel
+* Timmie Smith - Intel
+* Vasudha Badri-Paul - Intel
+* Alison Richards - Intel
+* Nikolay Petrov - Intel
+* Andrey Fedorov - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+
+Quick Recap
+===========
+
+The meeting covered the transition plan for CI ownership, including discussions about GitHub administrators, public CI
+resources, and the need for volunteer support from member organizations. Updates were shared about recent leadership
+changes at the API developer summit, with new co-chairs and a language SIG leader appointed. The team reviewed CI
+infrastructure needs across projects and discussed OFAC sanctions compliance requirements, including reporting
+procedures and access permission updates.
+
+Next Steps
+==========
+
+* John to add a paragraph about OFAC sanctions to the security and incident response process documentation.
+* Rod to fix permissions for the security repository to ensure all project owners have access.
+* Megan to share the Linux Foundation document about OFAC sanctions with the mailing list after getting permission from Dolan.
+* Megan to share links to sanction search websites with the meeting notes.
+* Rod to share more detailed CI requirements information with ARM to help them assess their support capabilities.
+* Project teams to review Rod's CI resource estimates and provide feedback on accuracy.
+* Project owners to document a process for reporting potential sanctions violations that includes forwarding to LF Legal within 24 hours.
+
+Summary
+=======
+
+Recap of Dev Summit
+===================
+
+The group also discussed the recent API developer summit, where Andy and Manuj were introduced as co-chairs, and Biagio
+Costanza took on the role of language SIG leader.
+
+CI Ownership Transition Planning:   (`slides`_)
+===============================================
+
+The meeting discussed the transfer of CI ownership, with Rod presenting slides on the transition plan and highlighting
+the need for GitHub administrators and public CI resources. Megan mentioned that ARM is waiting on requirements to
+assess their involvement, while Rod emphasized the need for volunteers from member organizations to support the
+transition.
+
+Rod presented a detailed analysis of CI resource needs across projects, estimating requirements for CPU and GPU testing.
+
+OFAC Sanctions Compliance:
+==========================
+
+Megan provided an overview of OFAC sanctions compliance requirements, explaining that while projects cannot prevent
+sanctioned individuals from contributing, they must report any concerns to LF Legal. The team discussed existing
+security reporting mechanisms and agreed to update access permissions for relevant documentation.
+
+Project Roundtable
+==================
+
+Projects were surveyed on their current public CI capabilities:
+
+* oneDNN: Public CI is in place with extended coverage using external triggers.
+  * Performance testing for AArch64, https://github.com/uxlfoundation/oneDNN/actions/workflows/performance-aarch64.yml
+    (Click on "Run Workflow" to open the drop down to see how we can customise the performance testing.)
+  * Functional testing for AArch64: https://github.com/uxlfoundation/oneDNN/actions/workflows/ci-aarch64.yml
+* oneDPL: Public CI using GitHub runners; considering Azure for extended coverage.
+* oneDAL: Public CI is in place with extended coverage using external triggers.
+* oneCCL: <not present>
+* oneMath: CPU testing publicly; exploration of extended testing.
+* oneTBB: Focus on CPU, with internal performance testing.
+
+
+
+.. _`slides`: ../presentations/2025-09-23-UXL-Working-Group-CI-Requirements.pdf
