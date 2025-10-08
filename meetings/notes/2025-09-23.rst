@@ -79,9 +79,11 @@ Project Roundtable
 Projects were surveyed on their current public CI capabilities:
 
 * oneDNN: Public CI is in place with extended coverage using external triggers.
-  * Performance testing for AArch64, https://github.com/uxlfoundation/oneDNN/actions/workflows/performance-aarch64.yml
-    (Click on "Run Workflow" to open the drop down to see how we can customise the performance testing.)
+
+  * Performance testing for AArch64, https://github.com/uxlfoundation/oneDNN/actions/workflows/performance-aarch64.yml (Click on "Run Workflow" to open the drop down to see how we can customise the performance testing.)
+
   * Functional testing for AArch64: https://github.com/uxlfoundation/oneDNN/actions/workflows/ci-aarch64.yml
+
 * oneDPL: Public CI using GitHub runners; considering Azure for extended coverage.
 * oneDAL: Public CI is in place with extended coverage using external triggers.
 * oneCCL: <not present>
