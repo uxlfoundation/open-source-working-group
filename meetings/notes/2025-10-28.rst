@@ -1,0 +1,104 @@
+==========================
+Open Source WG: 10/28/2025
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Hamza Butt - Arm
+* Megan Knight - Arm
+
+* Deepika H V - Centre for Development of Advanced Computing
+
+* Vadim Pirogov - Intel
+* Kuldeep Pal - Intel
+* Alexey Kukanov - Intel
+* Alison Richards - Intel
+* Nikolay Petrov - Intel
+* Timmie Smith - Intel
+* John Melonakos - Intel
+* Mike Voss - Intel
+* Maria Kraynyuk - Intel
+
+
+Next Steps
+==========
+
+* Megan Knight: Run the OFAC sanctions paragraph by LF Legal and get assurance that they can recommend other projects adopt this language
+* John: Publish the OFAC sanctions paragraph on the GitHub security page once approved by LF Legal
+* Megan Knight: Email Melissa to find out who is on the security email alias
+* Megan Knight and John: Create a process or procedure for routing security emails to both chairs and project security delegates, and document it
+* John: Publish the spec V1.5 mid-November with the current state as of November 7 code freeze date
+* Alison: Send the sitemap for the new website to Megan and John for review
+* John: Follow up on email thread about meeting with Chris regarding oneMath maintainer role
+* John: Connect all the dots regarding potential oneMath maintainer contributors and loop in Maria
+
+Summary
+=======
+
+Intel Namespace Access Discussion:
+==================================
+
+Hamza joined to discuss access to a specific branch of an Intel namespace project. They agreed that the Intel engineers
+would update the branch for them. The group waited for more participants to join before starting the agenda, with Megan
+inviting anyone with additional topics to add them to the chat. They reviewed a draft paragraph about OFAC sanctions for
+inclusion on their Security Procedures GitHub page.
+
+October Agenda and OFAC Review:
+===============================
+
+The team reviewed and discussed the October agenda, focusing on OFAC sanctions enforcement language. Megan agreed to
+have the LF legal team review the proposed language, with the goal of potentially encouraging other projects to adopt
+it. The team also discussed the need to clarify the security email alias recipients and potentially create a documented
+process for security responses. Finally, they confirmed the code freeze date for spec V1.5 as November 7, with John
+planning to publish the spec mid-November.
+
+Specifications Update and Website Planning:
+===========================================
+
+John expressed concerns about the state of specifications, noting that projects have not focused much on updating them,
+instead prioritizing open-source work. He mentioned that some specifications have changed, but the updates have not been
+reflected, which could lead to issues as more hardware vendors adopt the specifications. John plans to publish the
+current state of specifications and suggested conducting a gut check with components to address potential
+gaps. Meanwhile, Alison discussed wireframes for a new website, specifically an open-source page on oneapi.io, and
+planned to review the sitemap with Megan for further input.
+
+UXL Foundation Website Redesign Updates:
+========================================
+
+The team discussed updates on the UXL Foundation website redesign, which aims to better showcase the oneAPI
+specification and provide clear guidance on getting started with GitHub. Alison emphasized the importance of gathering
+content from component teams and encouraged members to contribute blog posts about events or UXL activities. John
+expressed excitement about the new website and highlighted the need for polished content from each component. The group
+also touched on the potential inclusion of the oneMCC (one Memory Component Controller) in the foundation, with plans to
+form a new Special Interest Group (SIG) and seek steering committee approval. Finally, Alison mentioned a limited UXL
+presence at an upcoming event with representatives from Google and Intel.
+
+oneDNN Release and RISC-V Support:
+==================================
+
+Vadim reported that oneDNN is preparing for the 3.10 release and is working on RISC-V support with active contributor
+involvement. He noted a challenge regarding the coordination of oneDNN updates across different platforms, with Hamza
+working on independent updates for ARM. Nikolay discussed the completion of several RFCs for deprecating and removing
+older functionality in oneDAL, which will be implemented in the next major release planned for next year.
+
+oneMath Maintainer Recruitment Drive:
+=====================================
+
+Maria reported that oneMath is preparing for release 0.9 next week but faces a challenge with a significant reduction in
+maintainers. She requested help from the community and known oneMath users to support the project and allocate more
+resources. John mentioned ongoing discussions at the steering committee level about potential new contributors and
+maintainers, including conversations with Chris and other contributors. He agreed to follow up on the email thread and
+connect the dots regarding potential new maintainers.
+
+Project Updates and Release Planning:
+=====================================
+
+The team discussed project updates for oneTBB and oneDPL, with both projects on track to complete remaining PRs for spec
+updates by November 7th. oneDPL also merged major work introducing C++ range-based parallel algorithms for SQL devices,
+and plans an open-source only release soon, with a larger release planned for March or April next year. John noted that
+each GitHub project governs itself independently and should be documented on GitHub, while Megan confirmed the
+established process for delegating maintainers.
