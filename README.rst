@@ -1,13 +1,13 @@
-================================
- UXLF Open-Source Working Group
-================================
+===================
+ UXLF Working Group
+===================
 
-The UXL Foundation Working Group defines, builds, and maintains UXLF open-source projects.
+The UXL Foundation Working Group defines, builds, and maintains UXLF specifications and open-source projects.
 
 Meetings
 ========
 
-The Working Group meets the 4th Tuesday of each month. Working group meetings track active work packages and discuss
+The Working Group meets the 2nd Friday of each month. Working group meetings track active work packages and discuss
 opening new work packages.
 
 * See `Meeting Notes`_.
@@ -29,28 +29,28 @@ Projects
   * The oneAPI Deep Neural Network Library (oneDNN) is an open-source cross-platform performance library of basic
     building blocks for deep learning applications.
 
-  * Upcoming `oneDNN Milestones`_: v3.10 (Oct 30, 2025); v3.11 (Feb 5, 2026)
+  * Upcoming `oneDNN Milestones`_
 
 * `oneMath`_:
 
   * The oneAPI Math Library (oneMath) defines a set of fundamental mathematical routines for use in high-performance
     computing and other applications.
 
-  * Upcoming `oneMath Milestones`_: v0.9 (Nov 4, 2025)
+  * Upcoming `oneMath Milestones`_
 
 * `oneDAL`_:
 
   * The oneAPI Data Analytics Library (oneDAL) is a powerful machine learning library that helps you accelerate big data
     analysis at all stages: preprocessing, transformation, analysis, modeling, validation, and decision making.
 
-  * Upcoming `oneDAL Milestones`_: Regular monthly releases
+  * Upcoming `oneDAL Milestones`_
 
 * `oneTBB`_:
 
   * The oneAPI Threading Building Blocks Library (oneTBB) is a flexible C++ library that simplifies the work of adding
     parallelism to complex applications, even if you are not a threading expert.
 
-  * Upcoming `oneTBB Milestones`_: 2022.3.0 (Oct 31, 2025); 2022.4.0 (Mar 31, 2026)
+  * Upcoming `oneTBB Milestones`_
 
 * `oneDPL`_:
 
@@ -58,14 +58,14 @@ Projects
     support data parallelism and offloading to devices, and with extensions to simplify its usage for implementing data
     parallel algorithms.
 
-  * Upcoming `oneDPL Milestones`_: 2022.10.0 (Oct 16, 2025); 2022.11.0 (Q1'2026)
+  * Upcoming `oneDPL Milestones`_
 
 * `oneCCL`_:
 
   * The oneAPI Collective Communications Library (oneCCL) provides an efficient implementation of communication patterns
     used in deep learning.
 
-  * Upcoming `oneCCL Milestones`_: 2021.17 (Oct 24, 2025)
+  * Upcoming `oneCCL Milestones`_
 
 Communication
 =============

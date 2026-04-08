@@ -1,0 +1,88 @@
+==========================
+Open Source WG: 02/13/2026
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Aniket Garade - Centre for Development of Advanced Computing
+
+* Ragesh Hajela - Fujitsu
+
+* Melissa Aranzamendez - The Linux Foundation
+
+* Maria Kraynyuk - Intel
+* John Melonakos - Intel
+* Michael Voss - Intel
+* Sri Raj Paul - Intel
+* Alexey Kukanov - Intel
+* Timmie Smith - Intel
+* Nikolay Petrov - Intel
+
+* Biagio COSENZA - University of Salerno
+
+
+Quick Recap
+===========
+
+The meeting focused on transitioning the oneAPI specification to a dynamic specification model, with John presenting the
+proposal and addressing concerns raised by Alexey about the loss of milestone markers and versioning clarity. The group
+discussed how to handle the specification updates for individual components, with Mike raising practical questions about
+hosting and versioning the documentation. Project updates were shared by Maria (oneMath), Timmie (oneDPL), Mike
+(oneTBB), and Sri (oneCCL), highlighting various technical improvements and ongoing development work. The conversation
+ended with a discussion about creating marketing content and awareness for the UXL projects, with John inviting members
+to contribute source material for creating explainer videos.
+
+Next Steps
+==========
+
+* John and Mike: Work through the process of moving oneTBB and oneDPL specifications to a new hosting location (separate
+  from the main UXL site), update links on the new UXL website, and determine version numbering, before the next oneAPI
+  release.
+* Maria/oneMath team: Discuss and decide on the handling of oneMath specification/documentation in light of the move to
+  dynamic spec, including whether to move it to GitHub or retain a separate spec, at next week's Math SIG meeting.
+* John: Send email to all projects requesting they provide source materials (e.g., existing videos, documentation) to
+  help generate explainer videos for each project for the new UXL website.
+* Nikolay: Provide updates in upcoming months regarding progress on renaming and recognition of the scikit-learn
+  plugin/extension for Wanda, including ongoing discussions with Inria and Probable.
+
+Summary
+=======
+
+Dynamic API Specification Proposal:
+===================================
+
+The meeting focused on discussing a proposal to move the oneAPI specification to a dynamic specification, with John
+presenting the options to the group. The steering committee had already expressed support for whatever decision the
+working group would make. John explained that the current option of maintaining a separate specification release was not
+feasible due to resource constraints and outdated components. The group discussed the three main options: continuing
+with the current system, releasing an incomplete specification, or moving to a dynamic specification with pointers to
+each project's documentation. Alexey was invited to share his concerns, which were noted but not detailed in the
+transcript.
+
+Dynamic Specification Transition Discussion:
+============================================
+
+The team discussed the transition from a specification-based to a dynamic specification approach for their
+components. John explained that while the steering committee preferred the term "dynamic specification" for continuity,
+it was essentially moving towards product documentation rather than a true specification. Alexey raised concerns about
+the loss of milestone markers and versioning clarity for users when moving away from fixed specification releases. The
+team agreed to host specifications separately from GitHub, allowing components like TBB and DPL to maintain their own
+version numbers independently of other projects. Maria provided updates on oneMath, including ARM backend support,
+library updates, and security improvements, noting that the specification changes would need to be reflected in the
+upcoming 2026 release.
+
+Team Progress and Collaboration Updates:
+========================================
+
+The meeting covered updates from different teams on their progress and plans for the year. Nikolay discussed the cleanup
+efforts and alignment of oneDAL specifications with the C++ standard. Timmie highlighted ongoing work on parallel range
+algorithms and random number generators. Mike talked about the team's approach to RFCs and collaborations, including
+work with Fermilab and improvements to ordered containers. Sri provided updates on CCL, including API changes to align
+with industry standards and support for various collective operations. John emphasized the need for marketing efforts to
+build awareness and adoption of UXL tools across member companies. The group discussed creating content like explainer
+videos to promote tool usage. Ragesh inquired about updates on the scikit-learn plugin for Wanda, which Nikolay
+explained is still in early stages of collaboration with external maintainers.
