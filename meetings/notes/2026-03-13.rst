@@ -1,0 +1,94 @@
+==========================
+Open Source WG: 03/13/2026
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+
+* Himanshu Chaudhary - C-DAC
+* Aniket Garade - C-DAC
+
+* Alexey Kukanov - Intel
+* Sri Raj Paul - Intel
+* Vadim Pirogov - Intel
+* John Melonakos - Intel
+* Maria Kraynyuk - Intel
+* Timmie Smith - Intel
+* Michael Voss - Intel
+* Dmitry Zarukin - Intel
+* Nikolay Petrov - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+* Verena Beckham - Qualcomm
+
+Quick Recap
+===========
+
+The meeting focused on updates from various UXL Foundation projects and discussions about content creation and
+distribution strategies. John demonstrated a new AI video generation tool using Notebook LM, though licensing and
+sharing restrictions were identified as potential issues. The team reviewed progress on the new website combining
+uxlfoundation.org and oneapi.io, with plans to hire additional help for content porting. Project updates were shared
+across multiple libraries including oneDNN (discussing PyTorch release cadence changes and new API extensions), oneDPL
+(planning performance updates and moving a random number generator to stable release), oneTBB (announcing code freeze
+and transitioning to quarterly releases), and oneCCL (preparing support for new APIs). A significant discussion emerged
+around packaging and distribution strategies across different platforms and vendors, with participants debating the
+merits of centralized versus distributed publishing approaches.
+
+Next Steps
+==========
+
+* John: Spin up and share the Notebook LM videos from a Gmail account to enable open sharing, and review the licensing
+  terms before wider distribution.
+* John: Pick one library and create a transcript to push towards a higher quality video output, and assess the effort to
+  repurpose old content for UXL Foundation.
+* Melissa: Follow up with John and Allison to confirm requirements and move forward with a purchase order (PO) for the
+  website content vendor.
+* John: Share the new specification pages for the website with the group for feedback once completed.
+* Megan: Add to the next meeting agenda an item to create/maintain a top-level list of where each project publishes
+  their artifacts/packages, for future reference and standardization.
+* Himanshu (Anike from CDAC): Complete the openBLAS integration in oneMath library (Level 1 and Level 2) by end of March
+  and update the group after completion.
+* Mike: Define features and milestones for the next oneTBB release within the next month.
+* Timmie: Continue work on parallel range algorithms and performance improvements for oneDPL, aligned with C++26, for
+  upcoming releases.
+
+Summary
+=======
+
+AI Video Generation Demonstration:
+==================================
+
+John demonstrated the use of Notebook LM to generate AI-powered videos about oneDNN, showing several iterations of
+prompts and resulting content. The team discussed potential legal considerations around using and sharing the generated
+content, with Vadim noting that commercial use requires a paid Google Workspace license. Alexey suggested a more
+structured approach to content generation, recommending separate iterative development of the narrative text and visuals
+to achieve better results while maintaining AI-assisted rather than fully AI-generated quality.
+
+UXL Foundation Website Development Update:
+==========================================
+
+John demonstrated a content generation tool that can create infographics and videos, but noted limitations in
+controlling the specific output. The team discussed progress on the new UXL Foundation website, which combines
+uxlfoundation.org and oneapi.io into a single platform. John indicated he would handle the specification pages but would
+need to hire additional help for other content areas like events and blog posts, with Melissa planning to proceed with a
+purchase order for vendors. The team aims to launch the new website in the first quarter, with John and others trained
+to make future edits via email requests.
+
+UXL Project Release Strategy Updates:
+=====================================
+
+The meeting covered updates from various UXL projects and discussed distribution strategies. Vadim reported that
+PyTorch's release cadence had changed from four to six releases per year, creating misalignment with the current
+quarterly oneDNN release schedule. Mike announced that oneTBB is moving to four releases per year with defined seasonal
+milestones, while Timmie shared that oneDPL is also adopting this release schedule with upcoming performance
+improvements. The main discussion centered on distribution challenges, with Nikolay raising questions about how to
+handle non-Intel platform distributions and package publishing across different vendors. The group agreed that while
+each library should make its own distribution decisions, there should be coordination on QA and testing processes to
+ensure compatibility across platforms. John suggested addressing distribution demands on a case-by-case basis, and Megan
+proposed creating a top-level view of where projects publish to help standardize future decisions.
