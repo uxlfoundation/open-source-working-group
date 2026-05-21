@@ -1,0 +1,119 @@
+==========================
+Open Source WG: 05/18/2026
+==========================
+
+Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
+a member of the Working Group you can access this through your account.
+
+Attendees
+=========
+
+* Megan Knight - Arm
+
+* Deepika H V - C-DAC
+* Laxmikant Botkewar - C-DAC
+
+* Ragesh Hajela - Fujitsu
+
+* Alexey Kukanov - Intel
+* John Melonakos - Intel
+* Maria Kraynyuk - Intel
+* Michael Voss - Intel
+* Nikolay Petrov - Intel
+
+* Melissa Aranzamendez - The Linux Foundation
+
+* Biagio Cosenza - University of Salerno
+
+Quick Recap
+===========
+
+The meeting focused on updates and discussions across multiple oneAPI library projects, including oneTBB, oneMath,
+oneDPL, and oneDAL. John and Mike discussed the transition of oneTBB's specification into its documentation, with plans
+to eventually integrate it fully into the developer reference. Biagio presented the Linux Foundation education
+initiative, proposing to start with four mini-courses for the projects and seeking subject matter experts for each
+course. The team reviewed current development activities, with Mike reporting on oneTBB's next release including C++
+modules support and NUMA extensions, while Alexey mentioned oneDPL's focus on closing implementation gaps for parallel
+differential algorithms and deprecating FPGA support. Maria provided updates on oneMath's plans to update the oneMKL
+backend and discussed the potential removal of SYCL buffer interface, which received mixed feedback from the
+team. Biagio concluded by sharing discussions from the SYCL Working Group regarding the deprecation of buffer interface
+and specialization constants, noting that buffer performance is generally lower than USM and that the buffer interface
+has many corner cases that need handling.
+
+Next Steps
+==========
+
+* John: Update the oneMath website links to point to the new documentation/specification structure, similar to what was
+  done for oneTBB.
+* John: Send out a follow-up email after the meeting to collect source materials (slide decks, data sheets, marketing
+  materials) for creating explainer videos for each library.
+* All Project Leads: Respond to John's email with the most fresh and relevant materials for their respective libraries.
+* All Project Leads: Assign a Subject Matter Expert (SME) for each of the 4 mini-courses to be developed with the Linux
+  Foundation Education team.
+* Biagio: Share the Linux Foundation Education slides with the meeting attendees.
+* Biagio: Create and distribute a form to gather feedback from projects on the proposed SYCL changes (buffer interface,
+  specialization constants, etc.).
+* John: Work with Melissa to schedule the next quarterly
+
+oneMath Specification Discussion Meeting:
+=========================================
+
+John and Biagio discussed the oneMath specification while waiting for other participants to join the meeting. John
+mentioned that he had joined a Math SIG the previous week to discuss this specification, noting that it faced similar
+challenges as oneTBB and oneDPL.
+
+Updated Specification Implementation Plans:
+===========================================
+
+Mike announced that they published an updated specification on GitHub, eliminating version numbers and embracing a
+dynamic specification approach. The team discussed plans to integrate the specification into their documentation over
+time, with most API content moving to the reference section while preview features remain in the reference section. John
+noted that oneMath needs to implement a similar approach, and they discussed updating website links to point to the new
+integrated specification and documentation structure.
+
+oneMath Documentation and Video Plans:
+======================================
+
+The team discussed moving oneMath specifications back into their documentation, with John explaining that while other
+components like oneDNN and oneDAL had dropped specification maintenance, oneMath still needs its architectural content
+which isn't duplicated elsewhere. John clarified that Nick from ARM is now the lead maintainer of oneMath. The meeting
+then shifted to plans for creating explainer videos for each library, with John outlining a process where he would
+collect current slide decks and marketing materials from projects, create initial video drafts and transcripts, then
+return them to projects for review and approval before recording and publishing the final videos on the new website.
+
+Linux Foundation Educational Platform Planning:  (`LF Education Slides`_)
+===============================================
+
+The team discussed implementing a Linux Foundation educational platform starting with four mini-courses, with Biagio
+explaining that the initial phase would involve free content with no budget required from the project. The plan involves
+identifying subject matter experts (SMEs) for each course, with Mike Walsh suggested as a potential SME, and the content
+would start as free microlearning videos before potentially expanding to paid certifications in the future. The team
+agreed to start with mini-courses on 6 projects and decided to provide feedback to Kara about the course strategy at the
+next open source meeting.
+
+Library Projects Development Updates:
+=====================================
+
+The team provided updates on their respective library projects. Mike reported that oneTBB is working on its next release
+with code freeze approaching, including support for C++ modules and NUMA extensions, with plans for four releases per
+year featuring major releases in spring and fall. Alexey discussed oneDPL's progress on closing implementation for
+parallel differential algorithms accepted for C++26, with plans to propose a cleaner version through the RFC process
+within the next year, including deprecating FPGA support. Maria shared that the oneMKL backend team plans to update
+oneMKL following a recent public release and is discussing making the SYCL buffer optional, seeking feedback on known
+use cases for this feature.
+
+SYCL Buffer Accessory Discussio: (`SYCL Slides`_)
+=================================
+
+The team discussed potential changes to SYCL, including the removal of buffer accessory in favor of USM, which would
+reduce binary size and address performance issues. Biagio presented feedback from the SYCL Working Group regarding
+several proposed changes, including buffer accessory deprecation, adaptive CPP support, and specialization
+constants. The group expressed mixed opinions about deprecating buffer accessory, with some noting implementation
+challenges and performance concerns, while others supported keeping it as an optional feature.
+
+The conversation ended with a decision to move to quarterly meetings going forward, with special meetings as needed
+based on feedback from participants.
+
+
+.. _`SYCL Slides`: ../presentations/2026-05-18-IWOCL_2026__SYCL__An_Update_from_the_Khronos_Working_Group.pdf
+.. _`LF Education Slides`: ../presentations/2026-05-18-LF_Education_Development_Process.pdf
