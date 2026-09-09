@@ -4,31 +4,34 @@ on:
   pull_request_target:
     types: [labeled, closed]
 
+permissions:
+  contents: read
+
 env:
-  SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
   channel: "wg-open-source"
-  # for testing
-  # channel: "rc-test"
 
 jobs:
   rfc:
     name: RFC Notification
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     # Trigger when labeling a PR with "RFC"
     if: |
       github.event.action == 'labeled' &&
-      contains(toJson(github.event.pull_request.labels.*.name), '"RFC"')
+      github.event.label.name == 'RFC'
     steps: 
     - name: Notify Slack
-      uses: slackapi/slack-github-action@v1.25.0
+      uses: slackapi/slack-github-action@6c661ce58804a1a20f6dc5fbee7f0381b469e001 # v1.25.0
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
-        # channel-id: "wg-open-source"
         channel-id: ${{ env.channel }}
         slack-message: "${{ github.actor }} posted a RFC: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"
 
   meeting-notes:
     name: Meeting Notes Notification
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     # Trigger when closing a PR with "meeting notes" label
     if: |
       github.event.action == 'closed' &&
@@ -36,7 +39,9 @@ jobs:
       contains(toJson(github.event.pull_request.labels.*.name), '"meeting notes"')
     steps: 
     - name: Notify Slack
-      uses: slackapi/slack-github-action@v1.25.0
+      uses: slackapi/slack-github-action@6c661ce58804a1a20f6dc5fbee7f0381b469e001 # v1.25.0
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
       with:
         channel-id: ${{ env.channel }}
         slack-message: "${{ github.actor }} posted meeting notes: ${{ github.event.pull_request.title }}. URL: ${{ github.event.pull_request.html_url }}"

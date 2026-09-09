@@ -3,6 +3,12 @@
 UXL Foundation CI Infrastructure
 ================================
 
+Documentation maintenance review: 2026-09-08. This date does not certify runner
+availability. Project representatives should add a last-verified date and public
+workflow/log links when updating their section. Entries marked unverified need
+confirmation; listed software versions and shared capacity are reported values,
+not current availability guarantees.
+
 The table outlines the existing shared public CI available to UXL Foundation projects.
 
 | Owner | Type | OS | Number | Active? | Notes |
@@ -11,7 +17,6 @@ The table outlines the existing shared public CI available to UXL Foundation pro
 | GitHub | CPU AArch64 | Linux, Mac | Up to 500 concurrent | Yes | |
 
 The following sections gather together, for each UXL Foundation project, the existing public CI set up and the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
-This document gathers together for each UXL Foundation project the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
 Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
 
 This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
@@ -35,7 +40,7 @@ Support contacts for CI:
 | CPU x64     | Linux, Windows, macOS | 2            | Yes     | CI x64 PR check     |
 | CPU AArch64 | Linux, macOS          | 2            | Yes     | CI AArch64 PR check |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 Basic required CI coverage includes reasonable OS coverage for all supported
 platforms.
@@ -92,7 +97,7 @@ when a new commit is made to the source branch of the PR.
 | GitHub | CPU x86 | Windows | Via CI Testing Workflow view |
 | GitHub | AArch64 | Mac OS | Via CI Testing Workflow view |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System |
 | --- | --- | --- | --- |
@@ -154,7 +159,7 @@ oneDAL
 | Platform | Type | OS | Number | Active? | Comments |
 | --- | --- | --- | --- | --- | --- |
 | Github | CPU AArch64 | Linux | 2 | Yes | 2 Pipelines on Physical Arm systems Github hosted and Arm-Hosted. [ci-aarch64.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci-aarch64.yml)  |
-| Github | Intel GPU (ICX compiler) | Linux | 1 | Yes* | Pipeline configured for GPU validation on uxlfoundation GPU runners, currently disabled due to issues with Tiber Cloud. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
+| Github | Intel GPU (ICX compiler) | Linux | 1 | Disabled (as documented) | Pipeline configured for GPU validation on uxlfoundation GPU runners, currently disabled due to issues with Tiber Cloud. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
 | Github | ABI conformance | Linux | 1 | Yes | ABI compatibility runs that compare PR to the main. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
 | Github | Docker validation | Linux | 1 | Yes | Validation of oneDAL development env docker file. [docker-validation-ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docker-validation-ci.yml)  |
 | Github | CPU Nightly | Linux, Windows | 2 | Yes | Nightly builds and broader validation for oneDAL. [nightly-build.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/nightly-build.yml)  |
@@ -228,9 +233,9 @@ Support contact for CI:
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+| Not documented | Not documented | Not documented | Not documented | Unverified | Project representative to provide workflow/log links |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System |
 | --- | --- | --- | --- |
@@ -292,7 +297,7 @@ Support contact for CI: Konstantin Boyarinov
 | Windows-2022 | CPU x64 | Windows | Yes | CI PR check |
 | Windows-2019 | CPU x64 | Windows | Yes | CI PR check |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 | Target        | OS                    |
 | ------------- | --------------------- |
@@ -312,9 +317,9 @@ Support contact for CI:
 
 | Owner | Type | OS | Number | Active? | How to access logs |
 | --- | --- | --- | --- | --- | --- |
-| ? | ? | ? | ? | ? | ? |
+| Not documented | Not documented | Not documented | Not documented | Unverified | Project representative to provide workflow/log links |
 
-*Required Public CI Infrastruture Needed To Confidently Accept Contributions*
+*Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
 | Instruction set architecture | Hardware Vendor | Processor Type | Operating System |
 | --- | --- | --- | --- |
