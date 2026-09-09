@@ -1,107 +1,102 @@
-===================
- UXLF Working Group
-===================
+|uxl-logo| UXL Foundation Working Group
+============================================================
 
-The UXL Foundation Working Group defines, builds, and maintains UXLF specifications and open-source projects.
+**Build the shared foundations for accelerated computing.**
 
-Meetings
-========
+The Working Group brings project maintainers and contributors together to advance
+UXL specifications, open-source libraries and shared infrastructure. Individual
+projects retain their own governance and technical direction.
 
-The Working Group meets quarterly to track active work packages and discuss new
-work. See the `Meeting Calendar`_ for dates and times. Additional meetings may be
-arranged as needed.
+UXL maintains a `dynamic oneAPI specification <https://uxlfoundation.org/specifications/oneapi/technical-overview/>`__.
+Each project's published documentation defines its current APIs and requirements.
 
-* See `Meeting Notes`_.
-* Recordings of the meetings are available in the Linux Foundation https://openprofile.dev/ profile. If you are a member
-  of the Working Group, you can access this through your account.
+`Latest meeting`_ | `Meeting calendar`_ | `Contribute`_ | `Project directory`_
 
-Active Work Packages
-====================
+Latest discussion
+-----------------
 
-* `Open-Source Project Best Practices`_
-* `Security Processes and Practices`_
-* `Public CI Infrastructure`_
+**August 19, 2026 — quarterly meeting**
 
-Projects
-========
+Project introductions and AMD participation; AI agent skills and evaluation;
+learning materials and the foundation website. Follow-up work includes project
+feedback on the skills framework, task scoring and hardware-specific evaluations.
 
-* `oneDNN`_:
+`Read the minutes and action items <meetings/notes/2026-08-19.rst>`_ or
+`browse meetings by topic <meetings/notes/README.rst>`_.
 
-  * The oneAPI Deep Neural Network Library (oneDNN) is an open-source cross-platform performance library of basic
-    building blocks for deep learning applications.
+Work together
+-------------
 
-  * Upcoming `oneDNN Milestones`_
+.. list-table::
+   :header-rows: 1
+   :widths: 30 45 25
 
-* `oneMath`_:
+   * - Area
+     - Ways to contribute
+     - Start here
+   * - AI agent skills
+     - Review library guidance, suggest evaluation tasks and share project feedback.
+     - `Skills repository`_
+   * - Public CI
+     - Document testing needs and discuss support for additional hardware.
+     - `CI requirements`_
+   * - Security practices
+     - Review project security improvements and shared processes.
+     - `Security work`_
+   * - Project health
+     - Improve contribution paths, documentation and open development practices.
+     - `Best practices`_
 
-  * The oneAPI Math Library (oneMath) defines a set of fundamental mathematical routines for use in high-performance
-    computing and other applications.
+The `Project directory`_ links to the six core libraries: oneDNN, oneDAL, oneMath,
+oneTBB, oneDPL and oneCCL, with a short description and documentation for each.
 
-  * Upcoming `oneMath Milestones`_
+Join a meeting
+--------------
 
-* `oneDAL`_:
+Meetings are **quarterly**, with additional sessions as needed. Use the
+`Meeting calendar`_ for dates and times and the `Mailing list`_ for invitations
+and discussion. Working Group members can access recordings through their
+`openprofile account`_.
 
-  * The oneAPI Data Analytics Library (oneDAL) is a powerful machine learning library that helps you accelerate big data
-    analysis at all stages: preprocessing, transformation, analysis, modeling, validation, and decision making.
+New participants are welcome to introduce their project or use case and suggest
+topics through the mailing list or the ``wg-open-source`` channel on `UXL Slack`_.
 
-  * `oneDAL Releases`_
+Bring a contribution
+--------------------
 
-* `oneTBB`_:
+* **A shared task or question:** check `Open issues`_ and discuss scope with the
+  relevant maintainers before starting.
+* **A significant cross-project proposal:** follow the `RFC process`_.
+* **A library bug or feature:** use that library's issue tracker in the
+  `Project directory`_.
+* **Meeting notes or documentation:** use the templates and review guidance in
+  `Contribute`_.
 
-  * The oneAPI Threading Building Blocks Library (oneTBB) is a flexible C++ library that simplifies the work of adding
-    parallelism to complex applications, even if you are not a threading expert.
+About this group
+----------------
 
-  * Upcoming `oneTBB Milestones`_
-
-* `oneDPL`_:
-
-  * The oneAPI DPC++ Library (oneDPL) provides the functionality specified in the C++ standard, with extensions to
-    support data parallelism and offloading to devices, and with extensions to simplify its usage for implementing data
-    parallel algorithms.
-
-  * Upcoming `oneDPL Milestones`_
-
-* `oneCCL`_:
-
-  * The oneAPI Collective Communications Library (oneCCL) provides an efficient implementation of communication patterns
-    used in deep learning.
-
-  * Upcoming `oneCCL Milestones`_
-
-Contributing
-============
-
-See `Contribution guidance <CONTRIBUTING.md>`_ for issue routing, meeting notes
-and review expectations, and `RFCs <rfc/README.rst>`_ for proposals.
-The repository retains its open-source-working-group URL; the Working Group
-coordinates both specifications and open-source projects.
-The former `Specification Working Group <https://github.com/uxlfoundation/spec-working-group>`_
-repository is archived for historical reference.
-
-Communication
-=============
-
-* `Mailing List`_: Receive calendar invites and mailing list emails.
-* `Slack`_: Join the "wg-open-source" channel.
+This repository coordinates both specification and implementation work within the
+`UXL Foundation`_. The former `Specification Working Group archive`_ preserves
+earlier discussions and RFCs. Current proposals belong here or in the relevant
+project repository.
 
 
+.. _`Latest meeting`: meetings/notes/2026-08-19.rst
+.. _`Meeting calendar`: https://lists.uxlfoundation.org/g/open-source-wg/calendar
+.. _`Contribute`: CONTRIBUTING.md
+.. _`Project directory`: https://github.com/uxlfoundation/foundation/blob/main/PROJECTS.md
+.. _`Skills repository`: https://github.com/uxlfoundation/skills
+.. _`CI requirements`: project-infrastructure/project-ci-documentation.md
+.. _`Security work`: https://github.com/orgs/uxlfoundation/projects/3?pane=info
+.. _`Best practices`: https://github.com/orgs/uxlfoundation/projects/5?pane=info
+.. _`Open issues`: https://github.com/uxlfoundation/open-source-working-group/issues
+.. _`RFC process`: rfc/README.rst
+.. _`Mailing list`: https://lists.uxlfoundation.org/g/open-source-wg
+.. _`openprofile account`: https://openprofile.dev/
+.. _`UXL Slack`: https://slack-invite.uxlfoundation.org/
+.. _`UXL Foundation`: https://github.com/uxlfoundation/foundation
+.. _`Specification Working Group archive`: https://github.com/uxlfoundation/spec-working-group
 
-.. _`Meeting Notes`: meetings/notes/README.rst
-.. _`Meeting Calendar`: https://lists.uxlfoundation.org/g/open-source-wg/calendar
-.. _`Open-Source Project Best Practices`: https://github.com/orgs/uxlfoundation/projects/5?pane=info
-.. _`Security Processes and Practices`: https://github.com/orgs/uxlfoundation/projects/3?pane=info
-.. _`Public CI Infrastructure`: https://github.com/orgs/uxlfoundation/projects/10/views/1?pane=info
-.. _`oneDNN`: https://github.com/uxlfoundation/oneDNN
-.. _`oneDNN Milestones`: https://github.com/uxlfoundation/oneDNN/milestones
-.. _`oneMath`: https://github.com/uxlfoundation/oneMath
-.. _`oneMath Milestones`: https://github.com/uxlfoundation/oneMath/milestones
-.. _`oneDAL`: https://github.com/uxlfoundation/oneDAL
-.. _`oneDAL Releases`: https://github.com/uxlfoundation/oneDAL/releases
-.. _`oneTBB`: https://github.com/uxlfoundation/oneTBB
-.. _`oneTBB Milestones`: https://github.com/uxlfoundation/oneTBB/milestones
-.. _`oneDPL`: https://github.com/uxlfoundation/oneDPL
-.. _`oneDPL Milestones`: https://github.com/uxlfoundation/oneDPL/milestones
-.. _`oneCCL`: https://github.com/uxlfoundation/oneCCL
-.. _`oneCCL Milestones`: https://github.com/uxlfoundation/oneCCL/milestones
-.. _`Mailing List`: https://lists.uxlfoundation.org/g/open-source-wg
-.. _`Slack`: https://join.slack.com/t/uxlfoundation/shared_invite/zt-2b1tm2frp-GZY~JBngtXo5xRrcgFrV6Q
+.. |uxl-logo| image:: https://raw.githubusercontent.com/uxlfoundation/artwork/e98f1a7a3d305c582d02c5f532e41487b710d470/foundation/uxl-foundation-icon-color.png
+   :alt:
+   :width: 36
