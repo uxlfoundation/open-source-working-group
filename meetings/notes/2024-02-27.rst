@@ -72,7 +72,7 @@ AR: Review checklist for your project and consider addressing issues.
 
   * Discuss in `slack channel`_ or raise in next meeting
 
-.. _`slack channel`: : https://uxlfoundation.slack.com/archives/C06E1NBV2ER
+.. _`slack channel`: https://uxlfoundation.slack.com/archives/C06E1NBV2ER
 .. _`Red Hat open source checklist`: https://www.redhat.com/en/resources/open-source-project-health-checklist
 .. _`Summary spreadsheet`: https://docs.google.com/spreadsheets/d/1UgOGCpskfu1LotfEh1MPwuV-GGdzB2FQQiw0iOd0Cb0
 .. _`oneMKL report`: https://docs.google.com/document/d/1F_WtqzdJuvEKgmBJR9P8nEjmalYLtxmS
@@ -80,4 +80,4 @@ AR: Review checklist for your project and consider addressing issues.
 .. _`oneDNN report`: https://docs.google.com/document/d/1e9vHtVcqWvusIs_U2mP1B8L5DtO5Qb8b
 .. _`oneCCL report`: https://docs.google.com/document/d/1NNK_BrBb0Rz_kcDDprfyuZPyktqePDtY
 .. _`oneDAL report`: https://docs.google.com/document/d/1QRJVhcUv_JKSQmqlb43NkL37n5rliKw4
-.. _`Roman's slides`: ../presentations/security-2024-02.pdf
+.. _`Roman's slides`: ../presentations/2024-02-27-security.pdf

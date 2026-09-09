@@ -2,6 +2,14 @@
 Moving Projects to UXL GitHub Organization
 ==========================================
 
+.. note::
+
+   Historical proposal, retained without rewriting its original recommendations.
+   The original six library repositories now reside in ``uxlfoundation``.
+   Consult the Working Group README for current links. A formal acceptance or
+   supersession reference is not recorded here; maintainers should add one when
+   verified.
+
 Moving UXL projects from `oneapi-src`_ to an organization owned
 by UXL.
 
