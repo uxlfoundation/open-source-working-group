@@ -1,0 +1,170 @@
+==========================
+Open Source WG: 08/19/2026
+==========================
+
+Quarterly meeting: August 19, 2026, 12:00-1:00 p.m. Eastern Time.
+
+Recording: Working Group members can access meeting recordings through their
+Linux Foundation `openprofile account`_.
+
+Attendees
+=========
+
+* Kurtis Bowman - AMD
+* Prakash Raghavendra - AMD
+
+* Andrew Wafaa - Arm
+
+* Himanshu Chaudhary - C-DAC
+* Kuldeep Pal - C-DAC
+
+* Ragesh Hajela - Fujitsu
+
+* Patrik Masson - Imagination Technologies
+
+* Alexey Kukanov - Intel
+* Denis Samoilov - Intel
+* John Melonakos - Intel
+* Maria Kraynyuk - Intel
+* Michael Voss - Intel
+* Nikolay Petrov - Intel
+* Polina Meltsin - Intel
+* Timmie Smith - Intel
+* Vadim Pirogov - Intel
+
+* Andrey Alekseenko - KTH Royal Institute of Technology
+
+* Biagio Cosenza - University of Salerno
+
+* Verena Beckham - Individual
+
+Quick Recap
+===========
+
+John welcomed AMD representatives to their first Working Group meeting. Project
+representatives introduced oneDNN, oneDAL, oneMath, oneTBB and oneDPL; a separate
+oneCCL discussion was planned. The main cross-project topic was the
+`UXL skills repository`_: reusable guidance and evaluations to help AI coding
+agents use UXL libraries correctly and efficiently. Project teams expressed
+interest and were asked to review the approach. The group also discussed
+learning materials, the foundation website and its quarterly meeting cadence.
+
+Next Steps
+==========
+
+* **John Melonakos:** Finish creating project-specific placeholder tasks in the
+  skills repository and send each project instructions for reviewing them.
+* **John Melonakos:** Develop guidance for scoring new evaluation tasks.
+* **John Melonakos:** Continue work on self-hosted runners for hardware-specific
+  skills evaluations.
+* **John Melonakos:** Share the skills repository and review considerations with
+  Polina Meltsin and her team.
+* **Biagio Cosenza:** Follow up with project contacts on learning materials.
+* **Nikolay Petrov:** Continue collaborating with the `scikit-learn`_ community
+  on integrating oneDAL as a backend.
+* **Maria Kraynyuk:** Review open oneMath pull requests and consider additional
+  project maintainers.
+* **Project maintainers:** Review the skills repository and evaluation framework
+  when shared, and provide feedback on their usefulness for each project.
+
+Summary
+========
+
+Project Introductions
+---------------------
+
+John outlined the foundation's collaboration model: member companies work across
+projects, while each project retains its own governance and technical authority.
+
+oneDNN: Deep Learning Primitives
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Vadim Pirogov introduced `oneDNN`_, which accelerates operations such as matrix
+multiplication and convolution used by AI frameworks, including PyTorch and
+TensorFlow. He described its use across CPU architectures and was identified as
+the oneDNN contact for Biagio's learning-materials effort.
+
+oneDAL: Machine Learning and Data Analytics
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nikolay Petrov introduced `oneDAL`_ and its optimized machine-learning algorithms,
+including regression and K-means, with CPU and GPU support. Discussion covered
+collaboration with the scikit-learn community and using oneDAL as a backend.
+
+oneMath: Portable Math Interfaces
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Maria Kraynyuk described `oneMath`_ as a lightweight layer providing SYCL
+interfaces to multiple math-library backends. These include Intel oneMKL,
+NVIDIA's CUDA math libraries, Arm Performance Libraries and AMD's ROCm math
+libraries. The project builds on optimized backend implementations rather than
+implementing every operation itself. The group discussed contributions and
+opportunities to broaden the maintainer team.
+
+oneTBB: CPU Parallel Programming
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Michael Voss introduced `oneTBB`_, highlighting its work-stealing task scheduler,
+parallel algorithms, flow graphs, concurrent containers and scalable memory
+allocators. He noted the approaching twentieth anniversary of its first release
+in 2006. Community participation is welcome through issues, RFCs and pull
+requests.
+
+oneDPL: Parallel C++ Algorithms
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Timmie Smith introduced `oneDPL`_, which provides C++ standard-library algorithms
+with SYCL support for GPUs and OpenMP or oneTBB backends for CPUs. Topics included
+C++26 parallel range algorithms, dynamic device selection and kernel templates
+for operations such as sorting and scanning. Timmie invited feedback on
+experimental features, new examples and proposals for additional algorithms.
+
+oneCCL: Follow-up Discussion
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+John introduced Polina Meltsin and noted that a separate `oneCCL`_ discussion
+would follow as the new team became familiar with the foundation. A detailed
+project presentation was deferred.
+
+AI Agent Skills and Evaluation
+------------------------------
+
+John presented the `UXL skills repository`_ and a Harbor-based evaluation
+framework. The goal is to measure whether library-specific guidance helps coding
+agents produce better results. Evaluations compare runs without skills, with the
+current skills and with proposed changes before those changes are promoted.
+
+At the time of the meeting, John reported placeholder tasks for 38 of 50 planned
+tasks. Work also included a dashboard, quality gates and normalized scoring.
+Hardware-specific testing would require self-hosted runners, alongside the goal
+of keeping reusable guidance portable across hardware.
+
+John proposed a shared repository as an incubator, with individual projects
+maintaining their own skills as the authoritative versions. Most projects
+reported that they had not yet developed their own skills and expressed interest
+in participating. Project feedback was requested on the framework and the
+proposed ownership model.
+
+Learning Materials, Website and Standards
+-----------------------------------------
+
+Biagio is coordinating learning materials with project contacts. John showed the
+`UXL Foundation website`_, including concise library overviews and documentation
+links, and discussed creating explainer videos for individual libraries.
+
+The group also discussed UXL's collaboration with the Khronos Group, particularly
+the `SYCL`_ Working Group and SYCL's role in GPU programming across UXL libraries.
+The meeting closed with a brief discussion of the quarterly schedule.
+
+
+.. _`openprofile account`: https://openprofile.dev/
+.. _`oneDNN`: https://github.com/uxlfoundation/oneDNN
+.. _`oneDAL`: https://github.com/uxlfoundation/oneDAL
+.. _`oneMath`: https://github.com/uxlfoundation/oneMath
+.. _`oneTBB`: https://github.com/uxlfoundation/oneTBB
+.. _`oneDPL`: https://github.com/uxlfoundation/oneDPL
+.. _`oneCCL`: https://github.com/uxlfoundation/oneCCL
+.. _`UXL skills repository`: https://github.com/uxlfoundation/skills
+.. _`scikit-learn`: https://scikit-learn.org/
+.. _`UXL Foundation website`: https://uxlfoundation.org/
+.. _`SYCL`: https://www.khronos.org/sycl/

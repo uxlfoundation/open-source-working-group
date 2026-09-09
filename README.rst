@@ -7,8 +7,9 @@ The UXL Foundation Working Group defines, builds, and maintains UXLF specificati
 Meetings
 ========
 
-The Working Group meets the 2nd Friday of each month. Working group meetings track active work packages and discuss
-opening new work packages.
+The Working Group meets quarterly to track active work packages and discuss new
+work. See the `Meeting Calendar`_ for dates and times. Additional meetings may be
+arranged as needed.
 
 * See `Meeting Notes`_.
 * Recordings of the meetings are available in the Linux Foundation https://openprofile.dev/ profile. If you are a member
@@ -86,6 +87,7 @@ Communication
 
 
 .. _`Meeting Notes`: meetings/notes/README.rst
+.. _`Meeting Calendar`: https://lists.uxlfoundation.org/g/open-source-wg/calendar
 .. _`Open-Source Project Best Practices`: https://github.com/orgs/uxlfoundation/projects/5?pane=info
 .. _`Security Processes and Practices`: https://github.com/orgs/uxlfoundation/projects/3?pane=info
 .. _`Public CI Infrastructure`: https://github.com/orgs/uxlfoundation/projects/10/views/1?pane=info
