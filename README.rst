@@ -39,7 +39,7 @@ Work together
      - `Skills repository`_
    * - Public CI
      - Document testing needs and discuss support for additional hardware.
-     - `CI requirements`_
+     - `CI setup guide <project-infrastructure/public-ci-guide.md>`_ and `CI requirements`_
    * - Security practices
      - Review project security improvements and shared processes.
      - `Security work`_
@@ -63,6 +63,10 @@ topics through the mailing list or the ``wg-open-source`` channel on `UXL Slack`
 
 Bring a contribution
 --------------------
+
+Pending discussion: `oneMath domain-split decision brief
+<meetings/topics/math-domain-split.md>`_. The twelve implementation tasks remain
+open pending a new Working Group decision.
 
 * **A shared task or question:** check `Open issues`_ and discuss scope with the
   relevant maintainers before starting.

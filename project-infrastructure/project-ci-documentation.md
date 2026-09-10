@@ -1,5 +1,9 @@
 # Project Infrastructure for CI and CD
 
+For setup and deployment recommendations, start with the
+[public CI guide](public-ci-guide.md). This inventory tracks project-specific
+requirements and evidence.
+
 Documentation maintenance review: 2026-09-09. This date does not certify runner
 availability. Project representatives should add a last-verified date and public
 workflow/log links when updating their section. Entries marked unverified need
