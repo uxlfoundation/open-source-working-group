@@ -1,25 +1,40 @@
 # Project Infrastructure for CI and CD
 
-UXL Foundation CI Infrastructure
-================================
-
-Documentation maintenance review: 2026-09-08. This date does not certify runner
+Documentation maintenance review: 2026-09-09. This date does not certify runner
 availability. Project representatives should add a last-verified date and public
 workflow/log links when updating their section. Entries marked unverified need
 confirmation; listed software versions and shared capacity are reported values,
 not current availability guarantees.
 
-The table outlines the existing shared public CI available to UXL Foundation projects.
+## Reading and updating this inventory
 
-| Owner | Type | OS | Number | Active? | Notes |
+This document records reported requirements and previous infrastructure descriptions.
+It is not a live inventory of provisioned runners. Shared capacity and per-project
+availability below remain unverified until an owner supplies current evidence.
+
+When updating a project section, include:
+
+- Verification date and agreed support owner.
+- A public workflow and recent run showing the tested platform.
+- Whether capacity is shared or dedicated, and how contributors request access.
+- Remaining requirements separately from resources already available.
+
+The [August 2025 infrastructure discussion](../meetings/notes/2025-08-26.rst)
+records changes to hardware access and support. Earlier runner catalogues should
+not be used as current availability guarantees.
+
+## Previously reported shared capacity
+
+| Owner | Type | OS | Number | Verified availability | Notes |
 | --- | --- | --- | --- | --- | --- |
-| GitHub | CPU x86 | Linux, Windows, Mac | Up to 500 concurrent | Yes | |
-| GitHub | CPU AArch64 | Linux, Mac | Up to 500 concurrent | Yes | |
+| GitHub | CPU x86 | Linux, Windows, Mac | Up to 500 concurrent | Unverified | |
+| GitHub | CPU AArch64 | Linux, Mac | Up to 500 concurrent | Unverified | |
 
-The following sections gather together, for each UXL Foundation project, the existing public CI set up and the minimum CI requirements so that contributions can be received with confidence that sufficient testing has been done.
-Currently much of the project CI is hosted by internal corporate infrastructure, and is separated from the open source repositories.
+The project sections below preserve previously reported CI setups and requested
+coverage. Descriptions of corporate infrastructure and software versions need
+project-owner verification before they are used for planning.
 
-This initiative is being kicked off to bring as much public CI as is possible for the UXL Foundation projects.
+The initiative tracks requirements for making project validation accessible to external contributors.
 
 oneDNN
 ------
@@ -33,12 +48,12 @@ Support contacts for CI:
 | AArch64            | Hamza Butt @theComputeKid |
 | x64, new platforms | Vadim Pirogov @vpirogov   |
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
-| Target      | OS                    | Concurrency  | Active? | How to access logs  |
+| Target      | OS                    | Concurrency  | Verified availability | How to access logs  |
 | ----------- | --------------------- | ------------ | ------- | ------------------- |
-| CPU x64     | Linux, Windows, macOS | 2            | Yes     | CI x64 PR check     |
-| CPU AArch64 | Linux, macOS          | 2            | Yes     | CI AArch64 PR check |
+| CPU x64     | Linux, Windows, macOS | 2            | Unverified | CI x64 PR check     |
+| CPU AArch64 | Linux, macOS          | 2            | Unverified | CI AArch64 PR check |
 
 *Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
@@ -78,7 +93,7 @@ oneDPL
 
 Representative: Timmie Smith
 
-Support contact for CI:
+Support contact for CI: not yet documented; project representative to confirm.
 
 | Maintainers               |
 | ------------------------- |
@@ -86,7 +101,7 @@ Support contact for CI:
 | Dmitriy Sobolev @dmitriy-sobolev |
 | Timmie Smith @timmiesmith |
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
 The current CI infrastructure is setup for per-commit testing. It is run automatically on PRs in the oneDPL repository
 when a new commit is made to the source branch of the PR.
@@ -110,8 +125,9 @@ when a new commit is made to the source branch of the PR.
 There are no special paths for particular architectures for AMD and NVIDIA GPUs in oneDPL at this point. It is
 sufficient for correctness to run functional testing on one GPU from a vendor. More information on the supported
 platforms can be found in the links below.
-* NVIDIA: https://developer.codeplay.com/products/oneapi/nvidia/latest/guides/get-started-guide-nvidia#supported-platforms
-* AMD: https://developer.codeplay.com/products/oneapi/amd/latest/guides/get-started-guide-amd#supported-platforms
+Use [oneDPL's current documentation](https://uxlfoundation.github.io/oneDPL/)
+for supported backends and their requirements. The former Codeplay `latest` guide
+links failed the September 2026 live-link review and are no longer used here.
 
 oneDPL testing must cover all C++ standard execution policies as well as oneDPL device policies.
 
@@ -152,47 +168,47 @@ Support contacts for CI:
 
 More details available in [MAINTAINERS.md](https://github.com/uxlfoundation/oneDAL/blob/main/MAINTAINERS.md)
 
-### *Existing public CI*
+### *Previously reported public CI — current availability unverified*
 
 oneDAL
 
-| Platform | Type | OS | Number | Active? | Comments |
+| Platform | Type | OS | Number | Verified availability | Comments |
 | --- | --- | --- | --- | --- | --- |
-| Github | CPU AArch64 | Linux | 2 | Yes | 2 Pipelines on Physical Arm systems Github hosted and Arm-Hosted. [ci-aarch64.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci-aarch64.yml)  |
+| Github | CPU AArch64 | Linux | 2 | Unverified | 2 Pipelines on Physical Arm systems Github hosted and Arm-Hosted. [ci-aarch64.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci-aarch64.yml)  |
 | Github | Intel GPU (ICX compiler) | Linux | 1 | Disabled (as documented) | Pipeline configured for GPU validation on uxlfoundation GPU runners, currently disabled due to issues with Tiber Cloud. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
-| Github | ABI conformance | Linux | 1 | Yes | ABI compatibility runs that compare PR to the main. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
-| Github | Docker validation | Linux | 1 | Yes | Validation of oneDAL development env docker file. [docker-validation-ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docker-validation-ci.yml)  |
-| Github | CPU Nightly | Linux, Windows | 2 | Yes | Nightly builds and broader validation for oneDAL. [nightly-build.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/nightly-build.yml)  |
-| Github | Copyright headers check | Linux | 1 | Yes | Check for proper copyright headers. [skywalking-eyes.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/skywalking-eyes.yml)  |
-| Github | PR checklist validation | Linux | 1 | Yes | Validation of PR conformance. [pr-checklist.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/pr-checklist.yml)  |
-| Github | Documentation deployment to gh-pages | Linux | 1 | Yes | Automatic docs deployment with release tag creation. [docs-release.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docs-release.yml)  |
-| Mergify | Helper automation for merges/backporting | Linux | 1 | Yes | Automated labels assignment, removal of renovate branches. [.mergify.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/.mergify.yml)  |
-| Renovate | Automated dependency updates | Linux | 1 | Yes | Dependabot alternative, manages dependency updates for components. [renovate.json](https://github.com/uxlfoundation/oneDAL/blob/main/.github/renovate.json)  |
-| Azure DevOps | Clang format check| Linux | 1 | Yes | Enforce coding standards. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
-| Azure DevOps | CI build/test for x86/ARM/RISC-V with OS compilers | Linux, Windows | 8 | Yes | Intel build natively, ARM and RISC-V with cross-platform build and QEMU emulation. Build with GCC/VC compilers. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
-| Azure DevOps | CI build/test with Bazel | Linux | 1 | Yes | Bazel-based build and validation. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
-| Azure DevOps | oneDAL documentation build | Linux | 1 | Yes | Build documentation for validation purposes in CI. [docs.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/docs.yml)  |
-| Azure DevOps | sklearnex validation | Linux | 1 | Yes | Checking out sklearnex sources, doing build and validation with oneDAL PR changes. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
-| Codefactor | Codefactor checks | N/A | 1 | Yes | Enforcing code checks in PRs, Bandit, and other code quality checks. [Codefactor](https://www.codefactor.io/repository/github/uxlfoundation/onedal)  |
+| Github | ABI conformance | Linux | 1 | Unverified | ABI compatibility runs that compare PR to the main. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/ci.yml)  |
+| Github | Docker validation | Linux | 1 | Unverified | Validation of oneDAL development env docker file. [docker-validation-ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docker-validation-ci.yml)  |
+| Github | CPU Nightly | Linux, Windows | 2 | Unverified | Nightly builds and broader validation for oneDAL. [nightly-build.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/nightly-build.yml)  |
+| Github | Copyright headers check | Linux | 1 | Unverified | Check for proper copyright headers. [skywalking-eyes.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/skywalking-eyes.yml)  |
+| Github | PR checklist validation | Linux | 1 | Unverified | Validation of PR conformance. [pr-checklist.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/pr-checklist.yml)  |
+| Github | Documentation deployment to gh-pages | Linux | 1 | Unverified | Automatic docs deployment with release tag creation. [docs-release.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/workflows/docs-release.yml)  |
+| Mergify | Helper automation for merges/backporting | Linux | 1 | Unverified | Automated labels assignment, removal of renovate branches. [.mergify.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.github/.mergify.yml)  |
+| Renovate | Automated dependency updates | Linux | 1 | Unverified | Dependabot alternative, manages dependency updates for components. [renovate.json](https://github.com/uxlfoundation/oneDAL/blob/main/.github/renovate.json)  |
+| Azure DevOps | Clang format check| Linux | 1 | Unverified | Enforce coding standards. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
+| Azure DevOps | CI build/test for x86/ARM/RISC-V with OS compilers | Linux, Windows | 8 | Unverified | Intel build natively, ARM and RISC-V with cross-platform build and QEMU emulation. Build with GCC/VC compilers. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
+| Azure DevOps | CI build/test with Bazel | Linux | 1 | Unverified | Bazel-based build and validation. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
+| Azure DevOps | oneDAL documentation build | Linux | 1 | Unverified | Build documentation for validation purposes in CI. [docs.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/docs.yml)  |
+| Azure DevOps | sklearnex validation | Linux | 1 | Unverified | Checking out sklearnex sources, doing build and validation with oneDAL PR changes. [ci.yml](https://github.com/uxlfoundation/oneDAL/blob/main/.ci/pipeline/ci.yml)  |
+| Codefactor | Codefactor checks | N/A | 1 | Unverified | Enforcing code checks in PRs, Bandit, and other code quality checks. [Codefactor](https://www.codefactor.io/repository/github/uxlfoundation/onedal)  |
 
 scikit-learn-intelex
 
-| Platform | Type | OS | Number | Active? | Comments |
+| Platform | Type | OS | Number | Verified availability | Comments |
 | --- | --- | --- | --- | --- | --- |
-| Mergify | Helper automation for merges/backporting | Linux | 1 | Yes | Automated labels assignment, removal of renovate branches. [.mergify.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/.mergify.yml)  |
-| Renovate | Automated dependency updates | Linux | 1 | Yes | Dependabot alternative, manages dependency updates for components. [renovate.json](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/renovate.json)  |
-| Azure DevOps | CI conda based | Linux, Windows | 10 | Yes | CI build and testing for different scikit/python combinations [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/ci.yml)  |
-| Azure DevOps | Documentation validation | Linux | 10| Yes | Documentation build validation [docs.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/docs.yml)  |
-| Azure DevOps | Linting | Linux | 1 | Yes | Linting enforcement through pre-commit [linting.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/linting.yml)  |
-| Azure DevOps | Nightly | Linux | 1 | Yes | Nightly validation against scikit-learn main branch [nightly.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/nightly.yml)  |
-| Azure DevOps | Coverity | Linux | 1 | Yes | [Coverity](https://scan.coverity.com/projects/daal4py) scans [nightly.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/nightly.yml)  |
-| Azure DevOps | Releases validation | Linux, Windows | 12 | Yes | Validation of already released versions in pypi and conda-forge [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/release.yml)  |
-| Github | CI venv based | Linux, Windows | 6 | Yes | CI build and testing for different scikit/python combinations. [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/ci.yml)  |
-| Github | Copyright headers check | Linux | 1 | Yes | Check for proper copyright headers. [skywalking-eyes.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/skywalking-eyes.yml)  |
-| Github | PR checklist validation | Linux | 1 | Yes | Validation of PR conformance. [pr-checklist.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/pr-checklist.yml)  |
-| Github | Documentation deployment to gh-pages | Linux | 1 | Yes | Automatic docs deployment with release tag creation. [docs-release.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/docs-release.yml)  |
-| Codefactor | Codefactor checks | N/A | 1 | Yes | Enforcing code checks in PRs, Bandit, and other code quality checks. [Codefactor](https://www.codefactor.io/repository/github/uxlfoundation/scikit-learn-intelex)  |
-| Codecov | Codecoverage | N/A | 1 | Yes | Enforcing coverage tracking and increments in PRs. [Codecov](https://app.codecov.io/gh/uxlfoundation/scikit-learn-intelex)  |
+| Mergify | Helper automation for merges/backporting | Linux | 1 | Unverified | Automated labels assignment, removal of renovate branches. [.mergify.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/.mergify.yml)  |
+| Renovate | Automated dependency updates | Linux | 1 | Unverified | Dependabot alternative, manages dependency updates for components. [renovate.json](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/renovate.json)  |
+| Azure DevOps | CI conda based | Linux, Windows | 10 | Unverified | CI build and testing for different scikit/python combinations [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/ci.yml)  |
+| Azure DevOps | Documentation validation | Linux | 10| Unverified | Documentation build validation [docs.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/docs.yml)  |
+| Azure DevOps | Linting | Linux | 1 | Unverified | Linting enforcement through pre-commit [linting.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/linting.yml)  |
+| Azure DevOps | Nightly | Linux | 1 | Unverified | Nightly validation against scikit-learn main branch [nightly.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/nightly.yml)  |
+| Azure DevOps | Coverity | Linux | 1 | Unverified | [Coverity](https://scan.coverity.com/projects/daal4py) scans [nightly.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/nightly.yml)  |
+| Azure DevOps | Releases validation | Linux, Windows | 12 | Unverified | Validation of already released versions in pypi and conda-forge [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.ci/pipeline/release.yml)  |
+| Github | CI venv based | Linux, Windows | 6 | Unverified | CI build and testing for different scikit/python combinations. [ci.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/ci.yml)  |
+| Github | Copyright headers check | Linux | 1 | Unverified | Check for proper copyright headers. [skywalking-eyes.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/skywalking-eyes.yml)  |
+| Github | PR checklist validation | Linux | 1 | Unverified | Validation of PR conformance. [pr-checklist.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/pr-checklist.yml)  |
+| Github | Documentation deployment to gh-pages | Linux | 1 | Unverified | Automatic docs deployment with release tag creation. [docs-release.yml](https://github.com/uxlfoundation/scikit-learn-intelex/blob/main/.github/workflows/docs-release.yml)  |
+| Codefactor | Codefactor checks | N/A | 1 | Unverified | Enforcing code checks in PRs, Bandit, and other code quality checks. [Codefactor](https://www.codefactor.io/repository/github/uxlfoundation/scikit-learn-intelex)  |
+| Codecov | Codecoverage | N/A | 1 | Unverified | Enforcing coverage tracking and increments in PRs. [Codecov](https://app.codecov.io/gh/uxlfoundation/scikit-learn-intelex)  |
 
 
 ### *Required Public CI Infrastructure Needed To Confidently Accept Contributions*
@@ -227,11 +243,11 @@ oneCCL
 
 Representative: Maria Petrova
 
-Support contact for CI:
+Support contact for CI: not yet documented; project representative to confirm.
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
+| Owner | Type | OS | Number | Verified availability | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | Not documented | Not documented | Not documented | Not documented | Unverified | Project representative to provide workflow/log links |
 
@@ -242,10 +258,7 @@ Support contact for CI:
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
 
-Software Versions:
-* CMake
-* glibc
-* ...
+Software requirements: not yet documented; project representative to provide a current requirements link.
 
 oneMath
 -------
@@ -254,11 +267,11 @@ Representative: [Maria Kraynyuk](https://github.com/mkrainiuk)
 
 Support contact for CI: [Alexey Srednitsky](https://github.com/toxicscum)
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
+| Owner | Type | OS | Number | Verified availability | How to access logs |
 | --- | --- | --- | --- | --- | --- |
-| GitHub	| CPU x86 | Ubuntu latest | N/A - GitHub-hosted runners | Yes | From workflow run |
+| GitHub	| CPU x86 | Ubuntu latest | N/A - GitHub-hosted runners | Unverified | From workflow run |
 
 *Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
@@ -281,21 +294,21 @@ Representative: Michael Voss
 
 Support contact for CI: Konstantin Boyarinov
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
-| Runner | Target | OS | Active | How to access logs |
+| Runner | Target | OS | Verified availability | How to access logs |
 | --- | --- | --- | --- | --- |
-| ubuntu-latest	| CPU x64 | Linux |Yes | CI PR check |
-| ubuntu-24.04 | CPU x64 | Linux | Yes | CI PR check |
-| ubuntu-24.04-arm | CPU AArch64 | Linux | Yes | CI PR check |
-| ubuntu-22.04 | CPU x64 | Linux | Yes | CI PR check |
-| ubuntu-22.04-arm | CPU AArch64 | Linux | Yes | CI PR check |
-| macos-15 | CPU AArch64 | macOS | Yes | CI PR check |
-| macos-14 | CPU AArch64 | macOS | Yes | CI PR check |
-| macos-13 | CPU x64 | macOS | Yes | CI PR check |
-| Windows-2025 | CPU x64 | Windows | Yes | CI PR check |
-| Windows-2022 | CPU x64 | Windows | Yes | CI PR check |
-| Windows-2019 | CPU x64 | Windows | Yes | CI PR check |
+| ubuntu-latest	| CPU x64 | Linux | Unverified | CI PR check |
+| ubuntu-24.04 | CPU x64 | Linux | Unverified | CI PR check |
+| ubuntu-24.04-arm | CPU AArch64 | Linux | Unverified | CI PR check |
+| ubuntu-22.04 | CPU x64 | Linux | Unverified | CI PR check |
+| ubuntu-22.04-arm | CPU AArch64 | Linux | Unverified | CI PR check |
+| macos-15 | CPU AArch64 | macOS | Unverified | CI PR check |
+| macos-14 | CPU AArch64 | macOS | Unverified | CI PR check |
+| macos-13 | CPU x64 | macOS | Unverified | CI PR check |
+| Windows-2025 | CPU x64 | Windows | Unverified | CI PR check |
+| Windows-2022 | CPU x64 | Windows | Unverified | CI PR check |
+| Windows-2019 | CPU x64 | Windows | Unverified | CI PR check |
 
 *Required Public CI Infrastructure Needed To Confidently Accept Contributions*
 
@@ -306,16 +319,16 @@ Support contact for CI: Konstantin Boyarinov
 
 Software requirements: [link](https://github.com/uxlfoundation/oneTBB/blob/master/SYSTEM_REQUIREMENTS.md)
 
-oneCK
------
+oneAPI Construction Kit
+----------------------
 
 Representative: Aaron Dron
 
-Support contact for CI:
+Support contact for CI: not yet documented; project representative to confirm.
 
-*Existing public CI*
+*Previously reported public CI — current availability unverified*
 
-| Owner | Type | OS | Number | Active? | How to access logs |
+| Owner | Type | OS | Number | Verified availability | How to access logs |
 | --- | --- | --- | --- | --- | --- |
 | Not documented | Not documented | Not documented | Not documented | Unverified | Project representative to provide workflow/log links |
 
@@ -326,7 +339,4 @@ Support contact for CI:
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
 
-Software Versions:
-* CMake
-* glibc
-* ...
+Software requirements: not yet documented; project representative to provide a current requirements link.

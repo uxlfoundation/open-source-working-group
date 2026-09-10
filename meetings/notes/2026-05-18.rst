@@ -1,12 +1,12 @@
-==========================
+============================
 Open Source WG: 05/18/2026
-==========================
+============================
 
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
 
 Attendees
-=========
+===========
 
 * Megan Knight - Arm
 
@@ -26,7 +26,7 @@ Attendees
 * Biagio Cosenza - University of Salerno
 
 Quick Recap
-===========
+=============
 
 The meeting focused on updates and discussions across multiple oneAPI library projects, including oneTBB, oneMath,
 oneDPL, and oneDAL. John and Mike discussed the transition of oneTBB's specification into its documentation, with plans
@@ -41,7 +41,7 @@ and specialization constants, noting that buffer performance is generally lower 
 has many corner cases that need handling.
 
 Next Steps
-==========
+============
 
 * John: Update the oneMath website links to point to the new documentation/specification structure, similar to what was
   done for oneTBB.
@@ -56,14 +56,14 @@ Next Steps
 * John: Work with Melissa to schedule the next quarterly
 
 oneMath Specification Discussion Meeting:
-=========================================
+===========================================
 
 John and Biagio discussed the oneMath specification while waiting for other participants to join the meeting. John
 mentioned that he had joined a Math SIG the previous week to discuss this specification, noting that it faced similar
 challenges as oneTBB and oneDPL.
 
 Updated Specification Implementation Plans:
-===========================================
+=============================================
 
 Mike announced that they published an updated specification on GitHub, eliminating version numbers and embracing a
 dynamic specification approach. The team discussed plans to integrate the specification into their documentation over
@@ -72,7 +72,7 @@ noted that oneMath needs to implement a similar approach, and they discussed upd
 integrated specification and documentation structure.
 
 oneMath Documentation and Video Plans:
-======================================
+========================================
 
 The team discussed moving oneMath specifications back into their documentation, with John explaining that while other
 components like oneDNN and oneDAL had dropped specification maintenance, oneMath still needs its architectural content
@@ -82,7 +82,7 @@ collect current slide decks and marketing materials from projects, create initia
 return them to projects for review and approval before recording and publishing the final videos on the new website.
 
 Linux Foundation Educational Platform Planning:  (`LF Education Slides`_)
-===============================================
+===========================================================================
 
 The team discussed implementing a Linux Foundation educational platform starting with four mini-courses, with Biagio
 explaining that the initial phase would involve free content with no budget required from the project. The plan involves
@@ -92,7 +92,7 @@ agreed to start with mini-courses on 6 projects and decided to provide feedback 
 next open source meeting.
 
 Library Projects Development Updates:
-=====================================
+=======================================
 
 The team provided updates on their respective library projects. Mike reported that oneTBB is working on its next release
 with code freeze approaching, including support for C++ modules and NUMA extensions, with plans for four releases per
@@ -103,7 +103,7 @@ oneMKL following a recent public release and is discussing making the SYCL buffe
 use cases for this feature.
 
 SYCL Buffer Accessory Discussio: (`SYCL Slides`_)
-=================================
+===================================================
 
 The team discussed potential changes to SYCL, including the removal of buffer accessory in favor of USM, which would
 reduce binary size and address performance issues. Biagio presented feedback from the SYCL Working Group regarding

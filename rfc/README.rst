@@ -20,5 +20,6 @@ Index
   does not describe today's repository locations. See the current project links
   in the `Working Group README <../README.rst>`_.
 
-Older specification RFCs remain in the
-`archived Specification Working Group <https://github.com/uxlfoundation/spec-working-group/tree/main/RFC>`_.
+For specification concepts and current project documentation, start with the
+`dynamic oneAPI specification <https://uxlfoundation.org/specifications/oneapi/technical-overview/>`__. Propose current
+cross-project changes here; propose API changes in the relevant project.

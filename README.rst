@@ -76,9 +76,9 @@ About this group
 ----------------
 
 This repository coordinates both specification and implementation work within the
-`UXL Foundation`_. The former `Specification Working Group archive`_ preserves
-earlier discussions and RFCs. Current proposals belong here or in the relevant
-project repository.
+`UXL Foundation`_. Current specification concepts are maintained on the UXL
+website, with APIs and requirements defined by each project's documentation.
+Proposals belong here or in the relevant project repository.
 
 
 .. _`Latest meeting`: meetings/notes/2026-08-19.rst
@@ -95,7 +95,6 @@ project repository.
 .. _`openprofile account`: https://openprofile.dev/
 .. _`UXL Slack`: https://slack-invite.uxlfoundation.org/
 .. _`UXL Foundation`: https://github.com/uxlfoundation/foundation
-.. _`Specification Working Group archive`: https://github.com/uxlfoundation/spec-working-group
 
 .. |uxl-logo| image:: https://raw.githubusercontent.com/uxlfoundation/artwork/e98f1a7a3d305c582d02c5f532e41487b710d470/foundation/uxl-foundation-icon-color.png
    :alt:

@@ -76,8 +76,8 @@ Key Discussion Points
 
        * oneMKL – https://github.com/oneapi-src/oneMKL/pull/551 (RFC to develop RFCs)
        * oneCCL – https://github.com/oneapi-src/oneCCL/pull/134 (RFC for new API)
-       * oneDPL – https://github.com/uxlfoundation/oneAPI-spec/pull/564 &
-         https://github.com/uxlfoundation/oneAPI-spec/pull/567 (not RFCs, but significant PRs)
+       * oneDPL – historical specification PR #564 &
+         historical specification PR #567 (not RFCs, but significant PRs)
 
    * Action Items:
 
