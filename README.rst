@@ -87,7 +87,7 @@ Proposals belong here or in the relevant project repository.
 .. _`Project directory`: https://github.com/uxlfoundation/foundation/blob/main/PROJECTS.md
 .. _`Skills repository`: https://github.com/uxlfoundation/skills
 .. _`CI requirements`: project-infrastructure/project-ci-documentation.md
-.. _`Security work`: https://github.com/orgs/uxlfoundation/projects/3?pane=info
+.. _`Security work`: security/README.md
 .. _`Best practices`: https://github.com/orgs/uxlfoundation/projects/5?pane=info
 .. _`Open issues`: https://github.com/uxlfoundation/open-source-working-group/issues
 .. _`RFC process`: rfc/README.rst

@@ -4,7 +4,10 @@ labels: [security, needs-triage]
 body:
   - type: markdown
     attributes:
-      value: Use the affected project's private reporting channel for vulnerabilities. Do not include vulnerability details here.
+      value: |
+        Start with the [security improvement guide](https://github.com/uxlfoundation/open-source-working-group/blob/main/security/README.md) for scope and completion evidence.
+
+        Use the affected project's private reporting channel for vulnerabilities. Do not include vulnerability details here.
   - type: input
     id: project
     attributes:
