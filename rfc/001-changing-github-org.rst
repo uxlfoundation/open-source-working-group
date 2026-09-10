@@ -90,11 +90,6 @@ Repo Information
      - Q4 2024
      - onetbb-project_
      - oneTBB
-   * - oneapi-spec
-     - Robert Cohn
-     - 5/2/2024
-     - uxlfoundation_
-     - oneapi-spec_
 
 .. _onednn-project: https://github.com/onednn-project
 .. _onedal-project: https://github.com/onedal-project
@@ -110,7 +105,11 @@ Repo Information
 .. _onetbb: https://github.com/oneapi-src/onetbb
 .. _onedpl: https://github.com/oneapi-src/onedpl
 .. _onemkl: https://github.com/oneapi-src/onemkl
-.. _oneapi-spec: https://github.com/uxlfoundation/oneapi-spec
+.. note::
+
+   Specification migration destinations have been removed from this historical
+   proposal. Use the `dynamic oneAPI specification <https://uxlfoundation.org/specifications/oneapi/technical-overview/>`__
+   and project documentation for current information.
 
 
 Org Administration
@@ -125,7 +124,7 @@ for emergency maintenance only. Need to share some guides on how to manage an
 org.
 
 Process
-=======
+========
 
 This is a sketch of the activity. Each project should prepare its own schedule
 and plan. Robert Dower, the maintainer of oneapi-src org will help with the

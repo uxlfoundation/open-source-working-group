@@ -1,5 +1,5 @@
 Working Group meeting records
-=============================
+===============================
 
 Browse discussions, action items and presentation materials by date. Minutes
 record the discussion at the time; consult current project documentation for
@@ -14,7 +14,7 @@ Recordings are available to Working Group members through their
 already published in this repository.
 
 2026
-----
+--------
 
 .. list-table::
    :header-rows: 1
@@ -37,7 +37,7 @@ already published in this repository.
      - —
 
 2025
-----
+--------
 
 .. list-table::
    :header-rows: 1
@@ -56,10 +56,10 @@ already published in this repository.
      - Infrastructure handover; hardware and administrator support; developer summit planning
      - `CI transition <../presentations/2025-08-26-UXL-Working-Group-CI-Transition.pdf>`__
    * - `2025-07-22 <2025-07-22.rst>`__
-     - Contribution policies and compliance; updates from the six library projects
+     - Contribution policies and compliance; project updates (June/July record duplication under review)
      - —
    * - `2025-06-22 <2025-06-22.rst>`__
-     - Contribution policies and compliance; updates from the six library projects
+     - Contribution policies and compliance; project updates (June/July record duplication under review)
      - —
    * - `2025-05-27 <2025-05-27.rst>`__
      - Security progress; hardware runners; CPU-inclusive APIs; library proposals
@@ -78,7 +78,7 @@ already published in this repository.
      - `CI <../presentations/2025-01-28-UXLCIPoC.pdf>`__
 
 2024 archive
-------------
+--------------
 
 * `2024-11-26 <2024-11-26.rst>`__
 * `2024-10-22 <2024-10-22.rst>`__

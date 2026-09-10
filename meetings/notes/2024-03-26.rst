@@ -5,53 +5,72 @@
 John M. chaired the meeting. Andy could not attend because of travel.
 
 Attendees
-=========
+===========
 
-.. list-table:: 
+.. list-table::
 
-  * - Alexey Kukanov 
+  * - Alexey Kukanov
     - Intel Corporation
-  * - Maria Garzaran 
+
+  * - Maria Garzaran
     - Intel Corporation
-  * - Abhishek Jain 
+
+  * - Abhishek Jain
     - Fujitsu Limited
+
   * - Nikolay Petrov
     - Intel Corporation
+
   * - Jory Burson
     - The Linux Foundation
+
   * - Kasper Mecklenburg
     - Arm Limited
+
   * - Ruyman Reyes Castro
     - Codeplay Software
+
   * - Ragesh Hajela
     - Fujitsu Limited
+
   * - Ankit Manerikar
     - Intel Corporation
+
   * - Steve Capper
     - Arm Limited
+
   * - Rod Burns
     - Codeplay Software
+
   * - Joel Rosenzweig
     - Intel Corporation
+
   * - Roman Zhukov
     - Intel Corporation
+
   * - David Edelsohn
     - International Business Machines Corporation
+
   * - Stephano Cetola
     - Intel Corporation
+
   * - Alison Richards
     - Intel Corporation
+
   * - John Melonakos
     - Intel Corporation
+
   * - Balas, DorotheeX Marie Clotilde
     - Intel Corporation
+
   * - Robert Cohn
     - Intel Corporation
+
   * - Pavel Kumbrasev
     - Intel Corporation
 
 Security: Roman Z.
-==================
+====================
 
 * Roman gave an update on security
 * Group has formed and met once
@@ -67,18 +86,25 @@ Security: Roman Z.
 .. _`security work package`: https://github.com/orgs/uxlfoundation/projects/3
 
 Open Source recommendations: Rod B.
-===================================
+=====================================
 
 * Rod had a follow-up discussion about the findings from looking at
   the `Red Hat open source checklist`_.
+
   * `Summary spreadsheet`_
+
   * `oneMKL report`_
+
   * `oneDPL report`_
+
   * `oneDNN report`_
+
   * `oneCCL report`_
+
   * `oneDAL report`_
 
 * Q: More discussion about private vs public discussion.
+
   * Prioritize the kinds of information that other developers will
     need to know. Look at oneDNN RFC's as an example.
 
@@ -95,7 +121,7 @@ Open Source recommendations: Rod B.
 .. _`oneDAL report`: https://docs.google.com/document/d/1QRJVhcUv_JKSQmqlb43NkL37n5rliKw4
 
 GitHub Org Transition: Robert C.
-================================
+==================================
 
 * `GitHub Org Slides`_
 * We have to move GitHub repos to LF/UXLF ownership

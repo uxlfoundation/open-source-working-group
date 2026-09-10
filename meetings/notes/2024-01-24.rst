@@ -1,8 +1,8 @@
 1/24/2024
-=========
+===========
 
 Attendees:
-----------
+------------
 
 * Andrew Wafaa, Arm (Open Source Working Group chair)
 * Abhishek Jain, Fujitsu
@@ -24,13 +24,13 @@ Attendees:
 * Vadim Pirogov, Intel
 
 Agenda:
--------
+---------
 
 * Present priorities for the Open Source Working Group
 * Discuss issues and areas for work
 
 Notes
------
+--------
 
 The first meeting of the UXL Foundation Open Source Working Group was
 led by Andrew Wafaa from Arm.
@@ -39,28 +39,33 @@ The group went through a set of priorities that have been provided by
 the UXL Steering Committee.
 
 * Build Infrastructure
+
   * The intention of this is to bring independent builds of the
     projects and infrastructure in place that facilitates community
     contributions to the projects.
 
 * Open Source Best Practice
+
   * The intention of this is to ensure that the projects follow the
     best practices of open source development so that there is a clear
     and frictionless way for the community to contribute to the
     projects.
 
 * Open Source Kernels
+
   * The intention of this is to bring more open source code to the
     projects where there are opportunities to add new kernel code
     particularly to help target more vendors and architectures.
 
 * Architecture
+
   * Identify opportunities to simplify projects or make it easier to
     support more vendor and architecture targets and also to simplify
     the integration of the projects with other frameworks and
     software, for example TensorFlow or PyTorch.
 
 * Compatibility Testing
+
   * In order to ensure that a developer using the projects has a
     consistent and good experience, compatibility tests could be made
     available so that they can be run on different vendors and
@@ -68,20 +73,23 @@ the UXL Steering Committee.
 
 
 * Build Infrastructure Discussion
+
   * Due to the history of the projects the infrastructure is mostly
     hosted by Intel but we would like to integrate CI, build and
     testing for different vendor and architecture targets.  Penporn
     from Google shared information about how this is done with the
     TensorFlow project:
+
     * `Official Builds (maintained by Google)`_
+
     * `Community Builds (maintained by 3rd parties)`_
 
 A similar model could be adopted for UXL Foundation projects.  Options
 for using public cloud infrastructure for the projects include:
- 
+
 * The foundation funding infrastructure (this is unlikely due to the
   costs involved)
-* Obtaining donations of credits from public cloud infrastructure 
+* Obtaining donations of credits from public cloud infrastructure
   providers (note that donations cannot be used in lieu of membership cost)
 * Organisations providing infrastructure in a similar way to how Intel
   currently does this

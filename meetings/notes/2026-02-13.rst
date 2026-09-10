@@ -2,6 +2,14 @@
 Open Source WG: 02/13/2026
 ==========================
 
+
+.. note::
+
+   Current guidance: the `dynamic oneAPI specification <https://uxlfoundation.org/specifications/oneapi/technical-overview/>`__
+   links to the concepts and project documentation maintained today. These minutes
+   record the discussion at the meeting date; release plans and API descriptions
+   below are historical. Obsolete destinations have been updated or removed.
+
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
 
@@ -50,7 +58,7 @@ Next Steps
   plugin/extension for Wanda, including ongoing discussions with Inria and Probable.
 
 Summary
-=======
+========
 
 Dynamic API Specification Proposal:
 ===================================

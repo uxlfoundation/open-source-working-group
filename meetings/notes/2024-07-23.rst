@@ -2,12 +2,20 @@
  Open Source WG: 7/23/2024
 ===========================
 
+
+.. note::
+
+   Current guidance: the `dynamic oneAPI specification <https://uxlfoundation.org/specifications/oneapi/technical-overview/>`__
+   links to the concepts and project documentation maintained today. These minutes
+   record the discussion at the meeting date; release plans and API descriptions
+   below are historical. Obsolete destinations have been updated or removed.
+
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
 
 
 Meeting Minutes
-===============
+=================
 
 Highlights:
 
@@ -18,7 +26,7 @@ Highlights:
   hardware.
 
 Key Discussion Points:
-======================
+========================
 
 1. Open Discussions:
 
@@ -57,7 +65,7 @@ Key Discussion Points:
      * Emphasis on secure setup and guidance documentation for member-enrolled hardware systems.
 
 Action Items:
-=============
+===============
 
 * Maria Garzaran: Draft and propose (the RFC utility TBD in follow-on conversations) documentation to gather feedback on
   oneCCL API from UXL members.
@@ -65,7 +73,7 @@ Action Items:
 * All Members: Provide feedback on CI Proof of Concept and possible documentation repositories.
 
 Decisions/Agreements Made:
-=============
+============================
 
 * The RFC process is recommended when projects have substantial changes to bring the community along in the
   decision-making process.

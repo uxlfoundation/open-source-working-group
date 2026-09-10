@@ -1,12 +1,12 @@
-==========================
+============================
 Open Source WG: 05/27/2025
-==========================
+============================
 
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
 
 Attendees
-=========
+===========
 
 * Megan Knight - Arm
 * Nick Dingle - Arm
@@ -36,7 +36,7 @@ Attendees
 
 
 Next Steps
-==========
+============
 
 * John to send out Vasanth's presentation slides to the group. (see below)
 * John to set up a GitHub discussion thread for further conversation on CPU inclusivity and the C API specification.
@@ -50,14 +50,14 @@ Next Steps
 Summary
 
 Security Work Package Progress Review (`UXL community infrastructure slides`_)
-=====================================
+================================================================================
 
 Rod presented on security work package progress, noting that most issues had been resolved or moved to the "in progress"
 column. He highlighted Coverity and OSS Fuzz as potential pain points, particularly regarding Google account
 requirements for OSS Fuzz, and mentioned that a guide was being developed to assist users.
 
 Security Testing Flexibility for Projects
-=========================================
+===========================================
 
 The team discussed security and quality testing approaches for UXL Foundation projects, agreeing that projects can
 determine their own priorities on a case-by-case basis rather than having a unified set of rules. They decided to share
@@ -68,7 +68,7 @@ selection. Rod noted that while current OpenSSF scorecard scores were decent, se
 their current threats and next steps, potentially through Slack discussions.
 
 Hardware Runners Status and Planning
-====================================
+======================================
 
 Rod discussed the status of various hardware runners, noting that the Codeplay host runner would go offline in a few
 days but that the free ARM runners were now available. He mentioned three in-progress runners from Codeplay and Intel,
@@ -79,7 +79,7 @@ hardware options. Rod also mentioned exploring Common Forge for binary releases 
 packaging DPC++. He encouraged further conversations about release planning and naming strategies.
 
 API CPU Inclusivity Customer Concerns (`CPU-inclusive C API slides`_)
-=====================================
+=======================================================================
 
 Vasanth presented on customer pain points regarding API specifications, particularly around CPU inclusivity and library
 support. Customers expressed concerns about the need to accommodate both CPU and accelerator paths, with questions about
@@ -89,7 +89,7 @@ inclusivity as a first-order discussion, with a preference for reference impleme
 different policy settings for different libraries, while also emphasizing the importance of conformance tests.
 
 Math and Imaging Library Proposals
-==================================
+====================================
 
 Vasanth discussed the primary requests regarding math and imaging libraries, noting that 80-90% of the requests centered
 around math functions, with the remaining 20% focusing on imaging library specifications. He explained that discussions
@@ -101,7 +101,7 @@ reduce workload and allow incremental implementation by hardware vendors, with a
 integration and testing.
 
 Compiler Support for CPU Inclusivity
-====================================
+======================================
 
 The meeting focused on discussing compiler support for CPU inclusivity, particularly for oneMath projects. Vasanth
 shared feedback from various stakeholders, including Qualcomm, who expressed interest in leveraging the compiler for

@@ -1,12 +1,12 @@
-===========================
+============================
  Open Source WG: 04/22/2025
-===========================
+============================
 
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
 
 Attendees
-=========
+===========
 
 * Deepika H V - Centre for Development of Advanced Computing
 
@@ -35,7 +35,7 @@ Attendees
 * Melissa Aranzamendez - The Linux Foundation
 
 Next Steps
-==========
+============
 
 * All projects to review and update their project CI documentation in the open source working group repo.
 * Aaron and team to continue working on documentation for CI infrastructure.
@@ -47,7 +47,7 @@ Next Steps
 * Rod to ensure relevant member organization representatives are present for Vasanth's presentation on CPU inclusivity.
 
 Security Work Package Breakdown Discussion (`slides`_)
-==========================================
+========================================================
 
 Aaron discussed the security work package breakdown, noting that most projects still have items in the in progress
 column. He asked for feedback on any issues with Coverity or OSS-Fuzz, and mentioned that the oneAPI Construction Kit
@@ -58,7 +58,7 @@ guidance for future directions and suggested that the security contacts and othe
 and discuss it.
 
 UXL Project Dashboard and Maintainer Selection (`slides`_)
-==============================================
+============================================================
 
 Aaron provides an update on several topics related to the UXL project. He discusses a dashboard implemented by an
 engineer to show GitHub organization scores, and recommends running scorecards within projects rather than relying on
@@ -69,7 +69,7 @@ well, but Intel GPU Max runners are currently unstable due to a location change.
 downtime for these runners until the migration is complete.
 
 Standardizing Project Infrastructure and Documentation (`slides`_)
-======================================================
+====================================================================
 
 Aaron discussed the need for standardization in project infrastructure and the importance of documenting testing
 processes. He mentioned the development of two new runner runners and the need for more documentation. Rod suggested
@@ -79,7 +79,7 @@ the level of detail required in the CI infrastructure documentation, and Aaron r
 details may not be necessary, software versions and compatibility should be included.
 
 UXL Roadmap Progress and Future Plans
-=====================================
+=======================================
 
 John discussed the progress of the UXL roadmap, noting that three projects had responded, while one project was not at
 1.0 yet and lacked a defined roadmap. John also mentioned that some projects had shared their feedback in chat
@@ -89,7 +89,7 @@ the UXL Foundation Github organization and how to expand the roadmap. Rod agreed
 potential merger of two working groups (Spec and Open-source).
 
 Intel Project Documentation and Marketing Strategy
-==================================================
+====================================================
 
 In the meeting, the team discussed the organization of their projects, specifically focusing on the Intel projects that
 have been moved to the UXL Foundation. They discussed the need for a unified way to direct users to the documentation
@@ -100,7 +100,7 @@ started. The team agreed to collect all marketing materials for the projects in 
 for the future.
 
 Expanding CPU Support in UXL
-============================
+==============================
 
 John presented an idea to improve CPU inclusivity in the UXL libraries, which was originally proposed by Vasanth to
 Qualcomm and ARM. The current UXL specifications focus on accelerator offloading, but John suggests expanding support

@@ -61,7 +61,7 @@ Key Discussion Points
    * oneMKL –
 
      * The `RFC for renaming`_ was merged. Now, work is in progress for the actual implementation.
-     * `PR for the spec`_
+     * Historical specification PR #596 (reference only)
      * `PR for the open-source project`_
 
    * oneDPL –
@@ -87,7 +87,6 @@ Action Items
 .. _`slides`: ../presentations/2024-10-22-Recommendations-for-design-of-oneAPI-libraries.pptx
 .. _`C API Design Document (RFC)`: https://github.com/oneapi-src/oneCCL/tree/rfcs/rfcs/20240806-c-api
 .. _`RFC for renaming`: https://github.com/oneapi-src/oneMKL/pull/564
-.. _`PR for the spec`: https://github.com/uxlfoundation/oneAPI-spec/pull/596
 .. _`PR for the open-source project`: https://github.com/oneapi-src/oneMKL/pull/602
 .. _`oneDPL formal RFC documents`: https://github.com/oneapi-src/oneDPL/tree/main/rfcs
 .. _`RFC GitHub discussions`: https://github.com/oneapi-src/oneDPL/discussions?discussions_q=is%3Aopen+label%3ARFC
