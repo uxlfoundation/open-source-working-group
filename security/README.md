@@ -9,6 +9,9 @@ This guide and the public issue form are for improvement work.
 
 ## Start a project task
 
+The [CI tool review](ci-tool-review.md) compares linting, coverage, reporting,
+runner-hardening and secret-detection options with observed UXL usage and limits.
+
 Check the [security work board](https://github.com/orgs/uxlfoundation/projects/3?pane=info)
 and existing issues before opening a
 [security improvement work item](https://github.com/uxlfoundation/open-source-working-group/issues/new?template=security-work-item.yml).

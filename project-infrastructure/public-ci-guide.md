@@ -39,6 +39,9 @@ each job; deregistration alone does not wipe it. See GitHub's
 
 ## 3. Configure a small, reviewable workflow
 
+Use the [CI tool review](../security/ci-tool-review.md) to select checks for
+specific quality or security gaps without duplicating existing integrations.
+
 Start with one target before expanding the matrix. Use a pull-request trigger
 for contributor validation and an appropriate main-branch or scheduled trigger
 for integration checks. Keep publishing credentials out of contributor testing.
