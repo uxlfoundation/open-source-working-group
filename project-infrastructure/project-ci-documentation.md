@@ -23,6 +23,27 @@ The [August 2025 infrastructure discussion](../meetings/notes/2025-08-26.rst)
 records changes to hardware access and support. Earlier runner catalogues should
 not be used as current availability guarantees.
 
+## Public workflow evidence
+
+Reviewed September 9, 2026 using GitHub's successful workflow-run records.
+These are observed examples, not a complete coverage assessment or a guarantee
+that runners are currently available. A workflow-level success can include skipped
+jobs; inspect its jobs and logs before claiming support for a particular platform.
+Dates below are the run creation dates in UTC.
+
+| Project | Successful run observed | Run date | What the evidence establishes |
+| --- | --- | --- | --- |
+| oneDNN | [CI AArch64](https://github.com/uxlfoundation/oneDNN/actions/runs/28283384460) | 2026-06-27 | A successful architecture-labelled CI workflow; this is older evidence, not current capacity verification. |
+| oneDAL | [docker-validation Nightly](https://github.com/uxlfoundation/oneDAL/actions/runs/34415652999) | 2026-09-09 | A successful nightly validation workflow; shared capacity and full platform coverage are not established. |
+| oneMath | [PR Tests (x86_64)](https://github.com/uxlfoundation/oneMath/actions/runs/33626039801), [PR Tests (aarch64)](https://github.com/uxlfoundation/oneMath/actions/runs/33626039750) | 2026-09-02 | Successful architecture-labelled PR workflows; GPU coverage is not established by these runs. |
+| oneTBB | [oneTBB CI](https://github.com/uxlfoundation/oneTBB/actions/runs/34341528354) | 2026-09-09 | A successful project CI workflow; inspect job results for the exact platform matrix. |
+| oneDPL | [oneDPL CI Docs](https://github.com/uxlfoundation/oneDPL/actions/runs/34399254049) | 2026-09-09 | Documentation CI only; this example does not establish functional CPU or GPU testing. |
+| oneCCL | [Coverity Scan](https://github.com/uxlfoundation/oneCCL/actions/runs/25319695571) | 2026-05-04 | An older static-analysis workflow; functional testing and current availability remain unverified. |
+
+Use each project's Actions page and maintainer guidance to obtain newer evidence.
+Update the verification date with the evidence; do not replace it merely because
+this document was edited.
+
 ## Previously reported shared capacity
 
 | Owner | Type | OS | Number | Verified availability | Notes |

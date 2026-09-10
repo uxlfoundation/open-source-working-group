@@ -56,10 +56,7 @@ already published in this repository.
      - Infrastructure handover; hardware and administrator support; developer summit planning
      - `CI transition <../presentations/2025-08-26-UXL-Working-Group-CI-Transition.pdf>`__
    * - `2025-07-22 <2025-07-22.rst>`__
-     - Contribution policies and compliance; project updates (June/July record duplication under review)
-     - —
-   * - `2025-06-22 <2025-06-22.rst>`__
-     - Contribution policies and compliance; project updates (June/July record duplication under review)
+     - Contribution policies and compliance; updates from the six library projects
      - —
    * - `2025-05-27 <2025-05-27.rst>`__
      - Security progress; hardware runners; CPU-inclusive APIs; library proposals
@@ -91,3 +88,10 @@ already published in this repository.
 * `2024-03-26 <2024-03-26.rst>`__
 * `2024-02-27 <2024-02-27.rst>`__
 * `2024-01-24 <2024-01-24.rst>`__
+
+Corrected record URLs
+----------------------
+
+The `June-labelled record <2025-06-22.rst>`__ redirects to the July 22, 2025
+minutes following the date correction in PR #231. It is not counted as an
+additional meeting.

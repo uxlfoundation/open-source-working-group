@@ -4,9 +4,10 @@ Open Source WG: 07/22/2025
 
 .. note::
 
-   Record verification pending: the body of these notes matches
-   `2025-06-22 <2025-06-22.rst>`__ apart from the meeting date. Both records
-   are preserved while the original calendar or recording is checked.
+   This is the corrected July record. `PR #231
+   <https://github.com/uxlfoundation/open-source-working-group/pull/231>`__
+   explicitly corrected the dates from June to July. The earlier
+   `June-labelled URL <2025-06-22.rst>`__ is retained as a redirect.
 
 Recording: A recording of the meeting is available in the Linux Foundation https://openprofile.dev/ profile. If you are
 a member of the Working Group you can access this through your account.
