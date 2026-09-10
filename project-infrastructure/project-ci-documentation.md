@@ -25,24 +25,51 @@ not be used as current availability guarantees.
 
 ## Public workflow evidence
 
-Reviewed September 9, 2026 using GitHub's successful workflow-run records.
-These are observed examples, not a complete coverage assessment or a guarantee
-that runners are currently available. A workflow-level success can include skipped
-jobs; inspect its jobs and logs before claiming support for a particular platform.
-Dates below are the run creation dates in UTC.
+Reviewed September 10, 2026 using successful pull-request workflow runs and their
+individual job steps. The examples below establish public build/test activity;
+they do not certify all requested platforms, release packaging, current runner
+capacity or a support service. Run dates are UTC. Some jobs skip domain-specific
+steps, so only observed successful build/test steps are described.
 
-| Project | Successful run observed | Run date | What the evidence establishes |
+| Project | Evidence | Run date | Observed work and limits |
 | --- | --- | --- | --- |
-| oneDNN | [CI AArch64](https://github.com/uxlfoundation/oneDNN/actions/runs/28283384460) | 2026-06-27 | A successful architecture-labelled CI workflow; this is older evidence, not current capacity verification. |
-| oneDAL | [docker-validation Nightly](https://github.com/uxlfoundation/oneDAL/actions/runs/34415652999) | 2026-09-09 | A successful nightly validation workflow; shared capacity and full platform coverage are not established. |
-| oneMath | [PR Tests (x86_64)](https://github.com/uxlfoundation/oneMath/actions/runs/33626039801), [PR Tests (aarch64)](https://github.com/uxlfoundation/oneMath/actions/runs/33626039750) | 2026-09-02 | Successful architecture-labelled PR workflows; GPU coverage is not established by these runs. |
-| oneTBB | [oneTBB CI](https://github.com/uxlfoundation/oneTBB/actions/runs/34341528354) | 2026-09-09 | A successful project CI workflow; inspect job results for the exact platform matrix. |
-| oneDPL | [oneDPL CI Docs](https://github.com/uxlfoundation/oneDPL/actions/runs/34399254049) | 2026-09-09 | Documentation CI only; this example does not establish functional CPU or GPU testing. |
-| oneCCL | [Coverity Scan](https://github.com/uxlfoundation/oneCCL/actions/runs/25319695571) | 2026-05-04 | An older static-analysis workflow; functional testing and current availability remain unverified. |
+| oneDNN | [CI AArch64](https://github.com/uxlfoundation/oneDNN/actions/runs/31367321109) | 2026-08-10 | Successful build and test steps in Windows, macOS and Linux jobs, plus c6g/c7g/c8g test jobs. This is dated evidence; it does not establish GPU coverage or current capacity. |
+| oneDAL | [Windows CI](https://github.com/uxlfoundation/oneDAL/actions/runs/34450073221) | 2026-09-10 | The Windows-arm64-clang-sve job completed Build daal, Build onedal_c, Test daal and Test oneapi. This example does not establish every requested platform. |
+| oneMath | [AArch64 PR tests](https://github.com/uxlfoundation/oneMath/actions/runs/33173530305), [x86_64 PR tests](https://github.com/uxlfoundation/oneMath/actions/runs/33173530290) | 2026-08-28 | Successful configure/build and test steps for ArmPL DFT, oneMKL DFT and portFFT CPU jobs. Other domains were conditionally skipped in this change; GPU testing is not established. |
+| oneTBB | [oneTBB CI](https://github.com/uxlfoundation/oneTBB/actions/runs/34341528354) | 2026-09-09 | Retained workflow-level evidence from the previous review. Individual jobs were not re-audited in this pass; inspect logs for the platform matrix. |
+| oneDPL | [CI Testing](https://github.com/uxlfoundation/oneDPL/actions/runs/34456236631) | 2026-09-10 | Successful testing steps across Linux, Windows and macOS jobs, plus explicit build-and-run example steps on Linux and Windows. This establishes functional testing beyond documentation CI; it does not establish physical FPGA or GPU coverage. |
+| oneCCL | [Earlier Coverity Scan](https://github.com/uxlfoundation/oneCCL/actions/runs/25319695571) | 2026-05-04 | Historical static-analysis evidence only. Current contribution-testing CI remains unverified; see the review below. |
 
-Use each project's Actions page and maintainer guidance to obtain newer evidence.
-Update the verification date with the evidence; do not replace it merely because
-this document was edited.
+### oneCCL follow-up
+
+On September 10, 2026, the GitHub API reported the default branch as
+`master-v2`, with no `.github/workflows` directory. The head commits of
+[PR 210](https://github.com/uxlfoundation/oneCCL/pull/210) and
+[PR 208](https://github.com/uxlfoundation/oneCCL/pull/208) had no recorded check
+runs or commit statuses. These observations do not rule out external testing.
+
+The [migration task](https://github.com/uxlfoundation/open-source-working-group/issues/170)
+includes CI for testing contributions, so repository relocation alone does not
+satisfy its full criteria. The
+[CI documentation task](https://github.com/uxlfoundation/open-source-working-group/issues/210)
+still needs a current testing link, software requirements and an agreed support
+contact. Keep these tasks open until their remaining criteria are verified.
+
+### Infrastructure task scope
+
+The observed build/test steps provide evidence for the initial public
+infrastructure tasks for oneDNN, oneMath, oneDAL and oneDPL. They do not imply
+that all requirements in the project sections below are satisfied. Track further
+platform coverage and capacity as specific work items with an agreed owner and
+completion evidence.
+
+The [August 2025 meeting](../meetings/notes/2025-08-26.rst) reported that prior
+Tiber and Intel GPU Max access was no longer available. The older
+[GPU-workload task](https://github.com/uxlfoundation/open-source-working-group/issues/214)
+and [container-workflow task](https://github.com/uxlfoundation/open-source-working-group/issues/215)
+need an agreed current execution environment before results can be evaluated.
+Do not interpret this historical report as a statement about the provider's
+present-day service offerings.
 
 ## Previously reported shared capacity
 
