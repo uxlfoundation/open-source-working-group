@@ -1,0 +1,157 @@
+==========================
+Open Source WG: 10/28/2026
+==========================
+
+Quarterly meeting: October 28, 2026, 12:00-1:00 p.m. Eastern Time.
+
+Recording: Working Group members can access meeting recordings through their
+Linux Foundation `openprofile account`_.
+
+Attendees
+=========
+
+* Nick Dingle - Arm
+* Chris Goodyer - Arm
+
+* Ragesh Hajela - Fujitsu
+
+* Alexey Kukanov - Intel
+* Dan Hoeflinger - Intel
+* Dmitry Zarukin - Intel
+* John Melonakos - Intel
+* Maria Kraynyuk - Intel
+* Michael Voss - Intel
+* Polina Meltsin - Intel
+* Timmie Smith - Intel
+* Vadim Pirogov - Intel
+
+* Verena Beckham - Qualcomm
+
+* Biagio Cosenza - University of Salerno
+
+Quick Recap
+===========
+
+John walked through the `UXL skills repository`_ using oneDNN as the example and
+asked each project how much it wants to invest in skills. The evidence so far is
+thin: one of five oneDNN evaluation tasks shows the skill improving on a bare
+agent, and the other four are solved equally well without it. Projects agreed
+that improving documentation serves agents and people alike, so skills stay an
+incubating, opt-in effort; oneDPL is building one and will test it in the
+framework. Biagio Cosenza proposed hosting the `oneAPI plugins`_ for NVIDIA and
+AMD GPUs under the foundation, which the group supported pending Steering
+Committee approval. Sergey Yakovlev joins as the oneDAL representative. The
+`oneAPI DevSummit`_ is December 1; its call for presentations closes October 31.
+
+Next Steps
+==========
+
+* **John Melonakos:** Collapse the oneMath maintainer teams into one maintainer
+  group and one admin, and move the Code of Conduct contact to Nick Dingle;
+  Maria Kraynyuk reviews the pull request and the related maintainer documentation.
+* **John Melonakos:** Raise the oneAPI plugins with the Steering Committee and
+  agree with Biagio Cosenza where the repository lives under the UXL GitHub
+  organization and how the website directs users to the downloads.
+* **John Melonakos:** Follow up with Vadim Pirogov on Intel GPU hardware outside
+  the corporate firewall for CI and skills evaluations.
+* **John Melonakos:** Send the meeting slides to the mailing list.
+* **Dan Hoeflinger:** Finish the oneDPL CMake skill and the oneDPL agent
+  instructions, then work with John to run the skill through the evaluation
+  framework.
+* **Biagio Cosenza:** Continue the learning-materials planning with Linux
+  Foundation Education, and move the oneAPI plugins to the UXL organization once
+  approved.
+* **Project maintainers:** Submit DevSummit presentations by October 31 and
+  send anyone building skills for a project to John for evaluation.
+
+Summary
+========
+
+Opens
+-----
+
+Maria Kraynyuk reported that oneMath has a GitHub team for every domain and
+backend, most with a single member, and that the Code of Conduct contact points
+to an Intel address that no longer exists. The group agreed to collapse the
+teams into one maintainer group plus one admin and to make Nick Dingle the
+contact. John takes the pull request; Maria reviews it.
+
+John announced that Sergey Yakovlev takes over from Nikolay Petrov as the
+oneDAL representative, with Nikolay remaining a maintainer.
+
+The UXL Skills Repository
+-------------------------
+
+John presented the `UXL skills repository`_ through oneDNN. A skill is one
+folder of four files that an agent loads: the skill itself, its official
+sources, prompt evaluations and agent-specific settings. A skill card is the
+human-readable page. Harbor tasks evaluate each library with and without the
+skill and build the dashboard, and ``docs/maintainer-review/`` holds one review
+packet per project. Besides the six library skills there are two cross-cutting
+ones: SYCL build and debug, and performance validation.
+
+The oneDNN results so far: of five implemented tasks, one shows the skill
+improving the agent's result and four hit the ceiling, meaning the agent solves
+the task as well without the skill, at a token cost for loading it. Across all
+skills, 9 of 41 tasks show headroom and 25 hit the ceiling. Every recorded run
+used one agent and one model. John named the two gaps: discriminating tasks need
+project experts who know what agents get wrong, ideally drawn from real issues,
+and the evaluation runs are not yet funded or automated, so a skill edit passes
+CI without any model being tested.
+
+Roundtable: What Each Project Wants
+-----------------------------------
+
+* **oneDNN:** Vadim Pirogov wants skills in the oneDNN repository for tasks
+  agents struggle with, but named two obstacles: proving that a skill helps, and
+  access to Intel GPUs, which public clouds do not offer. John described an Intel
+  lab with hardware outside the firewall that self-hosted runners could use; Vadim
+  noted it would serve CI as well.
+* **oneMath:** Nick Dingle echoed the evaluation question and said that with a
+  queue of open pull requests, maintainer time is better spent there for now.
+* **oneTBB:** Michael Voss will take a look but weighs the return against
+  improving documentation.
+* **oneDPL:** Dan Hoeflinger is building a skill for CMake build rules and has a
+  pull request adding agent instructions to the repository. John offered to run
+  the skill through the framework.
+* **oneDAL and oneCCL:** Not represented during the roundtable.
+
+John concluded that there is no push from the Working Group for projects to
+build skills on a timeline. Frontier models change within weeks, and better
+public documentation helps agents and people at once. The repository remains an
+incubator for any project that wants to use it.
+
+oneAPI Plugins for NVIDIA and AMD GPUs
+--------------------------------------
+
+Biagio Cosenza described the `oneAPI plugins`_ his group at Salerno builds after
+Codeplay stopped shipping them: two commands make a stock oneAPI installation
+run on NVIDIA and AMD GPUs. CINECA and others asked for them; Intel and Argonne
+engineers supplied the build scripts. The group supports hosting the project
+under the foundation. It needs Steering Committee approval, a home in the UXL
+GitHub organization and a download link on the website. Biagio will gain a
+team member to maintain it across oneAPI versions; an Arm host was requested
+and may follow.
+
+Biagio also raised a skill for writing SYCL kernels, a topic the Khronos SYCL
+Working Group is discussing. The repository covers building SYCL, not writing
+kernels; this is a possible longer-term contribution.
+
+Other Updates
+-------------
+
+Biagio has sent the learning-materials plan to Linux Foundation Education and is
+waiting for a planning meeting. He also noted that official SYCL support is
+coming to CMake, which will simplify builds and porting between SYCL
+implementations.
+
+The `oneAPI DevSummit`_ is December 1, 2026, a virtual half day from 7 a.m. to
+2 p.m. Pacific Time, with an AMD keynote and sessions on agentic AI. Few project
+presentations have been submitted; the call closes October 31. The next Working
+Group meeting is planned for January 2027.
+
+
+.. _`openprofile account`: https://openprofile.dev/
+.. _`UXL skills repository`: https://github.com/uxlfoundation/skills
+.. _`oneAPI plugins`: https://unisa-hpc.github.io/oneapi-plugins/
+.. _`oneAPI DevSummit`: https://sessionize.com/oneapi-devsummit-hosted-uxl-foundation-2

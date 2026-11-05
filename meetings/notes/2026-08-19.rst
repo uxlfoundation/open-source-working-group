@@ -34,9 +34,9 @@ Attendees
 
 * Andrey Alekseenko - KTH Royal Institute of Technology
 
-* Biagio Cosenza - University of Salerno
+* Verena Beckham - Qualcomm
 
-* Verena Beckham - Individual
+* Biagio Cosenza - University of Salerno
 
 Quick Recap
 ===========

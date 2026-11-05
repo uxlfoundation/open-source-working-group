@@ -15,13 +15,14 @@ Each project's published documentation defines its current APIs and requirements
 Latest discussion
 -----------------
 
-**August 19, 2026 — quarterly meeting**
+**October 28, 2026 — quarterly meeting**
 
-Project introductions and AMD participation; AI agent skills and evaluation;
-learning materials and the foundation website. Follow-up work includes project
-feedback on the skills framework, task scoring and hardware-specific evaluations.
+Skills repository walkthrough and project roundtable, which kept skills an
+opt-in effort; hosting the oneAPI plugins for NVIDIA and AMD GPUs under the
+foundation, pending Steering Committee approval; the oneAPI DevSummit on
+December 1. The next meeting is planned for January 2027.
 
-`Read the minutes and action items <meetings/notes/2026-08-19.rst>`_ or
+`Read the minutes and action items <meetings/notes/2026-10-28.rst>`_ or
 `browse meetings by topic <meetings/notes/README.rst>`_.
 
 Work together
@@ -85,7 +86,7 @@ website, with APIs and requirements defined by each project's documentation.
 Proposals belong here or in the relevant project repository.
 
 
-.. _`Latest meeting`: meetings/notes/2026-08-19.rst
+.. _`Latest meeting`: meetings/notes/2026-10-28.rst
 .. _`Meeting calendar`: https://lists.uxlfoundation.org/g/open-source-wg/calendar
 .. _`Contribute`: CONTRIBUTING.md
 .. _`Project directory`: https://github.com/uxlfoundation/foundation/blob/main/PROJECTS.md

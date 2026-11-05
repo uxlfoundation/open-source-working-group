@@ -23,6 +23,9 @@ already published in this repository.
    * - Date and minutes
      - Main topics
      - Presentations
+   * - `2026-10-28 <2026-10-28.rst>`__
+     - Skills repository walkthrough and roundtable; oneAPI plugins; DevSummit
+     - `Slides <../presentations/2026-10-28-UXL-OSWG.pdf>`__
    * - `2026-08-19 <2026-08-19.rst>`__
      - Project introductions; AI agent skills and evaluation; learning materials
      - —
