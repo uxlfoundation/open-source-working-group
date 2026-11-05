@@ -25,9 +25,9 @@ Attendees
 * Timmie Smith - Intel
 * Vadim Pirogov - Intel
 
-* Biagio Cosenza - University of Salerno
+* Verena Beckham - Qualcomm
 
-* Verena Beckham - Individual
+* Biagio Cosenza - University of Salerno
 
 Quick Recap
 ===========
