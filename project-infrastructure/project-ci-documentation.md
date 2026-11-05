@@ -293,7 +293,7 @@ Full list of SW requirements and steps defined in [INSTALL.md](https://github.co
 oneCCL
 ------
 
-Representative: Maria Petrova
+Representative: Polina Meltsin
 
 Support contact for CI: not yet documented; project representative to confirm.
 
@@ -310,7 +310,7 @@ Support contact for CI: not yet documented; project representative to confirm.
 | x86 | Intel | CPU | Ubuntu |
 | AArch64 | Arm | CPU | Ubuntu |
 
-Software requirements: not yet documented; project representative to provide a current requirements link.
+Software requirements: [link](https://www.intel.com/content/www/us/en/developer/articles/system-requirements/oneapi-collective-communication-library-system-requirements.html)
 
 oneMath
 -------
