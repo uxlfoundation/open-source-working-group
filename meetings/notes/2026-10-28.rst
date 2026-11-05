@@ -11,16 +11,23 @@ Attendees
 =========
 
 * Nick Dingle - Arm
+* Chris Goodyer - Arm
+
+* Ragesh Hajela - Fujitsu
 
 * Alexey Kukanov - Intel
 * Dan Hoeflinger - Intel
+* Dmitry Zarukin - Intel
 * John Melonakos - Intel
 * Maria Kraynyuk - Intel
 * Michael Voss - Intel
+* Polina Meltsin - Intel
 * Timmie Smith - Intel
 * Vadim Pirogov - Intel
 
 * Biagio Cosenza - University of Salerno
+
+* Verena Beckham - Individual
 
 Quick Recap
 ===========
@@ -107,7 +114,7 @@ Roundtable: What Each Project Wants
 * **oneDPL:** Dan Hoeflinger is building a skill for CMake build rules and has a
   pull request adding agent instructions to the repository. John offered to run
   the skill through the framework.
-* **oneDAL and oneCCL:** No representative present.
+* **oneDAL and oneCCL:** Not represented during the roundtable.
 
 John concluded that there is no push from the Working Group for projects to
 build skills on a timeline. Frontier models change within weeks, and better
