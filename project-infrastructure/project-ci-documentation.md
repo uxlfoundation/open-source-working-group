@@ -208,7 +208,7 @@ Minimum Software Versions:
 oneDAL
 ------
 
-Representative: [Nikolay Petrov](https://github.com/napetrov)
+Representative: [Sergey Yakovlev](https://github.com/syakov-intel)
 
 Support contacts for CI:
 
